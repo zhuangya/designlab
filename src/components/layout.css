@@ -1,0 +1,352 @@
+/* 字体调用 */
+@font-face {
+  font-family: "gilroy";
+  src: url("../fonts/Gilroy-Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "gilroy";
+  src: url("../fonts/Gilroy-Medium.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "gilroy";
+  src: url("../fonts/Gilroy-Semibold.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "gilroy";
+  src: url("../fonts/Gilroy-Bold.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "uuicon";
+  src: url("../fonts/uuicon.ttf");
+}
+/* 全局属性 */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  --Level-1: rgb(255, 255, 255);
+  --Level-2: rgb(245, 245, 245);
+  --Text-1: rgb(0, 0, 0);
+  --Text-2: rgba(51, 51, 51, 0.6);
+  --Text-3: rgba(51, 51, 51, 0.32);
+  --Text-4: rgba(51, 51, 51, 0.2);
+  --Space: linear-gradient(
+    180deg,
+    var(--Level-1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  --Glass: saturate(600%) blur(1.5rem);
+  --Glass-bg: rgba(245, 245, 245, 0.8);
+  --Style: #E6FF00;
+}
+@media (prefers-color-scheme: dark) {
+  html {
+    --Level-1: rgb(0, 0, 0);
+    --Level-2: rgb(24, 24, 24);
+    --Text-1: rgb(247, 247, 247);
+    --Text-2: rgba(247, 247, 247, 0.6);
+    --Text-3: rgba(247, 247, 247, 0.32);
+    --Text-4: rgba(247, 247, 247, 0.2);
+    --Space: linear-gradient(180deg, var(--Level-1) 0%, rgba(0, 0, 0, 0) 100%);
+    --Glass: saturate(400%) blur(1.5rem);
+    --Glass-bg: rgba(24, 24, 24, 0.8);
+    --Style: #CDE300;
+  }
+}
+::-webkit-scrollbar {
+  display: none;
+}
+::selection {
+  background-color: var(--Style);
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  font-family: "gilroy", "PingFang", sans-serif;
+  background-color: var(--Level-1);
+  color: var(--Text-1);
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  animation: fadein 1.2s ease 0.6s backwards;
+}
+/* 基础类型 */
+h1,
+h2,
+h3,
+p,
+a,
+ul,
+ol,
+blockquote,
+pre,
+table {
+  line-height: 1.5;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+h1 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+h2 {
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+p,
+a {
+  font-size: 1rem;
+  font-weight: 400;
+}
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+  color: var(--Style);
+}
+hr {
+  width: 100%;
+  height: 1px;
+  background-color: var(--Text-4);
+  border: none;
+  margin: 1rem 0;
+}
+blockquote {
+  box-shadow: inset 2px 0 0 0 var(--Style);
+}
+img {
+  width: 100%;
+  display: block;
+}
+pre {
+  padding: 1rem;
+  background-color: var(--Level-2);
+  font-size: 0.8rem;
+}
+code {
+  padding: 0.25rem;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  font-size: inherit;
+  white-space: pre-wrap;
+  background-color: var(--Level-2);
+}
+pre code {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+}
+ul,
+ol,
+blockquote {
+  padding-left: 1.5rem;
+}
+ul p,
+ul ul,
+ul ol,
+ol p,
+ol ol,
+ol ul {
+  margin: 0;
+}
+table {
+  border-left: 1px solid rgb(140, 140, 140);
+  border-top: 1px solid rgb(140, 140, 140);
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+table th {
+  background-color: var(--Level-2);
+}
+table th,
+table td {
+  table-layout: fixed;
+  padding: 0.5rem;
+  max-width: 18rem;
+  word-wrap: break-word;
+  border-right: 1px solid rgb(140, 140, 140);
+  border-bottom: 1px solid rgb(140, 140, 140);
+}
+main {
+  padding: 4rem 0 0;
+  animation: fadein 1.2s ease 0.6s backwards;
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+section {
+  padding: 0 1.5rem;
+  max-width: 65rem;
+  margin: 0 auto;
+}
+button {
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  display: block;
+  font-size: 1rem;
+  height: 3rem;
+  line-height: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: var(--Level-1);
+  background-color: var(--Text-1);
+  font-weight: 500;
+}
+.title {
+  font-size: 7.5rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -4px;
+  margin-top: 3rem;
+  transition: 0.3s ease;
+  margin-bottom: 0;
+}
+.title-center {
+  text-align: center;
+}
+
+/* 基础类型移动版 */
+@media screen and (max-width: 48rem) {
+  h1,
+  h2,
+  h3,
+  p,
+  a,
+  ul,
+  ol,
+  blockquote,
+  pre,
+  table {
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+  h1 {
+    font-size: 1.75rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+  .title {
+    margin-top: 2.5rem;
+    font-size: 3.25rem;
+    letter-spacing: -2px;
+  }
+}
+
+/* 全局栅格系统 */
+.grid-sys {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding: 0.75rem;
+}
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  padding: 0.75rem;
+  z-index: 10;
+}
+.col-12 {
+  width: 100%;
+}
+.col-11 {
+  width: calc(100% / 12 * 11);
+}
+.col-10 {
+  width: calc(100% / 12 * 10);
+}
+.col-9 {
+  width: calc(100% / 12 * 9);
+}
+.col-8 {
+  width: calc(100% / 12 * 8);
+}
+.col-7 {
+  width: calc(100% / 12 * 7);
+}
+.col-6 {
+  width: calc(100% / 12 * 6);
+}
+.col-5 {
+  width: calc(100% / 12 * 5);
+}
+.col-4 {
+  width: calc(100% / 12 * 4);
+}
+.col-3 {
+  width: calc(100% / 12 * 3);
+}
+.col-2 {
+  width: calc(100% / 12 * 2);
+}
+.col-1 {
+  width: calc(100% / 12);
+}
+.air {
+  padding: 0;
+}
+.desktop-none {
+  display: none;
+}
+/* 全局栅格系统移动版 */
+@media screen and (max-width: 48rem) {
+  .col-1,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-10,
+  .col-11,
+  .col-12 {
+    width: 100%;
+  }
+  .col-8-m {
+    width: 66.6666666%;
+  }
+  .col-6-m {
+    width: 50%;
+  }
+  .col-4-m {
+    width: 33.3333333%;
+  }
+  .mobile-none {
+    display: none;
+  }
+}

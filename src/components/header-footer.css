@@ -1,0 +1,279 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transform: translate3d(0px, 0px, 2000px);
+  z-index: 2000;
+  background-color: var(--Level-1);
+  user-select: none;
+}
+/* 滚动特殊样式 */
+.header-line {
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+  height: 1px;
+  padding: 0 1.5rem;
+}
+.header-line::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  max-width: 62rem;
+  height: 1px;
+  background-color: transparent;
+  transition: 0.3s ease-out;
+}
+.header-scroll.header-line::after {
+  background-color: var(--Text-3);
+}
+.header-content {
+  z-index: 20;
+  height: 4rem;
+  max-width: 65rem;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  padding: 1.5rem;
+}
+.header-logo {
+  position: absolute;
+  left: 1.5rem;
+  top: 1rem;
+  display: flex;
+  align-items: center;
+  height: 2rem;
+  margin: 0;
+}
+/* 汉堡动画菜单 */
+.menu-btn {
+  position: absolute;
+  right: 1.5rem;
+  top: 1.25rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.menu-btn li,
+.menu-btn li::after,
+.menu-btn li::before {
+  position: relative;
+  list-style-type: none;
+  width: 1.5rem;
+  height: 0.125rem;
+  content: "";
+  background-color: var(--Text-1);
+  transition: top 0.2s ease-out 0.2s, transform 0.2s ease-out,
+    background-color 0.15s ease-out;
+}
+.menu-btn li::before {
+  position: absolute;
+  top: -9px;
+  transform: rotate(0deg) translate3d(0, 2px, 0);
+}
+.menu-btn li::after {
+  position: absolute;
+  top: 9px;
+  transform: rotate(0deg) translate3d(0, -2px, 0);
+}
+.menu-btn:hover li::before {
+  transform: rotate(0deg) translate3d(0, 0, 0);
+}
+.menu-btn:hover li::after {
+  transform: rotate(0deg) translate3d(0, 0, 0);
+}
+/* 展开 */
+.header-active .menu-btn li::before {
+  top: 0;
+  transform: rotate(-45deg);
+  transition: top 0.2s ease-out, transform 0.2s ease-out 0.2s,
+    background-color 0.15s ease-out;
+}
+.header-active .menu-btn li::after {
+  top: 0;
+  transform: rotate(45deg);
+  transition: top 0.2s ease-out, transform 0.2s ease-out 0.2s,
+    background-color 0.15s ease-out;
+}
+.header-active .menu-btn li {
+  background-color: transparent;
+}
+/* 玻璃菜单内 */
+.header-bg {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100vh;
+  user-select: none;
+  backdrop-filter: var(--Glass);
+  background-color: var(--Glass-bg);
+  transform: translateX(100%);
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 4rem;
+  opacity: 0;
+}
+.header-active .header-bg {
+  transform: translateX(0);
+  opacity: 1;
+}
+.header-bg a {
+  color: var(--Text-2);
+  display: block;
+  transition: 0.3s ease;
+}
+.header-bg a:hover {
+  color: var(--Text-1);
+  text-decoration: none;
+}
+.header-bg .social-icon {
+  padding: 0.5rem 0;
+}
+/* 菜单选项 */
+.header-link {
+  position: relative;
+  font-size: 2.5rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  line-height: 1.2;
+  margin-top: 0;
+}
+.header-link:hover {
+  color: var(--Text-2)!important;
+}
+.header-link::before {
+  position: absolute;
+  height: 1rem;
+  bottom: 1rem;
+  left: -2px;
+  right: -2px;
+  z-index: -1;
+  content: "";
+  background-color: var(--Style);
+  transform: scaleX(0);
+  transform-origin: right center;
+  transition: transform 0.2s ease;
+}
+.header-link:hover::before {
+  transform: scaleX(1);
+  transform-origin: left center;
+}
+.header-foot {
+  margin-top: 1rem;
+  width: 100%;
+  color: var(--Text-3);
+}
+header [aria-current="page"] {
+  color: var(--Text-1);
+}
+header [aria-current="page"]::after {
+  position: absolute;
+  height: 4px;
+  bottom: 1rem;
+  left: -2px;
+  right: -2px;
+  z-index: -2;
+  content: "";
+  background-color: var(--Style);
+}
+
+/* footer */
+footer {
+  color: var(--Text-2);
+  user-select: none;
+}
+footer .header-content {
+  height: auto;
+  padding: 3rem 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+footer a {
+  color: var(--Text-2);
+  transition: 0.3s ease;
+  margin: 0;
+}
+footer a:hover {
+  text-decoration: none;
+  color: var(--Text-1);
+}
+/* footer导航社交 icon */
+.footer-link,
+.social-icon {
+  display: flex;
+  width: 12rem;
+  justify-content: space-between;
+}
+.social-icon a {
+  display: block;
+  margin: 0;
+  width: 2rem;
+  line-height: 2rem;
+  font-size: 1.4rem;
+  text-align: center;
+  font-family: "uuicon";
+  transition: 0.3s ease;
+}
+.social-icon a:hover {
+  text-decoration: none;
+  color: var(--Text-1);
+}
+/* 旋转文字 */
+.circular {
+  width: 6.5rem;
+  height: 6.5rem;
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 0.625rem;
+  letter-spacing: 0.88px;
+  text-align: center;
+  animation: rota 12s linear infinite;
+}
+@keyframes rota {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.circular svg {
+  display: block;
+  overflow: visible;
+  transform: rotate(-32deg);
+  fill: var(--Text-2);
+  text-transform: uppercase;
+}
+.circular path {
+  fill: none;
+  text-align: center;
+}
+/* 移动适配 */
+@media screen and (max-width: 48rem) {
+  .header-bg {
+    width: 100%;
+    transform: translateX(100%);
+  }
+  .header-link {
+    font-size: 2rem;
+  }
+  footer .header-content {
+    flex-direction: column;
+  }
+  .header-link::before {
+    bottom: 0.5rem;
+    height: 0.7rem;
+  }
+  header [aria-current="page"]::after {
+    bottom: 0.5rem;
+  }
+}
