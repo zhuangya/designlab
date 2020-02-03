@@ -58,7 +58,7 @@ const WorkPage = ({ data }) => {
           const { frontmatter } = edge.node;
           return (
             <div key={frontmatter.path} className="col-4">
-              <Link to={frontmatter.path} className="work-cover" title={frontmatter.title + " " + frontmatter.date}>
+              <Link to={frontmatter.path} className="work-cover">
                 <Tilt
                   className="Tilt"
                   options={{
