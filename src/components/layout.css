@@ -71,7 +71,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  animation: fadein 1.2s ease 0.6s backwards;
+  animation: fadein 2s ease 1s backwards;
 }
 /* 基础类型 */
 h1,
@@ -182,7 +182,7 @@ table td {
 }
 main {
   padding: 4rem 0 0;
-  animation: fadein 1.2s ease 0.6s backwards;
+  animation: fadein 2s ease 1.6s backwards;
 }
 @keyframes fadein {
   0% {
@@ -355,7 +355,7 @@ button:hover {
   }
 }
 
-
+/* 美洽 */
 #meiqia-container iframe {
   transform: translateZ(2000px);
 }
