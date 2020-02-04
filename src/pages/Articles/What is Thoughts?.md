@@ -50,3 +50,5 @@ Thoughts 是知识管理工具，也是一款很好用的文本编辑工具。�
 | ![](../../articles/what_is_thoughts/20.jpg) | 镜头继续迅速拉远，首页的控件空间距离时间差错落盖在页面上 | 1.5s |
 | ![](../../articles/what_is_thoughts/21.jpg) | 镜头切换打字 | 1.8s |
 | ![](../../articles/what_is_thoughts/22.jpg) | 落版 | 3s |
+
+---

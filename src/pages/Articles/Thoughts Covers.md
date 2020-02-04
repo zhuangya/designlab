@@ -72,3 +72,5 @@ Blog
 ![](../../articles/thoughts_covers/Marketing.jpg)
 
 Marketing
+
+---
