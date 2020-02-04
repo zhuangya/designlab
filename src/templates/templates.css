@@ -3,6 +3,11 @@
   margin: 0 auto;
   padding: 3rem 1.5rem;
 }
+.page a {
+  color: var(--Text-1);
+  text-decoration: underline;
+  text-decoration-color: var(--Style);
+}
 .page-title {
   font-size: 2.5rem;
 }
@@ -18,6 +23,7 @@
 }
 .page-btn a {
   color: var(--Text-2);
+  text-decoration: none;
   width: 100%;
   text-align: center;
   margin: 0;
