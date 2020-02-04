@@ -35,5 +35,3 @@ cover : ../../cover/readme.jpg
 # 💻 发布
 
 使用了盖茨比推荐的 [Netlify](https://app.netlify.com/)，轻松免费自动拉取 Master 进行部署。
-
----

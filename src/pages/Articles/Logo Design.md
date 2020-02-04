@@ -44,5 +44,3 @@ cover : ../../cover/logo_design.jpg
 ![](../../articles/logo_design/18.jpg)
 
 ![](../../articles/logo_design/19.jpg)
-
----
