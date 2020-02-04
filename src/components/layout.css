@@ -356,6 +356,6 @@ button:hover {
 }
 
 
-#meiqia-container {
+#meiqia-container iframe {
   transform: translateZ(2000px);
 }
