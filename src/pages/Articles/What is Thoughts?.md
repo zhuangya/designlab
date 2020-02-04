@@ -1,5 +1,5 @@
 ---
-path : "/articles/2/"
+path : "/articles/what—_is_thoughts/"
 date : "2020-02-03"
 title : "What is Thoughts?"
 tags : ['All','Brand','Motion']

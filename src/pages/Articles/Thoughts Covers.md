@@ -1,5 +1,5 @@
 ---
-path : "/articles/4/"
+path : "/articles/thoughts_covers/"
 date : "2020-02-02"
 title : "Thoughts Covers"
 tags : ['All','Visual','UI/UX']
@@ -72,5 +72,3 @@ Blog
 ![](../../articles/thoughts_covers/Marketing.jpg)
 
 Marketing
-
----
