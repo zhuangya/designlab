@@ -58,7 +58,7 @@
   backdrop-filter: var(--Glass);
   background-color: var(--Glass-bg);
   z-index: 20;
-  transform: translate3d(0, 0, 1000px);
+  transform: translate3d(0, 0, 800px);
 }
 .tgas-tab {
   overflow-x: auto;

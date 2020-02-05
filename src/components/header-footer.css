@@ -2,7 +2,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  transform: translate3d(0px, 0px, 2000px);
+  transform: translate3d(0px, 0px, 1000px);
   z-index: 2000;
   background-color: var(--Level-1);
   user-select: none;
