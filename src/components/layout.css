@@ -39,8 +39,15 @@ html {
     rgba(255, 255, 255, 0) 100%
   );
   --Glass: saturate(600%) blur(1.5rem);
-  --Glass-bg: rgba(245, 245, 245, 0.8);
-  --Style: #E6FF00;
+  --Glass-bg: var(--Level-2);
+  --Style: #e6ff00;
+}
+/* 玻璃兼容性 */
+@supports (backdrop-filter: none) {
+  html {
+    --Glass: saturate(600%) blur(1.5rem);
+    --Glass-bg: rgba(245, 245, 245, 0.8);
+  }
 }
 @media (prefers-color-scheme: dark) {
   html {
@@ -52,10 +59,17 @@ html {
     --Text-4: rgba(247, 247, 247, 0.2);
     --Space: linear-gradient(180deg, var(--Level-1) 0%, rgba(0, 0, 0, 0) 100%);
     --Glass: saturate(400%) blur(1.5rem);
-    --Glass-bg: rgba(24, 24, 24, 0.8);
-    --Style: #D1e700;
+    --Glass-bg: var(--Level-2);
+    --Style: #d1e700;
+  }
+  @supports (backdrop-filter: none) {
+    html {
+      --Glass: saturate(400%) blur(1.5rem);
+      --Glass-bg: rgba(24, 24, 24, 0.8);
+    }
   }
 }
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -121,7 +135,8 @@ hr {
 blockquote {
   box-shadow: inset 2px 0 0 0 var(--Style);
 }
-img,video {
+img,
+video {
   width: 100%;
   display: block;
   background-color: var(--Text-4);

@@ -194,6 +194,9 @@
   .Tilt {
     transform: translate3d(0px, 0px, 0px) !important;
   }
+  .work-cover:hover .Tilt-inner {
+    box-shadow: 0 0 0 0 var(--Text-4);
+  }
   .work-cover:hover .img-shadow {
     opacity: 0;
   }
