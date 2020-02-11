@@ -46,7 +46,7 @@ html {
 @supports (backdrop-filter: none) {
   html {
     --Glass: saturate(600%) blur(1.5rem);
-    --Glass-bg: rgba(245, 245, 245, 0.8);
+    --Glass-bg: rgba(245, 245, 245, 0.9);
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -65,7 +65,7 @@ html {
   @supports (backdrop-filter: none) {
     html {
       --Glass: saturate(400%) blur(1.5rem);
-      --Glass-bg: rgba(24, 24, 24, 0.8);
+      --Glass-bg: rgba(24, 24, 24, 0.9);
     }
   }
 }
@@ -130,19 +130,25 @@ hr {
   height: 1px;
   background-color: var(--Text-4);
   border: none;
-  margin: 1rem 0;
+  margin: 1.5rem 0;
 }
 blockquote {
   box-shadow: inset 2px 0 0 0 var(--Style);
+  margin: 0;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+blockquote p {
+  margin: 0;
 }
 img,
 video {
   width: 100%;
   display: block;
-  background-color: var(--Text-4);
 }
 video {
   box-shadow: 0 0 0 1px var(--Text-4);
+  background-color: var(--Text-4);
 }
 pre {
   padding: 1rem;
