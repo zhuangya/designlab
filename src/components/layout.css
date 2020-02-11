@@ -279,6 +279,9 @@ button:hover {
     font-size: 3.25rem;
     letter-spacing: -2px;
   }
+  blockquote {
+    margin: 0;
+  }
 }
 
 /* 全局栅格系统 */
