@@ -100,7 +100,6 @@ pre,
 table {
   line-height: 1.5;
   margin-top: 1rem;
-  margin-bottom: 1rem;
 }
 h1 {
   font-size: 2rem;
@@ -121,9 +120,11 @@ a {
 }
 a {
   text-decoration: none;
-  -webkit-tap-highlight-color: transparent;
   cursor: pointer;
   color: var(--Style);
+}
+a,a:hover,a:active,a:visited,a:link,a:focus {
+  -webkit-tap-highlight-color: transparent;
 }
 hr {
   width: 100%;
@@ -134,12 +135,6 @@ hr {
 }
 blockquote {
   box-shadow: inset 2px 0 0 0 var(--Style);
-  margin: 0;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
-blockquote p {
-  margin: 0;
 }
 img,
 video {
@@ -259,11 +254,10 @@ button:hover {
   a,
   ul,
   ol,
-  blockquote,
   pre,
+  blockquote,
   table {
     margin-top: 0.8rem;
-    margin-bottom: 0.8rem;
   }
   h1 {
     font-size: 1.75rem;
@@ -278,9 +272,6 @@ button:hover {
     margin-top: 2.5rem;
     font-size: 3.25rem;
     letter-spacing: -2px;
-  }
-  blockquote {
-    margin: 0;
   }
 }
 

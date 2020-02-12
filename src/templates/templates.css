@@ -3,6 +3,9 @@
   margin: 0 auto;
   padding: 3rem 1.5rem;
 }
+.page h1, .page h2, .page h3 {
+  margin-top: 2rem;
+}
 .page p {
   line-height: 1.8;
 }
@@ -12,7 +15,8 @@
   text-decoration-color: var(--Style);
 }
 .page-title {
-  font-size: 2.5rem;
+  font-weight: 600;
+  font-size: 3rem;
 }
 .page-date {
   color: var(--Text-2);

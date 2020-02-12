@@ -59,6 +59,7 @@
   background-color: var(--Glass-bg);
   z-index: 20;
   transform: translate3d(0, 0, 800px);
+  user-select: none;
 }
 .tgas-tab {
   overflow-x: auto;

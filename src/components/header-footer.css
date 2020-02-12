@@ -145,7 +145,6 @@ header {
   font-weight: 500;
   transition: color 0.3s ease;
   line-height: 1.2;
-  margin-top: 0;
 }
 .header-link:hover {
   color: var(--Text-2)!important;
