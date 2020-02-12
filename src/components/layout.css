@@ -144,6 +144,7 @@ video {
 video {
   box-shadow: 0 0 0 1px var(--Text-4);
   background-color: var(--Text-4);
+  cursor: pointer;
 }
 pre {
   padding: 1rem;
