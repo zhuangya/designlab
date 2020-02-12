@@ -267,6 +267,12 @@ footer a:hover {
   footer .header-content {
     flex-direction: column;
   }
+  .header-line {
+    padding: 0;
+  }
+  .header-scroll.header-line::after {
+    background-color: var(--Text-4);
+  }
   .header-link::before {
     bottom: 0.75rem;
     height: 0.7rem;
