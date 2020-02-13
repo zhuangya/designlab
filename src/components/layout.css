@@ -227,11 +227,27 @@ button {
   color: var(--Level-1);
   background-color: var(--Text-1);
   font-weight: 600;
-  transition: 0.2s ease;
+  transition: 0.4s ease;
+  position: relative;
 }
 button:hover {
+  background-color: var(--Text-2);
+}
+button::before {
+  position: absolute;
+  height: 0.25rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: "";
   background-color: var(--Style);
-  color: black;
+  transform: scaleX(0);
+  transform-origin: right center;
+  transition: transform 0.4s ease;
+}
+button:hover::before {
+  transform: scaleX(1);
+  transform-origin: left center;
 }
 .title {
   font-size: 7.5rem;
