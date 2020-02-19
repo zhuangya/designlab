@@ -2,6 +2,11 @@
 .title-y {
   color: var(--Style);
 }
+.title-svg {
+  margin-top: 2rem;
+  display: block;
+  width: 7.5rem;
+}
 .title-2 {
   color: var(--Text-2);
 }

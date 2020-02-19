@@ -5,17 +5,16 @@ import Parallax from "react-rellax";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Logos from "../components/logos"
+import Mesvg from "../images/assets/me.svg";
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <section className="grid-sys">
       <span className="col-12">
-        <h1 className="title">
-          <span role="img" aria-label="">
-            👨🏻‍💻
-          </span>
-        </h1>
+        <span className="title-svg">
+          <Mesvg />
+        </span>
         <h1 className="title">
           I'm Haoqi Wen <span className="title-y">(</span>
           <span className="title-2">
