@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import React from "react"
 
 import Social from "./social"
-import Logo from "../images/assets/dr.svg";
+import Logo from "../images/assets/logo.svg";
 
 import "./header-footer.css"
 

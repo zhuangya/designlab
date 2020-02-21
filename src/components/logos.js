@@ -11,7 +11,7 @@ const Logos = () => (
   <section className="grid-sys">
     <span className="col-12 title-center">
       <hr />
-      <h3 className="logos-title">Clients, 2012 till now</h3>
+      <h3 className="logos-title">My clients</h3>
     </span>
     <span className="col-2 col-4-m">
       <Audi />

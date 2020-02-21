@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Dr.cat`,
-    description: `Dr.cat Design Lab, UI/UX Designer.`,
-    author: `@ Dr.cat`,
+    title: `curiōsity`,
+    description: `curiōsity.design, UI/UX Designer.`,
+    author: `@ curiōsity`,
   },
   plugins: [
 

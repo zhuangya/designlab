@@ -21,7 +21,7 @@ const AboutPage = () => (
       </span>
       <span className="col-6">
         <h1>
-          I'm Haoqi Wen (also known as Dr.Cat), Currently based in Shanghai.
+          I'm Haoqi Wen (also known as curiōsity), Currently based in Shanghai.
           Devoted to UI/UE and Branding, I also work in other fields such as
           Packaging Motion Graphic, Illustration…
         </h1>

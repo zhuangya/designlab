@@ -18,7 +18,7 @@ const IndexPage = () => (
         <h1 className="title">
           I'm Haoqi Wen <span className="title-y">(</span>
           <span className="title-2">
-            also known as Dr<span className="title-y">.</span>Cat
+            also known as curi<span className="title-y">ō</span>sity
           </span>
           <span className="title-y">)</span>, a designer living in Shanghai.
         </h1>
