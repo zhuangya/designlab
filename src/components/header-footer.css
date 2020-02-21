@@ -269,11 +269,4 @@ footer a:hover {
   .header-line {
     padding: 0;
   }
-  .header-link::before {
-    bottom: 0.75rem;
-    height: 0.7rem;
-  }
-  header [aria-current="page"]::after {
-    bottom: 0.75rem;
-  }
 }
