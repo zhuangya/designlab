@@ -38,7 +38,7 @@ class Header extends React.Component {
         className={`header${this.state.isToggleOn ? "" : " header-active"}`}
       >
         <div className="header-content">
-          <a className="header-logo" href="https://wenhaoqi.com">
+          <a className="header-logo" href="/">
 
             <Logo />
           </a>
