@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import React from "react"
 
 import Social from "./social"
-import Logo from "../images/assets/logo.svg";
+import Logo from "../images/assets/dr.svg";
 
 import "./header-footer.css"
 
@@ -38,7 +38,7 @@ class Header extends React.Component {
         className={`header${this.state.isToggleOn ? "" : " header-active"}`}
       >
         <div className="header-content">
-          <a className="header-logo" href="/">
+          <a className="header-logo" href="https://wenhaoqi.com">
 
             <Logo />
           </a>

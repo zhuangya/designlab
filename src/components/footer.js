@@ -22,7 +22,7 @@ const Footer = ({ siteTitle }) => (
             <textPath xlinkHref="#c-1">
               {siteTitle} © {new Date().getFullYear()}
             </textPath>
-            <textPath startOffset="97" xlinkHref="#c-2">• All Rights Reserved •</textPath>
+            <textPath startOffset="86" xlinkHref="#c-2">• All Rights Reserved •</textPath>
           </text>
           <path d="M 10,50 a 40,40 10 1,1 0,1 z" />
         </svg>

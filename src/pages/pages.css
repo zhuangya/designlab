@@ -59,7 +59,7 @@
 .space-sticky {
   position: sticky;
   position: -webkit-sticky;
-  top: 4.5rem;
+  top: 4rem;
   background-image: var(--Space);
   backdrop-filter: var(--Glass);
   background-color: var(--Glass-bg);
@@ -76,7 +76,7 @@
   align-items: center;
 }
 .tgas-tab li {
-  line-height: 4.5rem;
+  line-height: 4rem;
   list-style: none;
   padding: 0 0.75rem;
   color: var(--Text-2);
@@ -163,7 +163,7 @@
   left: 0;
   right: 0;
   content: "";
-  background-color: var(--Text-1);
+  background-color: var(--Style);
   transform: scaleX(0);
   transform-origin: right center;
   transition: transform 0.2s ease;

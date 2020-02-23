@@ -198,7 +198,7 @@ table td {
   border-bottom: 1px solid rgb(140, 140, 140);
 }
 main {
-  padding: 4.5rem 0 0;
+  padding: 4rem 0 0;
   animation: fadein 2s ease 1.6s backwards;
 }
 @keyframes fadein {
@@ -211,7 +211,7 @@ main {
 }
 section {
   padding: 0 1.5rem;
-  max-width: 70rem;
+  max-width: 65rem;
   margin: 0 auto;
 }
 button {
@@ -228,7 +228,7 @@ button {
   color: var(--Level-1);
   background-color: var(--Text-1);
   font-weight: 500;
-  transition: 0.3s ease;
+  transition: 0.4s ease;
   position: relative;
 }
 button:hover {
@@ -242,7 +242,7 @@ button::before {
   left: 0;
   right: 0;
   content: "";
-  background-color: var(--Text-1);
+  background-color: var(--Style);
   transform: scaleX(0);
   transform-origin: right center;
   transition: transform 0.4s ease;
