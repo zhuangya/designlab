@@ -6,11 +6,6 @@
 }
 @font-face {
   font-family: "gilroy";
-  src: url("../fonts/Gilroy-Semibold.otf");
-  font-weight: 500;
-}
-@font-face {
-  font-family: "gilroy";
   src: url("../fonts/Gilroy-Bold.otf");
   font-weight: 600;
 }
@@ -27,49 +22,49 @@
   box-sizing: border-box;
 }
 html {
-  --Level-1: rgb(255, 255, 255);
-  --Level-2: rgb(245, 245, 245);
+  /* 背景 */
+  --Level-1: rgb(255, 254, 252);
+  --Level-2: rgb(248, 246, 244);
+  /* 文字与元素 */
   --Text-1: rgb(0, 0, 0);
   --Text-2: rgba(51, 51, 51, 0.6);
-  --Text-3: rgba(51, 51, 51, 0.32);
-  --Text-4: rgba(51, 51, 51, 0.2);
+  --Text-3: rgba(51, 51, 51, 0.2);
+  /* 玻璃 */
   --Space: linear-gradient(
     180deg,
     var(--Level-1) 0%,
-    rgba(255, 255, 255, 0) 100%
+    rgba(255, 254, 252, 0) 100%
   );
-  --Glass: saturate(600%) blur(1.5rem);
+  --Glass: saturate(300%) blur(1.5rem);
   --Glass-bg: var(--Level-2);
-  --Style: #e6ff00;
+  /* 装饰色 */
+  --Style: #CDF565;
 }
 /* 玻璃兼容性 */
 @supports (backdrop-filter: none) {
   html {
-    --Glass: saturate(600%) blur(1.5rem);
-    --Glass-bg: rgba(245, 245, 245, 0.9);
+    --Glass-bg: rgba(248, 246, 244, 0.88);
   }
 }
 @media (prefers-color-scheme: dark) {
   html {
-    --Level-1: rgb(0, 0, 0);
-    --Level-2: rgb(24, 24, 24);
+    /* 背景 */
+    --Level-1: rgb(26, 29, 31);
+    --Level-2: rgb(36, 39, 41);
+    /* 文字与元素 */
     --Text-1: rgb(247, 247, 247);
     --Text-2: rgba(247, 247, 247, 0.6);
-    --Text-3: rgba(247, 247, 247, 0.32);
-    --Text-4: rgba(247, 247, 247, 0.2);
-    --Space: linear-gradient(180deg, var(--Level-1) 0%, rgba(0, 0, 0, 0) 100%);
-    --Glass: saturate(400%) blur(1.5rem);
+    --Text-3: rgba(247, 247, 247, 0.2);
+    /* 玻璃 */
+    --Space: linear-gradient(180deg, var(--Level-1) 0%, rgba(26, 29, 31, 0) 100%);
     --Glass-bg: var(--Level-2);
-    --Style: #d1e700;
   }
   @supports (backdrop-filter: none) {
     html {
-      --Glass: saturate(400%) blur(1.5rem);
-      --Glass-bg: rgba(24, 24, 24, 0.9);
+      --Glass-bg: rgba(36, 39, 41, 0.88);
     }
   }
 }
-
 ::-webkit-scrollbar {
   display: none;
 }
@@ -103,15 +98,15 @@ table {
 }
 h1 {
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 h2 {
   font-size: 1.75rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 h3 {
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 p,
 a {
@@ -121,15 +116,15 @@ a {
 a {
   text-decoration: none;
   cursor: pointer;
-  color: var(--Style);
+  color: var(--Text-1);
 }
 a,a:hover,a:active,a:visited,a:link,a:focus {
   -webkit-tap-highlight-color: transparent;
 }
 hr {
   width: 100%;
-  height: 1px;
-  background-color: var(--Text-4);
+  height: 4px;
+  background-color: var(--Text-3);
   border: none;
   margin: 1.5rem 0;
 }
@@ -142,8 +137,8 @@ video {
   display: block;
 }
 video {
-  box-shadow: 0 0 0 1px var(--Text-4);
-  background-color: var(--Text-4);
+  box-shadow: 0 0 0 1px var(--Text-3);
+  background-color: var(--Text-3);
   cursor: pointer;
 }
 pre {
@@ -187,6 +182,7 @@ table {
 }
 table th {
   background-color: var(--Level-2);
+  font-weight: 400;
 }
 table th,
 table td {
@@ -200,6 +196,7 @@ table td {
 main {
   padding: 4rem 0 0;
   animation: fadein 2s ease 1.6s backwards;
+  min-height: calc(100vh - 16rem);
 }
 @keyframes fadein {
   0% {
@@ -214,53 +211,12 @@ section {
   max-width: 65rem;
   margin: 0 auto;
 }
-button {
-  font-family: "gilroy", "PingFang", sans-serif;
-  cursor: pointer;
-  outline: none;
-  border: 0;
-  display: block;
-  font-size: 1.25rem;
-  height: 4rem;
-  line-height: 4rem;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-  color: var(--Level-1);
-  background-color: var(--Text-1);
-  font-weight: 500;
-  transition: 0.4s ease;
-  position: relative;
-}
-button:hover {
-  background-color: transparent;
-  color: var(--Text-1);
-}
-button::before {
-  position: absolute;
-  height: 0.25rem;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  content: "";
-  background-color: var(--Style);
-  transform: scaleX(0);
-  transform-origin: right center;
-  transition: transform 0.4s ease;
-}
-button:hover::before {
-  transform: scaleX(1);
-  transform-origin: left center;
-}
 .title {
-  font-size: 7.5rem;
-  font-weight: 600;
-  line-height: 1;
-  letter-spacing: -4px;
-  margin-top: 3rem;
-  transition: 0.3s ease;
+  font-size: 3rem;
+  line-height: 1.2;
   margin-bottom: 0;
 }
-.title-center {
+.text-center {
   text-align: center;
 }
 
@@ -288,9 +244,7 @@ button:hover::before {
     font-size: 1.25rem;
   }
   .title {
-    margin-top: 2.5rem;
-    font-size: 3.25rem;
-    letter-spacing: -2px;
+    font-size: 2rem;
   }
 }
 

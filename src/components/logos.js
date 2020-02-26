@@ -9,7 +9,7 @@ import TB from "../images/assets/tb.svg";
 
 const Logos = () => (
   <section className="grid-sys">
-    <span className="col-12 title-center">
+    <span className="col-12 text-center">
       <hr />
     </span>
     <span className="col-2 col-4-m">

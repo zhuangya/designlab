@@ -39,7 +39,6 @@ class Header extends React.Component {
       >
         <div className="header-content">
           <a className="header-logo" href="/">
-
             <Logo />
           </a>
           <div className="menu-btn" onClick={this.handleClick} onFocus={()=> 0}>
@@ -48,9 +47,9 @@ class Header extends React.Component {
           </div>
         </div>
         <div className="header-bg">
-          <Link className="header-link" to="/">Home</Link>
-          <Link className="header-link" to="/articles/">Articles</Link>
+          <Link className="header-link" to="/">Articles</Link>
           <Link className="header-link" to="/about/">About</Link>
+          <a className="header-link" href="http://work.wenhaoqi.com/" target="_blank" title="Notion" rel="noopener noreferrer">Works</a>
           <div className="header-foot">
             <hr />
             <Social />

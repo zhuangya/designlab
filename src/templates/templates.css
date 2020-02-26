@@ -42,7 +42,7 @@
   position: relative;
 }
 .page-btn a:hover {
-  background-color: var(--Text-4);
+  background-color: var(--Text-3);
   color: var(--Text-1);
 }
 .page-prev {
