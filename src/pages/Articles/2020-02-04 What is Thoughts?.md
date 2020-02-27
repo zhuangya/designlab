@@ -2,7 +2,7 @@
 path : "/articles/what_is_thoughts/"
 date : "2020-02-03"
 title : "What is Thoughts?"
-tags : ['All','Brand','Motion']
+tags : ['All','Design']
 excerpt : "Thoughts 产品介绍视频分镜头脚本"
 cover : ../../cover/thoughts_video.jpg
 ---

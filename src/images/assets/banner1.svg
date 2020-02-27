@@ -1,0 +1,63 @@
+<svg viewBox="0 0 500 500" version="1.1" class="banner-1"
+  xmlns="http://www.w3.org/2000/svg">
+  <path class="box" id="p-1-1" d="">
+    <animate attributeType="XML" attributeName="d" values=" M60,60 C75,60 75,60 90,60 C90,75 90,75 90,90 C75,90 75,90 60,90 C60,75 60,75 60,60 Z;M90,60 C90,75 90,75 90,90 C75,90 75,90 60,90 C60,75 60,75 60,60 C75,60 75,60 90,60 Z" dur="4s" repeatCount="indefinite"></animate>
+    <animate attributeType="XML" attributeName="opacity" values="0.3;0.1;0.3" dur="4s" repeatCount="indefinite"></animate>
+  </path>
+  
+  <path class="box" id="p-1-4" d="">
+    <animate attributeType="XML" attributeName="d" values="M270,60 C285,60 285,60 300,60 C300,75 300,75 300,90 C285,90 285,90 270,90 C270,75 270,75 270,60 Z;M300,60 C300,75 300,75 300,90 C285,90 285,90 270,90 C270,75 270,75 270,60 C285,60 285,60 300,60 Z" dur="4s" repeatCount="indefinite"></animate>
+    <animate attributeType="XML" attributeName="opacity" values="0.3;0.1;0.3" dur="4s" repeatCount="indefinite"></animate>
+  </path>
+
+  <path class="box" id="p-2-3" d="">
+    <animate attributeType="XML" attributeName="d" values="M200,130 C215,130 215,130 230,130 C230,145 230,145 230,160 C215,160 215,160 200,160 C200,145 200,145 200,130 Z;M230,130 C230,145 230,145 230,160 C215,160 215,160 200,160 C200,145 200,145 200,130 C215,130 215,130 230,130 Z" dur="4s" repeatCount="indefinite"></animate>
+    <animate attributeType="XML" attributeName="opacity" values="0.3;0.1;0.3" dur="4s" repeatCount="indefinite"></animate>
+  </path>
+  
+  <path class="box" id="p-2-6" d="">
+    <animate attributeType="XML" attributeName="d" values="M410,130 C425,130 425,130 440,130 C440,145 440,145 440,160 C425,160 425,160 410,160 C410,145 410,145 410,130 Z;M440,130 C440,145 440,145 440,160 C425,160 425,160 410,160 C410,145 410,145 410,130 C425,130 425,130 440,130 Z" dur="4s" repeatCount="indefinite"></animate>
+    <animate attributeType="XML" attributeName="opacity" values="0.3;0.1;0.3" dur="4s" repeatCount="indefinite"></animate>
+  </path>
+  
+  <path class="box" id="p-3-2" d="">
+    <animate attributeType="XML" attributeName="d" values="M130,200 C145,200 145,200 160,200 C160,215 160,215 160,230 C145,230 145,230 130,230 C130,215 130,215 130,200 Z;M160,200 C160,215 160,215 160,230 C145,230 145,230 130,230 C130,215 130,215 130,200 C145,200 145,200 160,200 Z" dur="4s" repeatCount="indefinite"></animate>
+    <animate attributeType="XML" attributeName="opacity" values="0.3;0.1;0.3" dur="4s" repeatCount="indefinite"></animate>
+  </path>
+
+  <path class="box" id="p-3-5" d="">
+    <animate attributeType="XML" attributeName="d" values="M340,200 C355,200 355,200 370,200 C370,215 370,215 370,230 C355,230 355,230 340,230 C340,215 340,215 340,200 Z;M370,200 C370,215 370,215 370,230 C355,230 355,230 340,230 C340,215 340,215 340,200 C355,200 355,200 370,200 Z" dur="4s" repeatCount="indefinite"></animate>
+    <animate attributeType="XML" attributeName="opacity" values="0.3;0.1;0.3" dur="4s" repeatCount="indefinite"></animate>
+  </path>
+
+  <path class="box" id="p-4-1" d="">
+    <animate attributeType="XML" attributeName="d" values="M60,270 C75,270 75,270 90,270 C90,285 90,285 90,300 C75,300 75,300 60,300 C60,285 60,285 60,270 Z;M90,270 C90,285 90,285 90,300 C75,300 75,300 60,300 C60,285 60,285 60,270 C75,270 75,270 90,270 Z" dur="4s" repeatCount="indefinite"></animate>
+    <animate attributeType="XML" attributeName="opacity" values="0.3;0.1;0.3" dur="4s" repeatCount="indefinite"></animate>
+  </path>
+
+  <path class="box" id="p-4-4" d="">
+    <animate attributeType="XML" attributeName="d" values="M270,270 C285,270 285,270 300,270 C300,285 300,285 300,300 C285,300 285,300 270,300 C270,285 270,285 270,270 Z;M300,270 C300,285 300,285 300,300 C285,300 285,300 270,300 C270,285 270,285 270,270 C285,270 285,270 300,270 Z" dur="4s" repeatCount="indefinite"></animate>
+    <animate attributeType="XML" attributeName="opacity" values="0.3;0.1;0.3" dur="4s" repeatCount="indefinite"></animate>
+  </path>
+  
+  <path class="box" id="p-5-3" d="">
+    <animate attributeType="XML" attributeName="d" values="M200,340 C215,340 215,340 230,340 C230,355 230,355 230,370 C215,370 215,370 200,370 C200,355 200,355 200,340 Z;M230,340 C230,355 230,355 230,370 C215,370 215,370 200,370 C200,355 200,355 200,340 C215,340 215,340 230,340 Z" dur="4s" repeatCount="indefinite"></animate>
+    <animate attributeType="XML" attributeName="opacity" values="0.3;0.1;0.3" dur="4s" repeatCount="indefinite"></animate>
+  </path>
+
+  <path class="box" id="p-5-6" d="">
+    <animate attributeType="XML" attributeName="d" values="M410,340 C425,340 425,340 440,340 C440,355 440,355 440,370 C425,370 425,370 410,370 C410,355 410,355 410,340 Z;M440,340 C440,355 440,355 440,370 C425,370 425,370 410,370 C410,355 410,355 410,340 C425,340 425,340 440,340 Z" dur="4s" repeatCount="indefinite"></animate>
+    <animate attributeType="XML" attributeName="opacity" values="0.3;0.1;0.3" dur="4s" repeatCount="indefinite"></animate>
+  </path>
+
+  <path class="box" id="p-6-2" d="">
+    <animate attributeType="XML" attributeName="d" values="M130,410 C145,410 145,410 160,410 C160,425 160,425 160,440 C145,440 145,440 130,440 C130,425 130,425 130,410 Z;M160,410 C160,425 160,425 160,440 C145,440 145,440 130,440 C130,425 130,425 130,410 C145,410 145,410 160,410 Z" dur="4s" repeatCount="indefinite"></animate>
+    <animate attributeType="XML" attributeName="opacity" values="0.3;0.1;0.3" dur="4s" repeatCount="indefinite"></animate>
+  </path>
+
+  <path class="box" id="p-6-5" d="">
+    <animate attributeType="XML" attributeName="d" values="M340,410 C355,410 355,410 370,410 C370,425 370,425 370,440 C355,440 355,440 340,440 C340,425 340,425 340,410 Z;M370,410 C370,425 370,425 370,440 C355,440 355,440 340,440 C340,425 340,425 340,410 C355,410 355,410 370,410 Z" dur="4s" repeatCount="indefinite"></animate>
+    <animate attributeType="XML" attributeName="opacity" values="0.3;0.1;0.3" dur="4s" repeatCount="indefinite"></animate>
+  </path>
+
+</svg>

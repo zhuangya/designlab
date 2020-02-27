@@ -3,14 +3,13 @@ import { Link, graphql } from "gatsby";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import Banner from "../components/banner";
 
-import Parallax from "react-rellax";
 import Tilt from "react-tilt";
 
 import "./pages.css";
 
 const IndexPage = ({ data }) => {
-
   const { edges } = data.allMarkdownRemark;
 
   const [currentTag, setCurrentTag] = useState("");
@@ -34,29 +33,20 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Articles" />
-      {/* banner */}
-      <section className="grid-sys">
-        <span className="col-8 banner">
-          <h1 className="title">
-            Dr.cat is a experience designer currently working at{" "}
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.teambition.com/"
-              className="banner-link"
-            >Teambition</a>
-            {" "}in Shanghai.
-          </h1>
-        </span>
-        <span className="col-4"><Parallax speed={-7} className="title">🏗</Parallax></span>
-      </section>
+      <Banner />
 
       {/* 吸附筛选条 */}
       <div className="space-sticky">
         <section>
           <div className="tgas-tab">
             {allTags.map(n => (
-              <li key={n} className={n === currentTag ? "active" : ""} onClick={() => { setCurrentTag(n); }}>
+              <li
+                key={n}
+                className={n === currentTag ? "active" : ""}
+                onClick={() => {
+                  setCurrentTag(n);
+                }}
+              >
                 {n}
               </li>
             ))}
@@ -70,7 +60,11 @@ const IndexPage = ({ data }) => {
           const { frontmatter } = edge.node;
           return (
             <div key={frontmatter.path} className="col-4">
-              <Link to={frontmatter.path} className="work-cover" title={frontmatter.excerpt}>
+              <Link
+                to={frontmatter.path}
+                className="work-cover"
+                title={frontmatter.excerpt}
+              >
                 <Tilt
                   className="Tilt"
                   options={{
@@ -86,17 +80,10 @@ const IndexPage = ({ data }) => {
                     alt={frontmatter.title}
                     className="Tilt-inner"
                   />
-                  <img
-                    src={frontmatter.cover}
-                    alt={frontmatter.title}
-                    className="img-shadow"
-                  />
                 </Tilt>
                 <p>{frontmatter.title}</p>
-                
-                <p className="work-date">
-                  {frontmatter.date}
-                </p>
+
+                <p className="work-date">{frontmatter.date}</p>
                 <div className="work-line"></div>
               </Link>
             </div>

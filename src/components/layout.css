@@ -6,8 +6,17 @@
 }
 @font-face {
   font-family: "gilroy";
+  src: url("../fonts/Gilroy-Semibold.otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "gilroy";
   src: url("../fonts/Gilroy-Bold.otf");
   font-weight: 600;
+}
+@font-face {
+  font-family: "mono";
+  src: url("../fonts/JetBrainsMono-Regular.ttf");
 }
 @font-face {
   font-family: "uuicon";
@@ -26,16 +35,16 @@ html {
   --Level-1: rgb(255, 254, 252);
   --Level-2: rgb(248, 246, 244);
   /* 文字与元素 */
-  --Text-1: rgb(0, 0, 0);
-  --Text-2: rgba(51, 51, 51, 0.6);
-  --Text-3: rgba(51, 51, 51, 0.2);
+  --Text-1: rgb(18, 16, 12);
+  --Text-2: rgba(55, 53, 51, 0.6);
+  --Text-3: rgba(55, 53, 51, 0.2);
   /* 玻璃 */
   --Space: linear-gradient(
     180deg,
     var(--Level-1) 0%,
     rgba(255, 254, 252, 0) 100%
   );
-  --Glass: saturate(300%) blur(1.5rem);
+  --Glass: saturate(400%) blur(1.5rem);
   --Glass-bg: var(--Level-2);
   /* 装饰色 */
   --Style: #CDF565;
@@ -43,25 +52,25 @@ html {
 /* 玻璃兼容性 */
 @supports (backdrop-filter: none) {
   html {
-    --Glass-bg: rgba(248, 246, 244, 0.88);
+    --Glass-bg: rgba(248, 246, 244, 0.9);
   }
 }
 @media (prefers-color-scheme: dark) {
   html {
     /* 背景 */
     --Level-1: rgb(26, 29, 31);
-    --Level-2: rgb(36, 39, 41);
+    --Level-2: rgb(32, 36, 38);
     /* 文字与元素 */
-    --Text-1: rgb(247, 247, 247);
-    --Text-2: rgba(247, 247, 247, 0.6);
-    --Text-3: rgba(247, 247, 247, 0.2);
+    --Text-1: rgb(236, 237, 238);
+    --Text-2: rgba(226, 227, 228, 0.6);
+    --Text-3: rgba(226, 227, 228, 0.2);
     /* 玻璃 */
     --Space: linear-gradient(180deg, var(--Level-1) 0%, rgba(26, 29, 31, 0) 100%);
     --Glass-bg: var(--Level-2);
   }
   @supports (backdrop-filter: none) {
     html {
-      --Glass-bg: rgba(36, 39, 41, 0.88);
+      --Glass-bg: rgba(29, 33, 35, 0.9);
     }
   }
 }
@@ -123,7 +132,7 @@ a,a:hover,a:active,a:visited,a:link,a:focus {
 }
 hr {
   width: 100%;
-  height: 4px;
+  height: 1px;
   background-color: var(--Text-3);
   border: none;
   margin: 1.5rem 0;
@@ -145,6 +154,7 @@ pre {
   padding: 1rem;
   background-color: var(--Level-2);
   font-size: 0.8rem;
+  font-family: "mono";
 }
 code {
   padding: 0.25rem;
@@ -153,6 +163,7 @@ code {
   font-size: inherit;
   white-space: pre-wrap;
   background-color: var(--Level-2);
+  font-family: "mono";
 }
 pre code {
   background-color: transparent;
@@ -173,9 +184,8 @@ ol ul {
   margin: 0;
 }
 table {
-  border-left: 1px solid rgb(140, 140, 140);
-  border-top: 1px solid rgb(140, 140, 140);
-  border-collapse: collapse;
+  box-shadow: inset 1px 1px 0 0 var(--Text-3);
+  padding: 1px 0 0 1px;
   border-spacing: 0;
   width: 100%;
   table-layout: fixed;
@@ -190,8 +200,7 @@ table td {
   padding: 0.5rem;
   max-width: 18rem;
   word-wrap: break-word;
-  border-right: 1px solid rgb(140, 140, 140);
-  border-bottom: 1px solid rgb(140, 140, 140);
+  box-shadow: inset -1px -1px 0 0 var(--Text-3);
 }
 main {
   padding: 4rem 0 0;

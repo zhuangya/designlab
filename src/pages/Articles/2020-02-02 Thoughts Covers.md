@@ -2,7 +2,7 @@
 path : "/articles/thoughts_covers/"
 date : "2020-02-02"
 title : "Thoughts Covers"
-tags : ['All','Visual','UI/UX']
+tags : ['All','Design']
 excerpt : "为 Thoughts 设计的知识库默认封面"
 cover : ../../cover/thoughts_covers.jpg
 ---
