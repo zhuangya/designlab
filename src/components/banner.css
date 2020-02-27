@@ -68,16 +68,16 @@
   fill: var(--Text-3);
 }
 .banner-1 {
-  transform: translateZ(0rem);
+  transform: translateZ(-2rem);
 }
 .banner-2 {
   transform: translateZ(0rem);
 }
 .banner-3 {
-  transform: translateZ(0rem);
+  transform: translateZ(2rem);
 }
 .bannersvg:hover .banner-1 {
-  transform: translateZ(-6rem);
+  transform: translateZ(-7rem);
   filter: blur(0.25rem);
 }
 .bannersvg:hover .banner-2 {
@@ -85,7 +85,7 @@
   filter: blur(0.125rem);
 }
 .bannersvg:hover .banner-3 {
-  transform: translateZ(6rem);
+  transform: translateZ(7rem);
 }
 
 .banner-2, .banner-3 {
