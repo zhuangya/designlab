@@ -2,16 +2,6 @@ import React from "react";
 
 import "./notice.css";
 
-// const Notice = () => (
-//   <div className="notice">
-//     <i></i>
-//     <h3>通知</h3>
-//     <p>通知输出的内容</p>
-//   </div>
-// );
-
-// export default Notice;
-
 class Notice extends React.Component {
   constructor(props) {
     super(props);
@@ -25,13 +15,11 @@ class Notice extends React.Component {
       isToggleOn: !prevState.isToggleOn
     }));
   }
-
   render() {
     return (
       <div className={`notice${this.state.isToggleOn ? "" : " notice-active"}`}>
-        <i></i>
-        <h3>通知</h3>
-        <p>通知输出的内容</p>
+        <h3><i></i> {this.props.TitleH3}</h3>
+        <p>{this.props.ContentP}</p>
         <i onClick={this.handleClick} onFocus={() => 0} className="notice-exit">
           {this.state.isToggleOn}
         </i>
@@ -39,5 +27,4 @@ class Notice extends React.Component {
     );
   }
 }
-
 export default Notice;

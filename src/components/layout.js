@@ -23,7 +23,7 @@ const Layout = ({ children }) => {
   );
   return (
     <>
-      <Notice />
+      <Notice TitleH3="Notice" ContentP="Site development, interface and content is being edited..."/>
       <Header siteTitle={data.site.siteMetadata.title} />
       <main>{children}</main>
       <Footer siteTitle={data.site.siteMetadata.title} />
