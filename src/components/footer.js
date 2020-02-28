@@ -10,9 +10,9 @@ const Footer = ({ siteTitle }) => (
   <footer>
     <div className="header-content">
       <div className="footer-link">
-        <Link to="/">Home</Link>
-        <Link to="/articles/">Articles</Link>
+        <Link to="/">Articles</Link>
         <Link to="/about/">About</Link>
+        <a href="http://work.wenhaoqi.com/" target="_blank" title="Notion" rel="noopener noreferrer">Works</a>
       </div>
       <div className="circular">
         <svg viewBox="0 0 72 72">

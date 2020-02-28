@@ -1,0 +1,51 @@
+<svg viewBox="0 0 500 500" version="1.1" class="banner-2"
+  xmlns="http://www.w3.org/2000/svg">
+
+  <polygon class="tri" id="p-1-2" points="" opacity="0.7">
+    <animate attributeType="XML" attributeName="points" values="130 90 130 90 130 90;130 60 130 90 160 90;130 60 160 60 160 90;160 60 160 60 160 60" dur="8s" keyTimes="0;0.6;0.9;1" repeatCount="indefinite"></animate>
+  </polygon>
+  
+  <polygon class="tri" id="p-1-5" points="" opacity="0.7">
+    <animate attributeType="XML" attributeName="points" values="340 90 340 90 340 90;340 60 340 90 370 90;340 60 370 60 370 90;370 60 370 60 370 60" dur="8s" keyTimes="0;0.6;0.9;1" repeatCount="indefinite"></animate>
+  </polygon>
+  
+  <polygon class="tri" id="p-2-1" points="" opacity="0.7">
+    <animate attributeType="XML" attributeName="points" values="60 160 60 160 60 160;60 130 60 160 90 160;60 130 90 130 90 160;90 130 90 130 90 130" dur="8s" keyTimes="0;0.5;0.8;1" repeatCount="indefinite"></animate>
+  </polygon>
+
+  <polygon class="tri" id="p-2-4" points="" opacity="0.7">
+    <animate attributeType="XML" attributeName="points" values="270 160 270 160 270 160;270 130 270 160 300 160;270 130 300 130 300 160;300 130 300 130 300 130" dur="8s" keyTimes="0;0.5;0.8;1" repeatCount="indefinite"></animate>
+  </polygon>
+  
+  <polygon class="tri" id="p-3-3" points="" opacity="0.7">
+    <animate attributeType="XML" attributeName="points" values="200 230 200 230 200 230;200 200 200 230 230 230;200 200 230 200 230 230;230 200 230 200 230 200" dur="8s" keyTimes="0;0.4;0.7;1" repeatCount="indefinite"></animate>
+  </polygon>
+  
+  <polygon class="tri" id="p-3-6" points="" opacity="0.7">
+    <animate attributeType="XML" attributeName="points" values="410 230 410 230 410 230;410 200 410 230 440 230;410 200 440 200 440 230;440 200 440 200 440 200" dur="8s" keyTimes="0;0.4;0.7;1" repeatCount="indefinite"></animate>
+  </polygon>
+
+  <polygon class="tri" id="p-4-2" points="" opacity="0.7">
+    <animate attributeType="XML" attributeName="points" values="130 300 130 300 130 300;130 270 130 300 160 300;130 270 160 270 160 300;160 270 160 270 160 270" dur="8s" keyTimes="0;0.3;0.6;1" repeatCount="indefinite"></animate>
+  </polygon>
+  
+  <polygon class="tri" id="p-4-5" points="" opacity="0.7">
+    <animate attributeType="XML" attributeName="points" values="340 300 340 300 340 300;340 270 340 300 370 300;340 270 370 270 370 300;370 270 370 270 370 270" dur="8s" keyTimes="0;0.3;0.6;1" repeatCount="indefinite"></animate>
+  </polygon>
+  
+  <polygon class="tri" id="p-5-1" points="" opacity="0.7">
+    <animate attributeType="XML" attributeName="points" values="60 370 60 370 60 370;60 340 60 370 90 370;60 340 90 340 90 370;90 340 90 340 90 340" dur="8s" keyTimes="0;0.2;0.5;1" repeatCount="indefinite"></animate>
+  </polygon>
+  
+  <polygon class="tri" id="p-5-4" points="" opacity="0.7">
+    <animate attributeType="XML" attributeName="points" values="270 370 270 370 270 370;270 340 270 370 300 370;270 340 300 340 300 370;300 340 300 340 300 340" dur="8s" keyTimes="0;0.2;0.5;1" repeatCount="indefinite"></animate>
+  </polygon>
+  
+  <polygon class="tri" id="p-6-3" points="" opacity="0.7">
+    <animate attributeType="XML" attributeName="points" values="200 440 200 440 200 440;200 410 200 440 230 440;200 410 230 410 230 440;230 410 230 410 230 410" dur="8s" keyTimes="0;0.1;0.4;1" repeatCount="indefinite"></animate>
+  </polygon>
+  
+  <polygon class="tri" id="p-6-6" points="" opacity="0.7">
+    <animate attributeType="XML" attributeName="points" values="410 440 410 440 410 440;410 410 410 440 440 440;410 410 440 410 440 440;440 410 440 410 440 410" dur="8s" keyTimes="0;0.1;0.4;1" repeatCount="indefinite"></animate>
+  </polygon>
+</svg>

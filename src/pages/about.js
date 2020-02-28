@@ -9,7 +9,7 @@ const AboutPage = () => (
   <Layout>
     <SEO title="about"/>
     <section>
-      <h1 className="title title-center">About</h1>
+      <h1 className="title text-center">About</h1>
     </section>
     <section className="grid-sys about">
       <span className="col-6 about-img">
