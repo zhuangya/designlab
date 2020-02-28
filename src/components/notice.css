@@ -4,7 +4,7 @@
   width: 100%;
   background-color: var(--Glass-bg);
   backdrop-filter: var(--Glass);
-  z-index: 5000;
+  z-index: 10000000;
   transform: translateZ(5000px);
   bottom: -1.5rem;
   box-shadow: 0 -1px 0 var(--Text-3);
