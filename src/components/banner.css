@@ -3,7 +3,7 @@
 }
 .banner {
   display: flex;
-  min-height: calc(100vh - 128px + 24px - 160px);
+  min-height: calc(100vh - 8rem + 1.5rem - 10rem);
   align-items: center;
 }
 .banner-link {
@@ -29,20 +29,20 @@
 }
 .banner-link::before {
   position: absolute;
-  bottom: 4px;
+  bottom: 0.25rem;
   left: 0px;
   right: 0px;
-  height: 8px;
+  height: 0.5rem;
   content: "";
   z-index: -2;
   background-color: var(--Text-3);
 }
 .banner-link::after {
   position: absolute;
-  bottom: 4px;
+  bottom: 0.25rem;
   left: 0px;
   right: 0px;
-  height: 8px;
+  height: 0.5rem;
   content: "";
   z-index: -1;
   background-color: var(--Style);
@@ -68,16 +68,16 @@
   fill: var(--Text-3);
 }
 .banner-1 {
-  transform: translateZ(-2rem);
+  transform: translateZ(0rem);
 }
 .banner-2 {
   transform: translateZ(0rem);
 }
 .banner-3 {
-  transform: translateZ(2rem);
+  transform: translateZ(0rem);
 }
 .bannersvg:hover .banner-1 {
-  transform: translateZ(-7rem);
+  transform: translateZ(-7.5rem);
   filter: blur(0.25rem);
 }
 .bannersvg:hover .banner-2 {
@@ -85,10 +85,10 @@
   filter: blur(0.125rem);
 }
 .bannersvg:hover .banner-3 {
-  transform: translateZ(7rem);
+  transform: translateZ(7.5rem);
 }
-
-.banner-2, .banner-3 {
+.banner-2,
+.banner-3 {
   top: 0;
   left: 0;
   position: absolute;
@@ -96,24 +96,23 @@
   height: 100%;
   transition: 2s ease-out;
 }
-
 @media screen and (max-width: 48rem) {
   .bannersvg {
     width: 100%;
     z-index: -2;
   }
   .banner-1 {
-    transform: translateZ(-6rem)!important;
+    transform: translateZ(-7.5rem) !important;
     filter: blur(0.25rem);
   }
   .banner-2 {
-    transform: translateZ(0rem)!important;
+    transform: translateZ(0rem) !important;
     filter: blur(0.125rem);
   }
   .banner-3 {
-    transform: translateZ(6rem)!important;
+    transform: translateZ(7.5rem) !important;
   }
   .bannersvg .Tilt {
-    transform: perspective(800px) translate3d(0px, 0px, 0px)!important;
+    transform: perspective(800px) translate3d(0px, 0px, 0px) !important;
   }
 }

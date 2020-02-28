@@ -115,7 +115,7 @@ header {
   transition: transform 0.3s ease-out, opacity 0.3s ease-out;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
   padding: 4rem;
   opacity: 0;
@@ -124,6 +124,7 @@ header {
   transform: translateX(0);
   opacity: 1;
 }
+/* 侧栏菜单内容 */
 .header-bg a {
   color: var(--Text-2);
   display: block;
@@ -131,55 +132,52 @@ header {
 }
 .header-bg a:hover {
   color: var(--Text-1);
-  text-decoration: none;
+}
+.header-bg span:nth-child(1) {
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  width: 100%;
+  flex: 0 0 auto;
+}
+.header-bg span:nth-child(1) h1 {
+  margin: 0;
+}
+.header-bg span:nth-child(2) {
+  width: 100%;
+  flex: 0 0 auto;
 }
 .header-bg .social-icon {
-  padding: 0.5rem 0;
+  padding-top: 1.5rem;
+  margin-left: -4px;
 }
 /* 菜单选项 */
 .header-link {
   position: relative;
-  font-size: 2.5rem;
-  font-weight: 600;
-  transition: color 0.3s ease;
-  line-height: 1.2;
-}
-.header-link:hover {
-  color: var(--Text-2)!important;
 }
 .header-link::before {
   position: absolute;
-  height: 1rem;
-  bottom: 1rem;
-  left: -2px;
-  right: -2px;
+  height: 100%;
+  bottom: 0;
+  left: -0.25rem;
+  right: -0.25rem;
   z-index: -1;
   content: "";
-  background-color: var(--Style);
+  background-color: var(--Text-3);
   transform: scaleX(0);
   transform-origin: right center;
-  transition: transform 0.2s ease;
+  transition: transform 0.3s ease;
 }
 .header-link:hover::before {
   transform: scaleX(1);
   transform-origin: left center;
+  transition: transform 0.3s ease 0.2s;
 }
-.header-foot {
-  width: 100%;
-  color: var(--Text-2);
-}
+
 header [aria-current="page"] {
   color: var(--Text-1);
-}
-header [aria-current="page"]::after {
-  position: absolute;
-  height: 4px;
-  bottom: 1rem;
-  left: -2px;
-  right: -2px;
-  z-index: -2;
-  content: "";
-  background-color: var(--Style);
 }
 
 /* footer */
@@ -214,7 +212,7 @@ footer a:hover {
   margin: 0;
   width: 2rem;
   line-height: 2rem;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   text-align: center;
   font-family: "uuicon";
   transition: 0.3s ease;
@@ -258,6 +256,7 @@ footer a:hover {
   .header-bg {
     width: 100%;
     transform: translateX(100%);
+    padding: 3rem;
   }
   .header-link {
     font-size: 2rem;
@@ -268,10 +267,6 @@ footer a:hover {
   }
   .header-line {
     padding: 0;
-  }
-  .header-link::before {
-    bottom: 0.75rem;
-    height: 0.7rem;
   }
   .circular {
     width: 6rem;
