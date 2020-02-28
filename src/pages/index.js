@@ -68,7 +68,7 @@ const IndexPage = ({ data }) => {
                 <Tilt
                   className="Tilt"
                   options={{
-                    max: 18,
+                    max: 20,
                     reverse: true,
                     scale: 1,
                     reset: true,
@@ -82,7 +82,6 @@ const IndexPage = ({ data }) => {
                   />
                 </Tilt>
                 <p>{frontmatter.title}</p>
-
                 <p className="work-date">{frontmatter.date}</p>
                 <div className="work-line"></div>
               </Link>

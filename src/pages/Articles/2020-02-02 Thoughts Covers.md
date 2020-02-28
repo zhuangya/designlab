@@ -3,7 +3,7 @@ path : "/articles/thoughts_covers/"
 date : "2020-02-02"
 title : "Thoughts Covers"
 tags : ['All','Design']
-excerpt : "为 Thoughts 设计的知识库默认封面"
+excerpt : "..."
 cover : ../../cover/thoughts_covers.jpg
 ---
 
