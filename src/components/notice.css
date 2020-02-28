@@ -12,11 +12,9 @@
 }
 @keyframes notice-in {
   0% {
-    bottom: -10rem;
     opacity: 0;
   }
   100% {
-    bottom: -1.5rem;
     opacity: 1;
   }
 }
