@@ -62,12 +62,7 @@
 .work-date {
   color: var(--Text-2);
   font-size: 0.8rem;
-  font-weight: 400!important;
-}
-.work-date i {
-  font-style: normal;
-  font-family: "uuicon";
-  margin-right: 0.5rem;
+  font-weight: 400 !important;
 }
 .work-line {
   margin-top: 1rem;

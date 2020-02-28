@@ -1,0 +1,23 @@
+.notice {
+  position: fixed;
+  padding: 1.5rem;
+  width: 100%;
+  background-color: brown;
+  z-index: 5000;
+  transform: translateZ(5000px);
+  bottom: 0;
+}
+.notice i {
+  font-style: normal;
+  font-family: "uuicon";
+}
+.notice-active {
+  display: none;
+}
+.notice-exit {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  cursor: pointer;
+  user-select: none;
+}
