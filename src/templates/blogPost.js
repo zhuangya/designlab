@@ -1,15 +1,15 @@
 import React from "react";
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import "./templates.css";
 
-const Template = ({ data, pageContext }) => {
-  const { next, prev } = pageContext;
+const Template = ({ data }) => {
   const { markdownRemark } = data;
   const title = markdownRemark.frontmatter.title;
   const date = markdownRemark.frontmatter.date;
+  const twiter = markdownRemark.frontmatter.twiter;
   const html = markdownRemark.html;
 
   return (
@@ -18,28 +18,16 @@ const Template = ({ data, pageContext }) => {
       <div className="page">
         <h1 className="page-title">{title}</h1>
         <p className="page-date">{date}</p>
+        <a
+          href={twiter}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="page-share"
+        >
+          
+        </a>
         <hr />
         <div dangerouslySetInnerHTML={{ __html: html }} />
-        <div className="page-btn">
-          {prev && (
-            <Link
-              title={prev.frontmatter.title}
-              to={prev.frontmatter.path}
-              className="page-prev"
-            >
-              {prev.frontmatter.title}
-            </Link>
-          )}
-          {next && (
-            <Link
-              title={next.frontmatter.title}
-              to={next.frontmatter.path}
-              className="page-next"
-            >
-              {next.frontmatter.title}
-            </Link>
-          )}
-        </div>
       </div>
     </Layout>
   );
@@ -53,6 +41,7 @@ export const query = graphql`
         date(formatString: "MMMM DD, YYYY")
         path
         title
+        twiter
       }
     }
   }

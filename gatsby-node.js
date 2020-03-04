@@ -10,6 +10,7 @@ exports.createPages = ({ actions, graphql }) => {
             frontmatter {
               path
               title
+              twiter
               tags
               date
             }
@@ -23,7 +24,7 @@ exports.createPages = ({ actions, graphql }) => {
     }
     const posts = result.data.allMarkdownRemark.edges;
     // createTagPages(createPage, posts);
-    posts.forEach(({ node }, index) => {
+    posts.forEach(({ node }) => {
       const path = node.frontmatter.path;
       const title = node.frontmatter.title;
       createPage({
@@ -31,10 +32,8 @@ exports.createPages = ({ actions, graphql }) => {
         path,
         component: blogPostTemplate,
         context: {
-          pathSlug: path,
-          prev: index === 0 ? null : posts[index - 1].node,
-          next: index === (posts.length - 1) ? null : posts[index + 1].node
-        },
+          pathSlug: path
+        }
       });
     });
   });

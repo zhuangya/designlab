@@ -47,7 +47,7 @@ html {
   --Glass: saturate(400%) blur(1.5rem);
   --Glass-bg: var(--Level-2);
   /* 装饰色 */
-  --Style: #CDF565;
+  --Style: #cdf565;
 }
 /* 玻璃兼容性 */
 @supports (backdrop-filter: none) {
@@ -65,7 +65,11 @@ html {
     --Text-2: rgba(226, 227, 228, 0.6);
     --Text-3: rgba(226, 227, 228, 0.2);
     /* 玻璃 */
-    --Space: linear-gradient(180deg, var(--Level-1) 0%, rgba(26, 29, 31, 0) 100%);
+    --Space: linear-gradient(
+      180deg,
+      var(--Level-1) 0%,
+      rgba(26, 29, 31, 0) 100%
+    );
     --Glass-bg: var(--Level-2);
   }
   @supports (backdrop-filter: none) {
@@ -127,7 +131,12 @@ a {
   cursor: pointer;
   color: var(--Text-1);
 }
-a,a:hover,a:active,a:visited,a:link,a:focus {
+a,
+a:hover,
+a:active,
+a:visited,
+a:link,
+a:focus {
   -webkit-tap-highlight-color: transparent;
 }
 hr {
@@ -138,7 +147,7 @@ hr {
   margin: 1.5rem 0;
 }
 blockquote {
-  box-shadow: inset 2px 0 0 0 var(--Style);
+  box-shadow: inset 4px 0 0 0 var(--Text-1);
 }
 img,
 video {
@@ -149,26 +158,6 @@ video {
   box-shadow: 0 0 0 1px var(--Text-3);
   background-color: var(--Text-3);
   cursor: pointer;
-}
-pre {
-  padding: 1rem;
-  background-color: var(--Level-2);
-  font-size: 0.8rem;
-  font-family: "mono";
-}
-code {
-  padding: 0.25rem;
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
-  font-size: inherit;
-  white-space: pre-wrap;
-  background-color: var(--Level-2);
-  font-family: "mono";
-}
-pre code {
-  background-color: transparent;
-  padding: 0;
-  margin: 0;
 }
 ul,
 ol,

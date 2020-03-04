@@ -5,9 +5,10 @@ import { useStaticQuery, graphql } from "gatsby";
 import Header from "./header";
 import Footer from "./footer";
 
-import Notice from "./notice";
+// import Notice from "./notice";
 
 import "./layout.css";
+import "./code.css";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(
@@ -23,7 +24,7 @@ const Layout = ({ children }) => {
   );
   return (
     <>
-      <Notice TitleH3="Notice" ContentP="Site development, interface and content is being edited..."/>
+      {/* <Notice TitleH3="Notice" ContentP="Site development, interface and content is being edited..."/> */}
       <Header siteTitle={data.site.siteMetadata.title} />
       <main>{children}</main>
       <Footer siteTitle={data.site.siteMetadata.title} />

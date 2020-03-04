@@ -5,6 +5,7 @@ title : "Thoughts Covers"
 tags : ['All','Design']
 excerpt : "..."
 cover : ../../cover/thoughts_covers.jpg
+twiter : "https://twitter.com/share?text=Thoughts Covers&url=https://wenhaoqi.com/articles/thoughts_covers/"
 ---
 
 ![](../../articles/thoughts_covers/1.jpg)
