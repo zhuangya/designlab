@@ -18,14 +18,14 @@ const Template = ({ data }) => {
       <div className="page">
         <h1 className="title">{title}</h1>
         <p className="page-date">{date}</p>
-        <a
+        {/* <a
           href={twiter}
           target="_blank"
           rel="noopener noreferrer"
           className="page-share"
         >
           
-        </a>
+        </a> */}
         <hr />
         <div dangerouslySetInnerHTML={{ __html: html }} />
       </div>
