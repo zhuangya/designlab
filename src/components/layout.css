@@ -244,7 +244,8 @@ section {
     font-size: 2.75rem;
   }
   .banner .title {
-    font-size: calc((100vw - 48px) / 7);
+    /* font-size: calc((100vw - 48px) / 7); */
+    font-size: 12vw;
   }
   .text-center {
     text-align: left;
