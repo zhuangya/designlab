@@ -16,7 +16,7 @@ const Template = ({ data }) => {
     <Layout>
       <SEO title={title} />
       <div className="page">
-        <h1 className="page-title">{title}</h1>
+        <h1 className="title">{title}</h1>
         <p className="page-date">{date}</p>
         <a
           href={twiter}

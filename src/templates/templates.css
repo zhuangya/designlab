@@ -14,10 +14,6 @@
   text-decoration: underline;
   text-decoration-color: var(--Text-2);
 }
-.page-title {
-  font-weight: 600;
-  font-size: 3rem;
-}
 .page-date {
   color: var(--Text-2);
 }
