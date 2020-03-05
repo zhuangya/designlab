@@ -338,7 +338,7 @@ const html = Prism.highlight(code, Prism.languages.haml, 'haml');</code></pre>
 
   <section class="language-markup">
     <h1>Supported languages</h1>
-    <p>This is the list of all <span id="languages-list-count"></span> languages currently supported by Prism, with
+    <p>This is the list of all <span id="languages-list-count"></span> languages currently supported by Prism, with =>
       their corresponding alias, to use in place of <code>xxxx</code> in the <code>language-xxxx</code> (or
       <code>lang-xxxx</code>) class:</p>
     <div id="languages-list"></div>

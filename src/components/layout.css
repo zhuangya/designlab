@@ -15,10 +15,6 @@
   font-weight: 600;
 }
 @font-face {
-  font-family: "mono";
-  src: url("../fonts/JetBrainsMono-Regular.ttf");
-}
-@font-face {
   font-family: "uuicon";
   src: url("../fonts/uuicon.ttf");
 }
@@ -78,9 +74,9 @@ html {
     }
   }
 }
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   display: none;
-}
+} */
 ::selection {
   background-color: var(--Style);
 }
