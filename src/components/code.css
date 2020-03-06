@@ -27,13 +27,6 @@ pre[class*="language-"] {
   -webkit-overflow-scrolling: auto;
 }
 pre[class*="language-"] {
-  background: linear-gradient(270deg, var(--Level-1), var(--Level-1)) 0 0/1px
-      100%,
-    linear-gradient(270deg, var(--Level-1), var(--Level-1)) 100% 0/1px 100%,
-    linear-gradient(270deg, var(--Text-3), var(--Text-3)) 0 0/1px 100%,
-    linear-gradient(270deg, var(--Text-3), var(--Text-3)) 100% 0/1px 100%;
-  background-repeat: no-repeat;
-  background-attachment: local, local, scroll, scroll;
   background-color: var(--Level-2);
   overflow-x: scroll;
   -webkit-overflow-scrolling: auto;
