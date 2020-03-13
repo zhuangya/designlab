@@ -89,7 +89,15 @@ body {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  animation: fadein 2s ease 1s backwards;
+  animation: fadein 1s ease 1s backwards;
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 /* 基础类型 */
 h1,
@@ -189,15 +197,18 @@ table td {
 }
 main {
   padding: 4rem 0 0;
-  animation: fadein 2s ease 1.6s backwards;
+  animation: zoomin 1s ease 1.6s backwards;
   min-height: calc(100vh - 16rem);
+  transform-origin: 50% 0%;
 }
-@keyframes fadein {
+@keyframes zoomin {
   0% {
     opacity: 0;
+    transform: scale(1.1);
   }
   100% {
     opacity: 1;
+    transform: scale(1);
   }
 }
 section {
