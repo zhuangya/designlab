@@ -10,7 +10,7 @@ import PageUp from "../components/page-up"
 import Parallax from "react-rellax";
 import BannerSvg from "../images/assets/banner.svg";
 import BannerRing from "../images/assets/circular.svg";
-import Brand from "../images/assets/Brand.svg";
+import Brand from "../images/assets/brand.svg";
 import Uiux from "../images/assets/ui.svg";
 import Motion from "../images/assets/motion.svg"
 
