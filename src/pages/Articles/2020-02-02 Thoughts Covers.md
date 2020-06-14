@@ -1,6 +1,6 @@
 ---
 path : "/articles/thoughts_covers/"
-date : "2020-02-02"
+date : "2020-02-01"
 title : "Thoughts Covers"
 tags : ['All','Design']
 excerpt : "..."

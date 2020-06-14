@@ -1,13 +1,13 @@
 /* 字体调用 */
 @font-face {
-  font-family: "gilroy";
-  src: url("../fonts/Gilroy-Regular.otf");
-  font-weight: 400;
+  font-family: "Spoof";
+  src: url("../fonts/Spoof-Bold.otf");
+  font-weight: 600;
 }
 @font-face {
   font-family: "gilroy";
-  src: url("../fonts/Gilroy-Semibold.otf");
-  font-weight: 500;
+  src: url("../fonts/Gilroy-Regular.otf");
+  font-weight: 400;
 }
 @font-face {
   font-family: "gilroy";
@@ -15,9 +15,14 @@
   font-weight: 600;
 }
 @font-face {
+  font-family: "jet";
+  src: url("../fonts/JetBrainsMono-Medium.ttf");
+}
+@font-face {
   font-family: "uuicon";
   src: url("../fonts/uuicon.ttf");
 }
+
 /* 全局属性 */
 *,
 *::after,
@@ -27,56 +32,37 @@
   box-sizing: border-box;
 }
 html {
-  /* 背景 */
-  --Level-1: rgb(255, 254, 252);
-  --Level-2: rgb(248, 246, 244);
-  /* 文字与元素 */
-  --Text-1: rgb(18, 16, 12);
-  --Text-2: rgba(55, 53, 51, 0.6);
-  --Text-3: rgba(55, 53, 51, 0.2);
-  /* 玻璃 */
-  --Space: linear-gradient(
-    180deg,
-    var(--Level-1) 0%,
-    rgba(255, 254, 252, 0) 100%
-  );
-  --Glass: saturate(400%) blur(1.5rem);
-  --Glass-bg: var(--Level-2);
-  /* 装饰色 */
-  --Style: #cdf565;
+  --BG-P: rgb(250, 248, 246);
+  --BG-S: rgb(242, 240, 238);
+  --Text-1: rgb(26, 26, 26);
+  --Text-2: rgba(26, 26, 26, 0.6);
+  --Text-3: rgba(26, 26, 26, 0.2);
+  --Glass: saturate(200%) blur(1.5rem);
+  --Glass-bg: #fff;
+  --Shadow: 0px 4px 32px rgba(0, 0, 0, 0.12);
+  --Style: #5364ff;
+  scroll-behavior: smooth;
 }
-/* 玻璃兼容性 */
 @supports (backdrop-filter: none) {
   html {
-    --Glass-bg: rgba(248, 246, 244, 0.9);
+    --Glass-bg: rgba(255, 255, 255, 0.88);
   }
 }
 @media (prefers-color-scheme: dark) {
   html {
-    /* 背景 */
-    --Level-1: rgb(26, 29, 31);
-    --Level-2: rgb(32, 36, 38);
-    /* 文字与元素 */
-    --Text-1: rgb(236, 237, 238);
-    --Text-2: rgba(226, 227, 228, 0.6);
-    --Text-3: rgba(226, 227, 228, 0.2);
-    /* 玻璃 */
-    --Space: linear-gradient(
-      180deg,
-      var(--Level-1) 0%,
-      rgba(26, 29, 31, 0) 100%
-    );
-    --Glass-bg: var(--Level-2);
+    --BG-P: rgb(24, 26, 28);
+    --BG-S: rgb(33, 35, 37);
+    --Text-1: rgb(255, 255, 255);
+    --Text-2: rgba(255, 255, 255, 0.6);
+    --Text-3: rgba(255, 255, 255, 0.2);
+    --Glass-bg: rgb(42, 44, 46);
   }
   @supports (backdrop-filter: none) {
     html {
-      --Glass-bg: rgba(29, 33, 35, 0.9);
+      --Glass-bg: rgba(42, 44, 46, 0.88);
     }
   }
 }
-/* ::-webkit-scrollbar {
-  display: none;
-} */
 ::selection {
   background-color: var(--Style);
 }
@@ -84,7 +70,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
   font-family: "gilroy", "PingFang", sans-serif;
-  background-color: var(--Level-1);
+  background-color: var(--BG-P);
   color: var(--Text-1);
   font-size: 16px;
   line-height: 1.5;
@@ -100,40 +86,52 @@ body {
   }
 }
 /* 基础类型 */
+.big-type {
+  font-family: "Spoof";
+  font-size: 5.8vw;
+  line-height: 1;
+}
+.type-p {
+  font-size: 0.875rem;
+}
 h1,
 h2,
 h3,
-p,
-a,
-ul,
-ol,
-blockquote,
-pre,
-table {
+h4 {
   line-height: 1.5;
   margin-top: 1rem;
 }
 h1 {
-  font-size: 2rem;
+  font-size: 4rem;
   font-weight: 600;
 }
 h2 {
-  font-size: 1.75rem;
+  font-size: 3rem;
   font-weight: 600;
 }
 h3 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+h4 {
   font-size: 1.5rem;
   font-weight: 600;
 }
 p,
 a {
+  line-height: 1.5;
+  margin-top: 1rem;
+}
+p,
+a {
   font-size: 1rem;
   font-weight: 400;
+  text-decoration: none;
 }
 a {
-  text-decoration: none;
   cursor: pointer;
   color: var(--Text-1);
+  transition: color 0.3s ease;
 }
 a,
 a:hover,
@@ -143,214 +141,30 @@ a:link,
 a:focus {
   -webkit-tap-highlight-color: transparent;
 }
-hr {
-  width: 100%;
-  height: 1px;
-  background-color: var(--Text-3);
-  border: none;
-  margin: 1.5rem 0;
+a:hover {
+  color: var(--Text-2);
 }
-blockquote {
-  box-shadow: inset 4px 0 0 0 var(--Text-1);
-}
-img,
-video {
-  width: 100%;
-  display: block;
-}
-video {
-  box-shadow: 0 0 0 1px var(--Text-3);
-  background-color: var(--Text-3);
-  cursor: pointer;
-}
-ul,
-ol,
-blockquote {
-  padding-left: 1rem;
-}
-ul p,
-ul ul,
-ul ol,
-ol p,
-ol ol,
-ol ul {
-  margin: 0;
-}
-table {
-  box-shadow: inset 1px 1px 0 0 var(--Text-3);
-  padding: 1px 0 0 1px;
-  border-spacing: 0;
-  width: 100%;
-  table-layout: fixed;
-}
-table th {
-  background-color: var(--Level-2);
-  font-weight: 400;
-}
-table th,
-table td {
-  table-layout: fixed;
-  padding: 0.5rem;
-  max-width: 18rem;
-  word-wrap: break-word;
-  box-shadow: inset -1px -1px 0 0 var(--Text-3);
-}
-main {
-  padding: 4rem 0 0;
-  animation: zoomin 1s ease 1.6s backwards;
-  min-height: calc(100vh - 16rem);
-  transform-origin: 50% 0%;
-}
-@keyframes zoomin {
-  0% {
-    opacity: 0;
-    transform: scale(1.1);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-section {
-  padding: 0 1.5rem;
-  max-width: 65rem;
-  margin: 0 auto;
-}
-.title {
-  font-size: 3rem;
-  line-height: 1.2;
-}
-.text-center {
-  text-align: center;
-}
-
 /* 基础类型移动版 */
 @media screen and (max-width: 48rem) {
   h1,
   h2,
   h3,
+  h4,
   p,
-  a,
-  ul,
-  ol,
-  pre,
-  blockquote,
-  table {
+  a {
     margin-top: 0.8rem;
   }
   h1 {
-    font-size: 1.75rem;
+    font-size: 3rem;
   }
   h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   h3 {
+    font-size: 1.5rem;
+  }
+  h4 {
     font-size: 1.25rem;
-  }
-  .title {
-    font-size: 2.75rem;
-  }
-  .banner .title {
-    /* font-size: calc((100vw - 48px) / 7); */
-    font-size: 12vw;
-  }
-  .text-center {
-    text-align: left;
-  }
-}
-
-/* 全局栅格系统 */
-.grid-sys {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  padding: 0.75rem;
-}
-.col-1,
-.col-2,
-.col-3,
-.col-4,
-.col-5,
-.col-6,
-.col-7,
-.col-8,
-.col-9,
-.col-10,
-.col-11,
-.col-12 {
-  padding: 0.75rem;
-  z-index: 10;
-}
-.col-12 {
-  width: 100%;
-}
-.col-11 {
-  width: calc(100% / 12 * 11);
-}
-.col-10 {
-  width: calc(100% / 12 * 10);
-}
-.col-9 {
-  width: calc(100% / 12 * 9);
-}
-.col-8 {
-  width: calc(100% / 12 * 8);
-}
-.col-7 {
-  width: calc(100% / 12 * 7);
-}
-.col-6 {
-  width: calc(100% / 12 * 6);
-}
-.col-5 {
-  width: calc(100% / 12 * 5);
-}
-.col-4 {
-  width: calc(100% / 12 * 4);
-}
-.col-3 {
-  width: calc(100% / 12 * 3);
-}
-.col-2 {
-  width: calc(100% / 12 * 2);
-}
-.col-1 {
-  width: calc(100% / 12);
-}
-.air {
-  padding: 0;
-}
-.desktop-none {
-  display: none;
-}
-/* 全局栅格系统移动版 */
-@media screen and (max-width: 48rem) {
-  .col-1,
-  .col-2,
-  .col-3,
-  .col-4,
-  .col-5,
-  .col-6,
-  .col-7,
-  .col-8,
-  .col-9,
-  .col-10,
-  .col-11,
-  .col-12 {
-    width: 100%;
-  }
-  .col-8-m {
-    width: 66.6666666%;
-  }
-  .col-6-m {
-    width: 50%;
-  }
-  .col-4-m {
-    width: 33.3333333%;
-  }
-  .mobile-none {
-    display: none;
   }
 }
 

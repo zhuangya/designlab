@@ -3,12 +3,8 @@ import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
 
 import Header from "./header";
-import Footer from "./footer";
-
-import Notice from "./notice";
 
 import "./layout.css";
-import "./code.css";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(
@@ -24,16 +20,17 @@ const Layout = ({ children }) => {
   );
   return (
     <>
-      {/* <Notice TitleH3="Notice" ContentP="Site development, interface and content is being edited..."/> */}
+      <div className="overlay big-type big-stroke">
+        Version 10 is coming...
+      </div>
       <Header siteTitle={data.site.siteMetadata.title} />
       <main>{children}</main>
-      <Footer siteTitle={data.site.siteMetadata.title} />
     </>
   );
 };
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 };
 
 export default Layout;

@@ -1,33 +1,22 @@
 import { Link } from "gatsby";
 import React from "react";
 
-import Social from "./social";
-import Logo from "../images/assets/dr.svg";
+import Logo from "../images/assets/logo.svg";
+import SplitText from "../components/splittext";
 
-import "./header-footer.css";
+import "./header.css";
 
 class Header extends React.Component {
-  componentDidMount() {
-    window.addEventListener("scroll", this.handleScroll);
-  }
-  handleScroll = () => {
-    var header = document.getElementById("header-line");
-    if (window.pageYOffset >= 24) {
-      header.classList.add("header-scroll");
-    } else {
-      header.classList.remove("header-scroll");
-    }
-  };
   constructor(props) {
     super(props);
     this.state = {
-      isToggleOn: true
+      isToggleOn: true,
     };
     this.handleClick = this.handleClick.bind(this);
   }
   handleClick() {
-    this.setState(prevState => ({
-      isToggleOn: !prevState.isToggleOn
+    this.setState((prevState) => ({
+      isToggleOn: !prevState.isToggleOn,
     }));
   }
 
@@ -49,36 +38,39 @@ class Header extends React.Component {
             <li></li>
           </div>
         </div>
+
         <div className="header-bg">
-          <span>
-            <Link className="header-link" to="/">
-              <h1 className="title">Articles</h1>
+          <span className="menu-link">
+            <Link className="nav-title" to="/">
+              <SplitText copy="Home" />
+              <SplitText copy="Home" />
             </Link>
-            <Link className="header-link" to="/about/">
-              <h1 className="title">About</h1>
+
+            <Link className="nav-title" to="/articles/">
+              <SplitText copy="Stories" />
+              <SplitText copy="Stories" />
             </Link>
             <a
-              className="header-link"
-              href="http://work.wenhaoqi.com/"
+              href="https://thoughts.teambition.com/sharespace/5dcc2f9ff32abe001545f2c5/docs/5dcc2f94f32abe001545f2c1"
               target="_blank"
-              title="Notion"
+              title="Thoughts"
               rel="noopener noreferrer"
+              className="nav-title"
             >
-              <h1 className="title">Works</h1>
+              <SplitText copy="Works" />
+              <SplitText copy="Works" />
             </a>
           </span>
-          <span>
-            <hr />
+          <span className="menu-footer">
+            <p className="type-p">GET IN TOUCH</p>
             <a href="tel:+86 186 0487 2509" title="Phone & Wechat">
               +86 186 0487 2509
             </a>
             <a href="mailto:curiosity.wen@gmail.com" title="Mail">
               curiosity.wen@gmail.com
             </a>
-            <Social />
           </span>
         </div>
-        <div id="header-line" className="header-line"></div>
       </header>
     );
   }

@@ -1,113 +1,107 @@
-import React, { useState } from "react";
-import { Link, graphql } from "gatsby";
-
+import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import Banner from "../components/banner";
+import { useStaticQuery, graphql } from "gatsby";
 
-import Tilt from "react-tilt";
+import Footer from "../components/footer";
+import Social from "../components/social";
+import PageUp from "../components/page-up"
+
+import Parallax from "react-rellax";
+import BannerSvg from "../images/assets/banner.svg";
+import BannerRing from "../images/assets/circular.svg";
+import Brand from "../images/assets/Brand.svg";
+import Uiux from "../images/assets/ui.svg";
+import Motion from "../images/assets/motion.svg"
 
 import "./pages.css";
 
-const IndexPage = ({ data }) => {
-  const { edges } = data.allMarkdownRemark;
-
-  const [currentTag, setCurrentTag] = useState("");
-  const allTags = [];
-  edges
-    .map(n => n.node.frontmatter.tags)
-    .forEach(tags => {
-      for (const tag of tags) {
-        if (!allTags.includes(tag)) {
-          allTags.push(tag);
-        }
-      }
-    });
-
-  console.log(allTags, currentTag);
-
-  const visibleWorks = currentTag
-    ? edges.filter(n => n.node.frontmatter.tags.includes(currentTag))
-    : edges;
-
-  return (
-    <Layout>
-      <SEO title="Articles" />
-      <Banner />
-
-      {/* 吸附筛选条 */}
-      <div className="space-sticky">
-        <section>
-          <div className="tgas-tab">
-            {allTags.map(n => (
-              <li
-                key={n}
-                className={n === currentTag ? "active" : ""}
-                onClick={() => {
-                  setCurrentTag(n);
-                }}
-              >
-                {n}
-              </li>
-            ))}
-          </div>
-        </section>
-      </div>
-
-      {/* 文章区域 */}
-      <section className="grid-sys">
-        {visibleWorks.map(edge => {
-          const { frontmatter } = edge.node;
-          return (
-            <div key={frontmatter.path} className="col-4">
-              <Link
-                to={frontmatter.path}
-                className="work-cover"
-                title={frontmatter.excerpt}
-              >
-                <Tilt
-                  className="Tilt"
-                  options={{
-                    max: 20,
-                    reverse: true,
-                    scale: 1,
-                    reset: true,
-                    perspective: 900
-                  }}
-                >
-                  <img
-                    src={frontmatter.cover}
-                    alt={frontmatter.title}
-                    className="Tilt-inner"
-                  />
-                </Tilt>
-                <p>{frontmatter.title}</p>
-                <p className="work-date">{frontmatter.date}</p>
-                <div className="work-line"></div>
-              </Link>
-            </div>
-          );
-        })}
-      </section>
-    </Layout>
-  );
-};
-export const query = graphql`
-  query {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
-      edges {
-        node {
-          frontmatter {
+const IndexPage = () => {
+  const date = useStaticQuery(
+    graphql`
+      query SiteTitleQueryAndSiteTitleQuery {
+        site {
+          siteMetadata {
             title
-            path
-            date(formatString: "MMMM DD, YYYY")
-            tags
-            excerpt
-            cover
           }
         }
       }
-    }
-  }
-`;
+    `
+  );
+  return (
+    <Layout>
+      <SEO title="Home" />
+      <div className="home-space">
+        <section id="#home" className="home-01">
+          <h1 className="big-type">
+            DR.CAT
+            <br />
+            DESIGNER
+            <br />
+            <span className="big-stroke">SHANGHAI</span>
+          </h1>
+        </section>
+        <section className="home-02">
+          <BannerSvg />
+          <div className="banner-ring">
+            <BannerRing />
+          </div>
+        </section>
+        <section className="home-03">
+          <Parallax speed={-3}>
+            <img src={`../../me.jpg`} alt="" />
+          </Parallax>
+          <div className="ring">
+            <Footer siteTitle={date.site.siteMetadata.title} />
+          </div>
+        </section>
+        <section className="home-04">
+          <h4>
+            Hello, I'm Haoqi Wen (also known as Dr.Cat), I am the senior
+            experience designer of Alibaba Shanghai. Used to work in ecommerce,
+            recruitment industry, engaged in digital product design. Devoted to
+            UI/UX and Branding, I also work in other fields such as Motion
+            Graphic, Illustration.|
+          </h4>
+        </section>
+        <Social />
+        <PageUp />
+      </div>
+      <div className="home-space">
+        <section className="home-05">
+          <li>
+            <Uiux />
+            <p>UI/UX</p>
+          </li>
+          <li>
+            <Motion />
+            <p>Motion</p>
+          </li>
+          <li>
+            <Brand />
+            <p>Brand</p>
+          </li>
+        </section>
+        <section className="home-06">
+          <li>
+            <h1 className="big-type big-stroke">8</h1>
+            <p>Years</p>
+          </li>
+          <li>
+            <h1 className="big-type big-stroke">2</h1>
+            <p>Design Systems</p>
+          </li>
+          <li>
+            <h1 className="big-type big-stroke">15</h1>
+            <p>Commercial Projects</p>
+          </li>
+        </section>
+      </div>
+
+      {/* <Link to="/articles/">
+        </Link> */}
+    </Layout>
+  );
+};
+
 export default IndexPage;
