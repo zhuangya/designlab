@@ -199,7 +199,6 @@
     z-index: 35;
     background-color: var(--BG-P);
     background: linear-gradient(180deg, var(--BG-P) 0%, var(--BG-S) 100%);
-    box-shadow: 0 -3rem 3rem 3rem var(--BG-P);
   }
   .ring {
     left: -2rem;
