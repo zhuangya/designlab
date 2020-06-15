@@ -172,7 +172,7 @@
   text-align: center;
   align-items: center;
   justify-content: center;
-  background-color: var(--Text-3);
+  background: linear-gradient(90deg, var(--BG-S) 50%, var(--BG-P) 50%);
 }
 @media screen and (max-width: 48rem) {
   .home-space {
@@ -220,6 +220,7 @@
   }
   .home-space section.home-07 {
     grid-column-start: span 1;
+    background: linear-gradient(90deg, var(--BG-p) 50%, var(--BG-P) 50%);
   }
 }
 
