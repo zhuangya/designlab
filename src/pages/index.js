@@ -56,12 +56,15 @@ const IndexPage = () => {
           </div>
         </section>
         <section className="home-04">
+          <h3>
+            Hello!
+          </h3>
           <h4>
-            Hello, I'm Haoqi Wen (also known as Dr.Cat), I am the senior
+            I'm Haoqi Wen (also known as Dr.Cat), I am the senior
             experience designer of Alibaba Shanghai. Used to work in ecommerce,
             recruitment industry, engaged in digital product design. Devoted to
             UI/UX and Branding, I also work in other fields such as Motion
-            Graphic, Illustration.|
+            Graphic, Illustration.
           </h4>
         </section>
         <Social />

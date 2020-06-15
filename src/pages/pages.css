@@ -111,7 +111,11 @@
 }
 .home-space section.home-04 {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.home-space section.home-04 h3 {
+  color: var(--Text-2);
 }
 .page-up {
   position: fixed;
