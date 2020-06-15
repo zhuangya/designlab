@@ -172,7 +172,7 @@
   text-align: center;
   align-items: center;
   justify-content: center;
-  background-color: var(--Glass-bg);
+  background-color: var(--Text-3);
 }
 @media screen and (max-width: 48rem) {
   .home-space {
