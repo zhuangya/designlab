@@ -5,14 +5,14 @@ import { useStaticQuery, graphql } from "gatsby";
 
 import Footer from "../components/footer";
 import Social from "../components/social";
-import PageUp from "../components/page-up"
+import PageUp from "../components/page-up";
 
 import Parallax from "react-rellax";
 import BannerSvg from "../images/assets/banner.svg";
 import BannerRing from "../images/assets/circular.svg";
 import Brand from "../images/assets/brand.svg";
 import Uiux from "../images/assets/ui.svg";
-import Motion from "../images/assets/motion.svg"
+import Motion from "../images/assets/motion.svg";
 
 import "./pages.css";
 
@@ -95,6 +95,9 @@ const IndexPage = () => {
             <h1 className="big-type big-stroke">15</h1>
             <p>Commercial Projects</p>
           </li>
+        </section>
+        <section className="home-07">
+          <Footer siteTitle={date.site.siteMetadata.title} />
         </section>
       </div>
 

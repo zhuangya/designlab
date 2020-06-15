@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import PageUp from "../components/page-up";
 
 import Tilt from "react-tilt";
 
@@ -14,8 +15,8 @@ const IndexPage = ({ data }) => {
   const [currentTag, setCurrentTag] = useState("");
   const allTags = [];
   edges
-    .map(n => n.node.frontmatter.tags)
-    .forEach(tags => {
+    .map((n) => n.node.frontmatter.tags)
+    .forEach((tags) => {
       for (const tag of tags) {
         if (!allTags.includes(tag)) {
           allTags.push(tag);
@@ -26,22 +27,21 @@ const IndexPage = ({ data }) => {
   console.log(allTags, currentTag);
 
   const visibleWorks = currentTag
-    ? edges.filter(n => n.node.frontmatter.tags.includes(currentTag))
+    ? edges.filter((n) => n.node.frontmatter.tags.includes(currentTag))
     : edges;
 
   return (
     <Layout>
       <SEO title="Articles" />
       <section>
-        <h1 style={{ marginTop: `8rem` }}>
-          Articles
-        </h1>
+        <h1 style={{ marginTop: `8rem` }}>Articles</h1>
       </section>
       {/* 吸附筛选条 */}
       <div className="space-sticky">
         <section>
+          <PageUp />
           <div className="tgas-tab">
-            {allTags.map(n => (
+            {allTags.map((n) => (
               <li
                 key={n}
                 className={n === currentTag ? "active" : ""}
@@ -58,7 +58,7 @@ const IndexPage = ({ data }) => {
 
       {/* 文章区域 */}
       <section className="work-grid">
-        {visibleWorks.map(edge => {
+        {visibleWorks.map((edge) => {
           const { frontmatter } = edge.node;
           return (
             <div key={frontmatter.path}>
@@ -74,7 +74,7 @@ const IndexPage = ({ data }) => {
                     reverse: true,
                     scale: 1,
                     reset: true,
-                    perspective: 900
+                    perspective: 900,
                   }}
                 >
                   <img

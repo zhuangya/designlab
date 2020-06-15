@@ -39,7 +39,6 @@ html {
   --Text-3: rgba(26, 26, 26, 0.2);
   --Glass: saturate(200%) blur(1.5rem);
   --Glass-bg: #fff;
-  --Shadow: 0px 4px 32px rgba(0, 0, 0, 0.12);
   --Style: #5364ff;
   scroll-behavior: smooth;
 }
@@ -146,6 +145,9 @@ a:hover {
 }
 /* 基础类型移动版 */
 @media screen and (max-width: 48rem) {
+  .big-type {
+    font-size: 12vw;
+  }
   h1,
   h2,
   h3,
