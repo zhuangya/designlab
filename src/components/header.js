@@ -33,6 +33,10 @@ class Header extends React.Component {
             className="menu-btn"
             onClick={this.handleClick}
             onFocus={() => 0}
+
+            role="button"
+            onKeyPress={() => {}}
+            tabIndex="0"
           >
             {this.state.isToggleOn}
             <li></li>

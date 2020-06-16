@@ -42,15 +42,19 @@ const IndexPage = ({ data }) => {
           <PageUp />
           <div className="tgas-tab">
             {allTags.map((n) => (
-              <li
+              <div
                 key={n}
                 className={n === currentTag ? "active" : ""}
                 onClick={() => {
                   setCurrentTag(n);
                 }}
+
+                role="button"
+                onKeyPress={() => {}}
+                tabIndex="0"
               >
                 {n}
-              </li>
+              </div>
             ))}
           </div>
         </section>

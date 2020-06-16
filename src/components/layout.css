@@ -169,6 +169,9 @@ a:hover {
     font-size: 1.25rem;
   }
 }
+button,div {
+  outline: 0 none;
+}
 
 /* 美洽 */
 #meiqia-container iframe {

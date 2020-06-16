@@ -111,7 +111,6 @@ header {
 .menu-link {
   display: flex;
   flex-direction: column;
-  justify-content: start;
   align-items: flex-start;
   width: 100%;
   flex: 0 0 auto;
