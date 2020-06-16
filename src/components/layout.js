@@ -20,9 +20,9 @@ const Layout = ({ children }) => {
   );
   return (
     <>
-      {/* <div className="overlay big-type big-stroke">
+      <div className="overlay big-type big-stroke">
         Version 10 is coming...
-      </div> */}
+      </div>
       <Header siteTitle={data.site.siteMetadata.title} />
       <main>{children}</main>
     </>
