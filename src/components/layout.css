@@ -11,6 +11,11 @@
 }
 @font-face {
   font-family: "gilroy";
+  src: url("../fonts/Gilroy-Semibold.otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "gilroy";
   src: url("../fonts/Gilroy-Bold.otf");
   font-weight: 600;
 }
@@ -114,7 +119,7 @@ h3 {
 }
 h4 {
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 p,
 a {
@@ -169,7 +174,7 @@ a:hover {
     font-size: 1.25rem;
   }
 }
-button,div {
+div {
   outline: 0 none;
 }
 

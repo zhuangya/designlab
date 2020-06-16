@@ -56,9 +56,9 @@ const IndexPage = () => {
           </div>
         </section>
         <section className="home-04">
-          <h3>
+          <h2>
             Hello!
-          </h3>
+          </h2>
           <h4>
             I'm Haoqi Wen (also known as Dr.Cat), I am the senior
             experience designer of Alibaba Shanghai. Used to work in ecommerce,
@@ -74,29 +74,29 @@ const IndexPage = () => {
         <section className="home-05">
           <li>
             <Uiux />
-            <p>UI/UX</p>
+            <h4>UI/UX</h4>
           </li>
           <li>
             <Motion />
-            <p>Motion</p>
+            <h4>Motion</h4>
           </li>
           <li>
             <Brand />
-            <p>Brand</p>
+            <h4>Brand</h4>
           </li>
         </section>
         <section className="home-06">
           <li>
             <h1 className="big-type big-stroke">8</h1>
-            <p>Years</p>
+            <h4>Years</h4>
           </li>
           <li>
             <h1 className="big-type big-stroke">2</h1>
-            <p>Design Systems</p>
+            <h4>Design Systems</h4>
           </li>
           <li>
-            <h1 className="big-type big-stroke">15</h1>
-            <p>Commercial Projects</p>
+            <h1 className="big-type big-stroke">20+</h1>
+            <h4>Commercial Projects</h4>
           </li>
         </section>
         <section className="home-07">
