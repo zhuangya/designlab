@@ -14,7 +14,7 @@
 }
 .Tilt {
   z-index: 2;
-  margin: 1rem 8rem;
+  margin: 1rem 20%;
 }
 .Tilt-inner {
   display: block;
@@ -58,6 +58,7 @@
 }
 .banner-ring svg {
   transform: rotate(-90deg);
+  flex: 1 0 auto;
 }
 .rotating {
   animation: rotating 6s linear both infinite;
