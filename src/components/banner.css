@@ -23,9 +23,8 @@
   display: block;
   width: 100%;
   fill: var(--Glass-bg);
-  animation: opp 1s ease 1s backwards;
+  animation: app 1s ease 1s backwards;
 }
-
 @keyframes opp {
   0% {
     opacity: 0;
