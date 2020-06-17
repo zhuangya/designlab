@@ -31,9 +31,9 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Articles" />
-      <section>
+      {/* <section>
         <h1 style={{ marginTop: `8rem` }}>Articles</h1>
-      </section>
+      </section> */}
       {/* 吸附筛选条 */}
       <div className="space-sticky">
         <section>
@@ -50,7 +50,7 @@ const IndexPage = ({ data }) => {
                 onKeyPress={() => {}}
                 tabIndex="0"
               >
-                <h1>{n}</h1>
+                <h1 className="big-stroke">{n}</h1>
               </div>
             ))}
           </div>

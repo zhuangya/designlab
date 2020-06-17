@@ -228,7 +228,7 @@
   background-color: var(--Glass-bg);
   backdrop-filter: var(--Glass);
   z-index: 20;
-  transform: translate3d(0, 0, 800px);
+  /* transform: translate3d(0, 0, 800px); */
   user-select: none;
 }
 .tgas-tab {
@@ -236,21 +236,18 @@
   overflow-y: hidden;
   white-space: nowrap;
   display: flex;
-  justify-content: center;
   align-items: center;
   padding-top: 4rem;
 }
-.tgas-tab li {
-  line-height: 4rem;
-  list-style: none;
+.tgas-tab h1 {
   padding: 0 1.5rem 0;
-  color: var(--Text-2);
+  /* color: var(--Text-2); */
   font-weight: 600;
   cursor: pointer;
   -webkit-tab-highlight-color: transparent;
   transition: 0.3s ease;
 }
-.tgas-tab .active {
+.tgas-tab .active h1 {
   color: var(--Text-1);
 }
 @media screen and (max-width: 48rem) {
