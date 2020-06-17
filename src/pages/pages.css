@@ -277,12 +277,11 @@
 .work-cover hr {
   margin: 0.5rem 0;
 }
-.work-cover p {
-  margin: 0.5rem 0;
+.work-cover h4 {
+  margin: 0.75rem 0 0.5rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  font-weight: 600;
 }
 .work-date {
   color: var(--Text-2);

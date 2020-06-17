@@ -73,7 +73,7 @@ const IndexPage = ({ data }) => {
                   alt={frontmatter.title}
                   className="Tilt-inner"
                 />
-                <p>{frontmatter.title}</p>
+                <h4>{frontmatter.title}</h4>
                 <p className="work-date">{frontmatter.date}</p>
                 <div className="work-line"></div>
               </Link>
