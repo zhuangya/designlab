@@ -53,41 +53,7 @@
   background-color: var(--BG-S);
   padding: 0;
   z-index: 50;
-}
-.banner {
-  display: block;
-  width: 100%;
-  fill: var(--Glass-bg);
-  animation: opp 1s ease 1s backwards;
-}
-@keyframes opp {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.banner-ring {
-  position: absolute;
-  width: 2rem;
-  height: 2rem;
-  right: 1.5rem;
-  bottom: 1.5rem;
-}
-.banner-ring svg {
-  transform: rotate(-90deg);
-}
-.rotating {
-  animation: rotating 6s linear both infinite;
-}
-@keyframes rotating {
-  from {
-    stroke-dashoffset: 76px;
-  }
-  to {
-    stroke-dashoffset: 0px;
-  }
+  overflow: hidden;
 }
 .home-space section.home-03 {
   background-color: var(--BG-S);
@@ -311,17 +277,6 @@
   display: block;
   margin: 0;
 }
-.Tilt {
-  transform: perspective(1000px);
-  transform-style: preserve-3d;
-}
-.Tilt-inner {
-  transition: 0.3s ease;
-  box-shadow: 0 0 0 0 transparent;
-}
-.work-cover:hover .Tilt-inner {
-  transform: translateZ(2rem);
-}
 .work-cover hr {
   margin: 0.5rem 0;
 }
@@ -361,9 +316,6 @@
   transform-origin: left center;
 }
 @media screen and (max-width: 48rem) {
-  .work-cover .Tilt {
-    transform: translate3d(0px, 0px, 0px) !important;
-  }
   .work-line::before {
     background-color: transparent;
   }

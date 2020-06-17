@@ -1,4 +1,5 @@
 import React from "react";
+import Parallax from "react-rellax";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { useStaticQuery, graphql } from "gatsby";
@@ -6,10 +7,8 @@ import { useStaticQuery, graphql } from "gatsby";
 import Footer from "../components/footer";
 import Social from "../components/social";
 import PageUp from "../components/page-up";
+import Banner from "../components/banner"
 
-import Parallax from "react-rellax";
-import BannerSvg from "../images/assets/banner.svg";
-import BannerRing from "../images/assets/circular.svg";
 import Brand from "../images/assets/brand.svg";
 import Uiux from "../images/assets/ui.svg";
 import Motion from "../images/assets/motion.svg";
@@ -42,13 +41,10 @@ const IndexPage = () => {
           </h1>
         </section>
         <section className="home-02">
-          <BannerSvg />
-          <div className="banner-ring">
-            <BannerRing />
-          </div>
+          <Banner />
         </section>
         <section className="home-03">
-          <Parallax speed={-3}>
+          <Parallax speed={-4}>
             <img src={`../../me.jpg`} alt="" />
           </Parallax>
           <div className="ring">
@@ -56,15 +52,13 @@ const IndexPage = () => {
           </div>
         </section>
         <section className="home-04">
-          <h2>
-            Hello!
-          </h2>
+          <h2>Hello!</h2>
           <h4>
-            I'm Haoqi Wen (also known as Dr.Cat), I am the senior
-            experience designer of Alibaba Shanghai. Used to work in ecommerce,
-            recruitment industry, engaged in digital product design. Devoted to
-            UI/UX and Branding, I also work in other fields such as Motion
-            Graphic, Illustration.
+            I'm Haoqi Wen (also known as Dr.Cat), I am the senior experience
+            designer of Alibaba Shanghai. Used to work in ecommerce, recruitment
+            industry, engaged in digital product design. Devoted to UI/UX and
+            Branding, I also work in other fields such as Motion Graphic,
+            Illustration.
           </h4>
         </section>
         <Social />

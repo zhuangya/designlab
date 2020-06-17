@@ -5,8 +5,6 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import PageUp from "../components/page-up";
 
-import Tilt from "react-tilt";
-
 import "./pages.css";
 
 const IndexPage = ({ data }) => {
@@ -48,12 +46,11 @@ const IndexPage = ({ data }) => {
                 onClick={() => {
                   setCurrentTag(n);
                 }}
-
                 role="button"
                 onKeyPress={() => {}}
                 tabIndex="0"
               >
-                {n}
+                <h1>{n}</h1>
               </div>
             ))}
           </div>
@@ -71,22 +68,11 @@ const IndexPage = ({ data }) => {
                 className="work-cover"
                 title={frontmatter.excerpt}
               >
-                <Tilt
-                  className="Tilt"
-                  options={{
-                    max: 20,
-                    reverse: true,
-                    scale: 1,
-                    reset: true,
-                    perspective: 900,
-                  }}
-                >
-                  <img
-                    src={frontmatter.cover}
-                    alt={frontmatter.title}
-                    className="Tilt-inner"
-                  />
-                </Tilt>
+                <img
+                  src={frontmatter.cover}
+                  alt={frontmatter.title}
+                  className="Tilt-inner"
+                />
                 <p>{frontmatter.title}</p>
                 <p className="work-date">{frontmatter.date}</p>
                 <div className="work-line"></div>
