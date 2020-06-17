@@ -11,7 +11,7 @@ const Banner = () => (
     <a
       style={{ backgroundColor: "rgba(21,193,255,0.08)" }}
       className="banner-space"
-      href="http://localhost:8000/articles/dark_mode/"
+      href="https://wenhaoqi.com/articles/dark_mode/"
       target="_blank"
       rel="noopener noreferrer"
     >
