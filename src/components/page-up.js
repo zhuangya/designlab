@@ -7,7 +7,7 @@ class PageUp extends React.Component {
   }
   handleScroll = () => {
     var header = document.getElementById("page-up");
-    if (window.pageYOffset >= 120) {
+    if (window.pageYOffset >= 80) {
       header.classList.add("up-scroll");
     } else {
       header.classList.remove("up-scroll");
