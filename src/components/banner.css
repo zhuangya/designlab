@@ -1,4 +1,7 @@
-.banner-space {
+.home-02 a:first-child {
+  display: flex;
+}
+.banner-space  {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -10,7 +13,8 @@
   align-items: center;
   overflow: hidden;
   margin: 0;
-  animation: opp 1s ease 2s backwards;
+  display: none;
+  animation: opp 0.5s ease 1s backwards;
 }
 .Tilt {
   z-index: 2;
@@ -18,20 +22,6 @@
 }
 .Tilt-inner {
   display: block;
-}
-.banner {
-  display: block;
-  width: 100%;
-  fill: var(--Glass-bg);
-  animation: app 1s ease 1s backwards;
-}
-@keyframes opp {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 .banner-ring {
   position: absolute;

@@ -44,6 +44,7 @@ html {
   --Text-3: rgba(26, 26, 26, 0.2);
   --Glass: saturate(200%) blur(1.5rem);
   --Glass-bg: #fff;
+  --Glass-bg-2: rgba(250, 248, 246,0.6);
   --Style: #5364ff;
   scroll-behavior: smooth;
 }
@@ -60,6 +61,7 @@ html {
     --Text-2: rgba(255, 255, 255, 0.6);
     --Text-3: rgba(255, 255, 255, 0.2);
     --Glass-bg: rgb(42, 44, 46);
+    --Glass-bg-2: rgba(24, 26, 28,0.6);
   }
   @supports (backdrop-filter: none) {
     html {

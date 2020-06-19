@@ -1,4 +1,5 @@
 import React from "react";
+import "./page-up.css";
 
 class PageUp extends React.Component {
   componentDidMount() {
