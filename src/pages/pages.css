@@ -30,7 +30,7 @@
 }
 .home-space section {
   min-height: 100vh;
-  padding: 5rem;
+  padding: 4.5rem;
 }
 .home-space section.home-01 {
   position: sticky;
@@ -54,20 +54,6 @@
   padding: 0;
   z-index: 50;
   overflow: hidden;
-}
-.banner {
-  display: block;
-  width: 100%;
-  fill: var(--Glass-bg);
-  animation: app 1s ease 1s backwards;
-}
-@keyframes opp {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 .home-space section.home-03 {
   background-color: var(--BG-S);
@@ -96,6 +82,34 @@
 }
 .home-space section.home-04 h2 {
   color: var(--Text-2);
+}
+.page-up {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  font-family: "uuicon";
+  font-size: 1.5rem;
+  text-align: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 10rem;
+  line-height: 2rem;
+  z-index: 40;  
+  transform: rotateZ(0deg) scale(4);
+  box-shadow: inset 0 0 0 1px transparent;
+  transition: transform 0.6s ease, color 0.3s ease, box-shadow 0.3s ease;
+  color: transparent;
+  pointer-events: none;
+}
+.up-scroll {
+  box-shadow: inset 0 0 0 1px var(--Text-3);
+  color: var(--Text-1);
+  transform: rotateZ(90deg) scale(1);
+  pointer-events: auto;
+}
+.page-up:hover {
+  box-shadow: inset 0 0 0 1px var(--Text-1);
+  color: var(--Text-1);
 }
 .home-space section.home-05 {
   display: flex;
@@ -161,6 +175,15 @@
   .ring {
     left: -2rem;
   }
+  .page-up {
+    transform: rotateZ(-90deg) scale(1);
+    box-shadow: inset 0 0 0 1px var(--Text-1);
+    color: var(--Text-1);
+    pointer-events: auto;
+  }
+  .up-scroll {
+    transform: rotateZ(90deg) scale(1);
+  }
   .home-space section.home-05 svg {
     width: 16vw;
   }
@@ -201,16 +224,12 @@
 .space-sticky {
   position: sticky;
   position: -webkit-sticky;
-  top: -4.5rem;
-  background-color: var(--Glass-bg-2);
+  top: 0;
+  background-color: var(--Glass-bg);
   backdrop-filter: var(--Glass);
   z-index: 20;
   /* transform: translate3d(0, 0, 800px); */
   user-select: none;
-}
-.space-sticky p {
-  padding: 9rem 4.5rem 0;
-  margin: 0;
 }
 .tgas-tab {
   overflow-x: auto;
@@ -218,11 +237,10 @@
   white-space: nowrap;
   display: flex;
   align-items: center;
-  /* padding-top: 4rem; */
-  padding: 0 4.5rem;
+  padding-top: 4rem;
 }
 .tgas-tab h1 {
-  margin: 0 2rem 0 0;
+  padding: 0 1.5rem 0;
   /* color: var(--Text-2); */
   font-weight: 600;
   cursor: pointer;
@@ -249,7 +267,7 @@
     minmax(var(--auto-grid-min-size), 1fr)
   );
   grid-gap: 1.5rem;
-  padding: 1.5rem 4.5rem;
+  padding-top: 1.5rem;
 }
 /* Work卡片 */
 .work-cover {

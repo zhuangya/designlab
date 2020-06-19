@@ -8,10 +8,6 @@
 
 ## 基础依赖
 
-拉取 Airtable 数据
-[gatsby-source-airtable](https://www.gatsbyjs.org/packages/gatsby-source-airtable/?=airtable)
-(目前实现构建拉取转静态，未来尝试动态拉取)
-
 盖茨比文件管理
 [gatsby-source-filesystem](https://www.gatsbyjs.org/packages/gatsby-source-filesystem/?=gatsby-source-filesystem)
 

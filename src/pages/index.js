@@ -7,14 +7,13 @@ import { useStaticQuery, graphql } from "gatsby";
 import Footer from "../components/footer";
 import Social from "../components/social";
 import PageUp from "../components/page-up";
-import Banner from "../components/banner";
-
-import "./pages.css";
+import Banner from "../components/banner"
 
 import Brand from "../images/assets/brand.svg";
 import Uiux from "../images/assets/ui.svg";
 import Motion from "../images/assets/motion.svg";
-import BannerSvg from "../images/assets/banner.svg";
+
+import "./pages.css";
 
 const IndexPage = () => {
   const date = useStaticQuery(
@@ -43,7 +42,6 @@ const IndexPage = () => {
         </section>
         <section className="home-02">
           <Banner />
-          <BannerSvg />
         </section>
         <section className="home-03">
           <Parallax speed={-4}>

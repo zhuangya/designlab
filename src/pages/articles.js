@@ -31,10 +31,13 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Articles" />
+      {/* <section>
+        <h1 style={{ marginTop: `8rem` }}>Articles</h1>
+      </section> */}
       {/* 吸附筛选条 */}
       <div className="space-sticky">
-        <p>UPDATE: 06.11.2020</p>
         <section>
+          <PageUp />
           <div className="tgas-tab">
             {allTags.map((n) => (
               <div
@@ -56,7 +59,6 @@ const IndexPage = ({ data }) => {
 
       {/* 文章区域 */}
       <section className="work-grid">
-      <PageUp />
         {visibleWorks.map((edge) => {
           const { frontmatter } = edge.node;
           return (
