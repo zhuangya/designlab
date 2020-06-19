@@ -8,6 +8,10 @@
 
 ## 基础依赖
 
+加载时取 Airtable 数据
+[gatsby-source-airtable](https://www.gatsbyjs.org/packages/gatsby-source-airtable/?=airtable)
+（轮播 Banner 暂定静态方案，之后调用动态 api 获取 banner 数据）
+
 盖茨比文件管理
 [gatsby-source-filesystem](https://www.gatsbyjs.org/packages/gatsby-source-filesystem/?=gatsby-source-filesystem)
 

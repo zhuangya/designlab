@@ -1,8 +1,9 @@
 import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
 import Parallax from "react-rellax";
+
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import { useStaticQuery, graphql } from "gatsby";
 
 import Footer from "../components/footer";
 import Social from "../components/social";
@@ -32,8 +33,8 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Home" />
       <div className="home-space">
-        <section id="#home" className="home-01">
-          <p>test-2</p>
+        <section className="home-01">
+          {/* <p>test-2</p> */}
           <h1 className="big-type">
             DR.CAT
             <br />

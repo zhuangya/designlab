@@ -24,13 +24,11 @@ const Layout = ({ children }) => {
         Version 10 is coming...
       </div> */}
       <Header siteTitle={data.site.siteMetadata.title} />
-      <main>{children}</main>
+      <main id="#home">{children}</main>
     </>
   );
 };
-
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 };
-
 export default Layout;

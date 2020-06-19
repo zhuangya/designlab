@@ -1,13 +1,11 @@
 import React from "react";
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import "./templates.css";
 
-const Template = ({ data, pageContext }) => {
-
-  const { next, prev } = pageContext;
+const Template = ({ data }) => {
 
   const { markdownRemark } = data;
   
@@ -32,9 +30,6 @@ const Template = ({ data, pageContext }) => {
         </a> */}
         <hr />
         <div dangerouslySetInnerHTML={{ __html: html }} />
-        
-        {next&&<Link to={next.frontmatter.path}>Next</Link>}
-        {prev&&<Link to={prev.frontmatter.path}>Prev</Link>}
       </div>
     </Layout>
   );
