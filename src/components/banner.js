@@ -6,12 +6,13 @@ import "./banner.css";
 
 import BannerRing from "../images/assets/circular.svg";
 
+// DESC降序 ASC生序
 const Banner = () => {
   const data = useStaticQuery(graphql`
     query MenuQuery {
       sandwiches: allAirtable(
         filter: { table: { eq: "Sandwiches" } }
-        sort: { fields: data___Name, order: DESC }
+        sort: { fields: data___Name, order: ASC }
       ) {
         nodes {
           data {
@@ -56,7 +57,7 @@ const Banner = () => {
               />
             </Tilt>
             <div className="banner-ring">
-              <p>{item.data.Description}</p>
+              <p>{item.data.Name} - {item.data.Description}</p>
               <BannerRing />
             </div>
           </a>

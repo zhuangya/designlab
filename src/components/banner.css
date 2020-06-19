@@ -1,22 +1,32 @@
+.home-02 {
+  --banner-time: 24s;
+}
 .home-02 a:nth-child(1) {
-  animation: ba 18s ease infinite;
+  animation: banner var(--banner-time) ease calc(var(--banner-time) / 4 * 0) infinite;
 }
 .home-02 a:nth-child(2) {
-  animation: ba 18s ease 6s infinite;
+  animation: banner var(--banner-time) ease calc(var(--banner-time) / 4 * 1) infinite;
 }
 .home-02 a:nth-child(3) {
-  animation: ba 18s ease 12s infinite;
+  animation: banner var(--banner-time) ease calc(var(--banner-time) / 4 * 2) infinite;
 }
-@keyframes ba {
+.home-02 a:nth-child(4) {
+  animation: banner var(--banner-time) ease calc(var(--banner-time) / 4 * 3) infinite;
+}
+@keyframes banner {
   0% {
+    opacity: 0;
+    z-index: 20;
+  }
+  3% {
     opacity: 1;
     z-index: 20;
   }
-  33% {
+  25% {
     opacity: 1;
     z-index: 20;
   }
-  36%{
+  28%{
     opacity: 0;
     z-index: 10;
   }
@@ -39,7 +49,7 @@
   margin: 0;
   opacity: 0;
   z-index: 10;
-  animation: opp 0.5s ease 0.5s backwards;
+  user-select: none;
 }
 .Tilt {
   z-index: 2;
@@ -76,7 +86,7 @@
   flex: 1 0 auto;
 }
 .rotating {
-  animation: rotating 6s linear both infinite;
+  animation: rotating calc(var(--banner-time) / 4) linear both infinite;
 }
 @keyframes rotating {
   from {
