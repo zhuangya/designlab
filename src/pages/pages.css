@@ -266,7 +266,7 @@
   white-space: nowrap;
 }
 .work-date {
-  color: var(--Text-2 );
+  color: var(--Text-2);
   font-size: 0.8rem;
   font-weight: 400 !important;
 }
