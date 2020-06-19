@@ -1,8 +1,6 @@
 import React from "react";
 import Tilt from "react-tilt";
-
 import "./banner.css";
-
 import BannerRing from "../images/assets/circular.svg";
 
 const Banner = () => (
