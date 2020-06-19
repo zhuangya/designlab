@@ -49,7 +49,7 @@ const Banner = () => {
               }}
             >
               <img
-                // src={item.data.Cover[0].url}
+                src={item.data.Cover[0].url}
                 alt={item.data.Name}
                 className="Tilt-inner"
               />
