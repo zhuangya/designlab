@@ -12,6 +12,7 @@ import Banner from "../components/banner"
 import Brand from "../images/assets/brand.svg";
 import Uiux from "../images/assets/ui.svg";
 import Motion from "../images/assets/motion.svg";
+import BannerSvg from "../images/assets/banner.svg";
 
 import "./pages.css";
 
@@ -32,6 +33,7 @@ const IndexPage = () => {
       <SEO title="Home" />
       <div className="home-space">
         <section id="#home" className="home-01">
+          <p>test-1</p>
           <h1 className="big-type">
             DR.CAT
             <br />
@@ -42,6 +44,7 @@ const IndexPage = () => {
         </section>
         <section className="home-02">
           <Banner />
+          <BannerSvg />
         </section>
         <section className="home-03">
           <Parallax speed={-4}>

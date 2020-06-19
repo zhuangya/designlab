@@ -3,7 +3,6 @@ import Tilt from "react-tilt";
 
 import "./banner.css";
 
-import BannerSvg from "../images/assets/banner.svg";
 import BannerRing from "../images/assets/circular.svg";
 
 const Banner = () => (
@@ -36,8 +35,6 @@ const Banner = () => (
         <BannerRing />
       </div>
     </a>
-
-    <BannerSvg />
   </>
 );
 
