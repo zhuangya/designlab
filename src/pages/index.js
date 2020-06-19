@@ -33,7 +33,7 @@ const IndexPage = () => {
       <SEO title="Home" />
       <div className="home-space">
         <section id="#home" className="home-01">
-          <p>test-1</p>
+          <p>test-2</p>
           <h1 className="big-type">
             DR.CAT
             <br />
