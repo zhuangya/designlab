@@ -8,7 +8,7 @@ import SEO from "../components/seo";
 import Footer from "../components/footer";
 import Social from "../components/social";
 import PageUp from "../components/page-up";
-import Banner from "../components/banner"
+import Banner from "../components/banner";
 
 import Brand from "../images/assets/brand.svg";
 import Uiux from "../images/assets/ui.svg";
@@ -62,7 +62,7 @@ const IndexPage = () => {
             designer of Alibaba Shanghai. Used to work in ecommerce, recruitment
             industry, engaged in digital product design. Devoted to UI/UX and
             Branding, I also work in other fields such as Motion Graphic,
-            Illustration.
+            Illustration<span className="text-x">_</span>
           </h4>
         </section>
         <Social />
