@@ -267,6 +267,9 @@ main {
   grid-gap: 2rem;
   padding: 2rem 5rem;
 }
+.work-grid :first-child{
+  grid-column: span 2;
+}
 /* Work卡片 */
 .work-cover {
   display: block;
@@ -313,6 +316,9 @@ main {
 @media screen and (max-width: 48rem) {
   .work-grid {
     padding: 2rem 1.75rem;
+  }
+  .work-grid :first-child{
+    grid-column: span 1;
   }
   .work-line::before {
     background-color: transparent;

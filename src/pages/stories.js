@@ -53,7 +53,6 @@ const IndexPage = ({ data }) => {
 
       {/* 文章区域 */}
       <section className="work-grid">
-        <PageUp />
         {visibleWorks.map((edge) => {
           const { frontmatter } = edge.node;
           return (
@@ -68,13 +67,14 @@ const IndexPage = ({ data }) => {
                   alt={frontmatter.title}
                   className="Tilt-inner"
                 />
-                <p>{frontmatter.title}</p>
+                <h4>{frontmatter.title}</h4>
                 <p className="work-date">{frontmatter.date}</p>
                 <div className="work-line"></div>
               </Link>
             </div>
           );
         })}
+        <PageUp />
       </section>
     </Layout>
   );
