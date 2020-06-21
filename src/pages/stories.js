@@ -30,10 +30,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Articles" />
-      {/* <section>
-        <h1 style={{ marginTop: `8rem` }}>Articles</h1>
-      </section> */}
+      <SEO title="Stories" />
       {/* 吸附筛选条 */}
       <div className="space-sticky">
         <section>

@@ -34,7 +34,6 @@ const IndexPage = () => {
       <SEO title="Home" />
       <div className="home-space">
         <section className="home-01">
-          {/* <p>test-2</p> */}
           <h1 className="big-type">
             DR.CAT
             <br />
@@ -52,7 +51,7 @@ const IndexPage = () => {
             <img src={`../../me.jpg`} alt="" />
           </Parallax>
           <div className="ring">
-            <Footer siteTitle={date.site.siteMetadata.title} />
+            <Footer siteTitle={date.site.siteMetadata.title} display="none"/>
           </div>
         </section>
         <section className="home-04">
@@ -101,9 +100,6 @@ const IndexPage = () => {
           <Footer siteTitle={date.site.siteMetadata.title} />
         </section>
       </div>
-
-      {/* <Link to="/articles/">
-        </Link> */}
     </Layout>
   );
 };

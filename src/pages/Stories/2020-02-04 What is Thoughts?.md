@@ -1,14 +1,14 @@
 ---
-path: "/articles/what_is_thoughts/"
+path: "/stories/what_is_thoughts/"
 date: "2020-02-02"
 title: "What is Thoughts?"
 tags: ["All", "Design"]
 excerpt: "Thoughts 产品介绍视频分镜头脚本"
 cover: ../../cover/thoughts_video.jpg
-twiter: "https://twitter.com/share?text=Thoughts Covers&url=https://wenhaoqi.com/articles/thoughts_covers/"
+twiter: "https://twitter.com/share?text=Thoughts Covers&url=https://wenhaoqi.com/stories/thoughts_covers/"
 ---
 
-<video preload="metadata" controls="controls" poster="../../articles/what_is_thoughts/7.jpg"><source type="video/mp4" src="http://dn-clients.teambition.net/thoughts/thoughts_intro_2019.mp4"></video>
+<video preload="metadata" controls="controls" poster="../../stories/what_is_thoughts/7.jpg"><source type="video/mp4" src="http://dn-clients.teambition.net/thoughts/thoughts_intro_2019.mp4"></video>
 
 > Product introduction video
 
@@ -28,29 +28,29 @@ Thoughts 是知识管理工具，也是一款很好用的文本编辑工具。�
 
 | 镜头                                        | 描述                                                                                                         | 时长 |
 | ------------------------------------------- | ------------------------------------------------------------------------------------------------------------ | ---- |
-| ![](../../articles/what_is_thoughts/1.jpg)  | 画面中心出现插入“+”，这是 thoughts 一切编辑媒体内容的开端                                                    | 0.3s |
-| ![](../../articles/what_is_thoughts/2.jpg)  | 加号后方的的输入框显示出占位符，短暂停留（看清占位符即可）                                                   | 0.8s |
-| ![](../../articles/what_is_thoughts/3.jpg)  | 模拟输入“所思是什么？”                                                                                       | 1.5s |
-| ![](../../articles/what_is_thoughts/4.jpg)  | 输入##放大文字，突出疑问感                                                                                   | 0.2s |
-| ![](../../articles/what_is_thoughts/5.jpg)  | 镜头硬切至新的文案打出                                                                                       | 1.5s |
-| ![](../../articles/what_is_thoughts/6.jpg)  | 按回车输入其他文字，注意控制节奏。                                                                           | 1s   |
-| ![](../../articles/what_is_thoughts/6.jpg)  | 将下半部分重点文字圈选，出现文本编辑工具条，稍作停留                                                         | 1s   |
-| ![](../../articles/what_is_thoughts/7.jpg)  | 选中变为检查列表后节奏加快并选中项目                                                                         | 1.2s |
-| ![](../../articles/what_is_thoughts/8.jpg)  | 镜头切至一个引用段落正在打字出现文字内容                                                                     | 2s   |
-| ![](../../articles/what_is_thoughts/9.jpg)  | 镜头继续切至放大的标题                                                                                       | 1s   |
-| ![](../../articles/what_is_thoughts/10.jpg) | 镜头切至选中的讨论文字点击讨论按钮                                                                           | 1s   |
-| ![](../../articles/what_is_thoughts/11.jpg) | 弹出的讨论框内打字展示                                                                                       | 2s   |
-| ![](../../articles/what_is_thoughts/12.jpg) | 打字后发送讨论，同时镜头拉远继续展示讨论的细节，文档的内容也在这一刻看清楚了，前面敲过的字都是文档的一部分。 | 1s   |
-| ![](../../articles/what_is_thoughts/13.jpg) | 镜头继续拉远打破第四面墙与移动版界面同时出现                                                                 | 1.2s |
-| ![](../../articles/what_is_thoughts/14.jpg) | 停留片刻后，移动版、桌面版同时吸入 Thoughts 的 icon 中                                                       | 0.3s |
-| ![](../../articles/what_is_thoughts/15.jpg) | icon 像两侧分离，镜头拉远，thoughts 的 icon 后出现了 TB 的 icon ，中间出现联动文案                           | 1s   |
-| ![](../../articles/what_is_thoughts/16.jpg) | 文案淡出后图标识相聚，出现文件文档传输状态                                                                   | 1s   |
-| ![](../../articles/what_is_thoughts/17.jpg) | 镜头拉远两个图标旋转融入背景插画                                                                             | 1.2s |
-| ![](../../articles/what_is_thoughts/18.jpg) | 镜头拉远速度加快，插画是一个知识库的封面                                                                     | 0.3s |
-| ![](../../articles/what_is_thoughts/19.jpg) | 知识库向上移动，下方出现                                                                                     | 1s   |
-| ![](../../articles/what_is_thoughts/20.jpg) | 镜头继续迅速拉远，首页的控件空间距离时间差错落盖在页面上                                                     | 1.5s |
-| ![](../../articles/what_is_thoughts/21.jpg) | 镜头切换打字                                                                                                 | 1.8s |
-| ![](../../articles/what_is_thoughts/22.jpg) | 落版                                                                                                         | 3s   |
+| ![](../../stories/what_is_thoughts/1.jpg)  | 画面中心出现插入“+”，这是 thoughts 一切编辑媒体内容的开端                                                    | 0.3s |
+| ![](../../stories/what_is_thoughts/2.jpg)  | 加号后方的的输入框显示出占位符，短暂停留（看清占位符即可）                                                   | 0.8s |
+| ![](../../stories/what_is_thoughts/3.jpg)  | 模拟输入“所思是什么？”                                                                                       | 1.5s |
+| ![](../../stories/what_is_thoughts/4.jpg)  | 输入##放大文字，突出疑问感                                                                                   | 0.2s |
+| ![](../../stories/what_is_thoughts/5.jpg)  | 镜头硬切至新的文案打出                                                                                       | 1.5s |
+| ![](../../stories/what_is_thoughts/6.jpg)  | 按回车输入其他文字，注意控制节奏。                                                                           | 1s   |
+| ![](../../stories/what_is_thoughts/6.jpg)  | 将下半部分重点文字圈选，出现文本编辑工具条，稍作停留                                                         | 1s   |
+| ![](../../stories/what_is_thoughts/7.jpg)  | 选中变为检查列表后节奏加快并选中项目                                                                         | 1.2s |
+| ![](../../stories/what_is_thoughts/8.jpg)  | 镜头切至一个引用段落正在打字出现文字内容                                                                     | 2s   |
+| ![](../../stories/what_is_thoughts/9.jpg)  | 镜头继续切至放大的标题                                                                                       | 1s   |
+| ![](../../stories/what_is_thoughts/10.jpg) | 镜头切至选中的讨论文字点击讨论按钮                                                                           | 1s   |
+| ![](../../stories/what_is_thoughts/11.jpg) | 弹出的讨论框内打字展示                                                                                       | 2s   |
+| ![](../../stories/what_is_thoughts/12.jpg) | 打字后发送讨论，同时镜头拉远继续展示讨论的细节，文档的内容也在这一刻看清楚了，前面敲过的字都是文档的一部分。 | 1s   |
+| ![](../../stories/what_is_thoughts/13.jpg) | 镜头继续拉远打破第四面墙与移动版界面同时出现                                                                 | 1.2s |
+| ![](../../stories/what_is_thoughts/14.jpg) | 停留片刻后，移动版、桌面版同时吸入 Thoughts 的 icon 中                                                       | 0.3s |
+| ![](../../stories/what_is_thoughts/15.jpg) | icon 像两侧分离，镜头拉远，thoughts 的 icon 后出现了 TB 的 icon ，中间出现联动文案                           | 1s   |
+| ![](../../stories/what_is_thoughts/16.jpg) | 文案淡出后图标识相聚，出现文件文档传输状态                                                                   | 1s   |
+| ![](../../stories/what_is_thoughts/17.jpg) | 镜头拉远两个图标旋转融入背景插画                                                                             | 1.2s |
+| ![](../../stories/what_is_thoughts/18.jpg) | 镜头拉远速度加快，插画是一个知识库的封面                                                                     | 0.3s |
+| ![](../../stories/what_is_thoughts/19.jpg) | 知识库向上移动，下方出现                                                                                     | 1s   |
+| ![](../../stories/what_is_thoughts/20.jpg) | 镜头继续迅速拉远，首页的控件空间距离时间差错落盖在页面上                                                     | 1.5s |
+| ![](../../stories/what_is_thoughts/21.jpg) | 镜头切换打字                                                                                                 | 1.8s |
+| ![](../../stories/what_is_thoughts/22.jpg) | 落版                                                                                                         | 3s   |
 
 如果是一个代码片段呢？`<div>hahah</div>` hahaha
 

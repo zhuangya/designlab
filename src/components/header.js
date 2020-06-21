@@ -50,7 +50,7 @@ class Header extends React.Component {
               <SplitText copy="Home" />
             </Link>
 
-            <Link className="nav-title" to="/articles/">
+            <Link className="nav-title" to="/stories/">
               <SplitText copy="Stories" />
               <SplitText copy="Stories" />
             </Link>
