@@ -98,7 +98,7 @@
 }
 @media screen and (max-width: 48rem) {
   .Tilt {
-    margin: 6rem;
+    margin: 1rem 22.5%;
     transform: translate3d(0px, 0px, 0px) !important;
   }
   .banner-ring p {

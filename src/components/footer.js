@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 
 import "./header.css";
 
-const Footer = ({ siteTitle, display }) => (
+const Footer = ({ siteTitle, footerLink }) => (
   <div className="circular">
     <style>
       {`
@@ -70,7 +70,7 @@ const Footer = ({ siteTitle, display }) => (
         </textPath>
       </text>
     </svg>
-    <div className="footer-link" style={{ display: display }}>
+    <div className="footer-link" style={{ display: footerLink }}>
       <Link to="/"><h4>Home</h4></Link>
       <Link to="/stories/"><h4>Stories</h4></Link>
       <a

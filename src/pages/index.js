@@ -51,7 +51,7 @@ const IndexPage = () => {
             <img src={`../../me.jpg`} alt="" />
           </Parallax>
           <div className="ring">
-            <Footer siteTitle={date.site.siteMetadata.title} display="none"/>
+            <Footer siteTitle={date.site.siteMetadata.title} footerLink="none"/>
           </div>
         </section>
         <section className="home-04">

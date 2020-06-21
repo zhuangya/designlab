@@ -31,31 +31,29 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Stories" />
-      {/* 吸附筛选条 */}
       <div className="space-sticky">
-        <section>
-          <PageUp />
-          <div className="tgas-tab">
-            {allTags.map((n) => (
-              <div
-                key={n}
-                className={n === currentTag ? "active" : ""}
-                onClick={() => {
-                  setCurrentTag(n);
-                }}
-                role="button"
-                onKeyPress={() => {}}
-                tabIndex="0"
-              >
-                <h1 className="big-stroke">{n}</h1>
-              </div>
-            ))}
-          </div>
-        </section>
+        <p>UPDATE: 06.11.2020</p>
+        <div className="tgas-tab">
+          {allTags.map((n) => (
+            <div
+              key={n}
+              className={n === currentTag ? "active" : ""}
+              onClick={() => {
+                setCurrentTag(n);
+              }}
+              role="button"
+              onKeyPress={() => {}}
+              tabIndex="0"
+            >
+              <h1 className="big-stroke">{n}</h1>
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* 文章区域 */}
       <section className="work-grid">
+        <PageUp />
         {visibleWorks.map((edge) => {
           const { frontmatter } = edge.node;
           return (

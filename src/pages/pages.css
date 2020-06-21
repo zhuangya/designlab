@@ -1,21 +1,17 @@
-.overlay {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: var(--Glass-bg);
-  width: 100%;
-  height: 100%;
-  user-select: none;
-  backdrop-filter: var(--Glass);
-  transform: translate3d(0px, 0px, 4000px);
-  z-index: 4000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+main {
+  animation: zoomin 1s ease 1.6s backwards;
+  transform-origin: 50% 0%;
 }
-
+@keyframes zoomin {
+  0% {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 /* 首页 */
 .home-space {
   position: relative;
@@ -186,67 +182,80 @@
 }
 
 
-
-
-
-
-
-
-
-/* main {
-  animation: zoomin 1s ease 1.6s backwards;
-  transform-origin: 50% 0%;
-}
-@keyframes zoomin {
-  0% {
-    opacity: 0;
-    transform: scale(1.1);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-} */
-
-/* 文章区域 */
-/* 吸附 tab */
+/* 故事页面 */
 .space-sticky {
   position: sticky;
   position: -webkit-sticky;
-  top: 0;
-  background-color: var(--Glass-bg);
-  backdrop-filter: var(--Glass);
+  top: -3.5rem;
   z-index: 20;
-  /* transform: translate3d(0, 0, 800px); */
+  background-color: var(--Glass-bg-2);
+  backdrop-filter: var(--Glass);
   user-select: none;
+  padding: 4.5rem 5rem 0;
+  overflow: visible;
+}
+.space-sticky p {
+  margin: 4.5rem 0 0;
+  color: var(--Text-2);
+  font-weight: 500;
 }
 .tgas-tab {
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
   display: flex;
-  align-items: center;
-  padding-top: 4rem;
+  /* 吸附滚动关键 */
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: smooth;
+  margin-inline-start: -5rem;
+  margin-inline-end: -5rem;
+  padding-inline-start: 5rem;
+  padding-inline-end: 5rem;
+}
+.tgas-tab::-webkit-scrollbar {
+  display: none;
+}
+.tgas-tab div {
+  /* 子元素关键 */
+  scroll-snap-align: start;
+  margin-inline-start: -5rem;
+  margin-inline-end: -5rem;
+  padding-inline-start: 5rem;
+  padding-inline-end: 5rem;
 }
 .tgas-tab h1 {
-  padding: 0 1.5rem 0;
-  /* color: var(--Text-2); */
+  margin: 1rem 2rem 1rem 0;
   font-weight: 600;
+  line-height: 1;
   cursor: pointer;
   -webkit-tab-highlight-color: transparent;
   transition: 0.3s ease;
+}
+.tgas-tab div:last-child h1{
+  margin-right: 0;
 }
 .tgas-tab .active h1 {
   color: var(--Text-1);
 }
 @media screen and (max-width: 48rem) {
-  .tgas-tab {
-    justify-content: space-between;
+  .space-sticky {
+    padding: 4.5rem 1.75rem 0;
   }
-  .tgas-tab li {
-    padding: 0rem;
+  .tgas-tab {
+    margin-inline-start: -1.75rem;
+    margin-inline-end: -1.75rem;
+    padding-inline-start: 1.75rem;
+    padding-inline-end: 1.75rem;
+  }
+  .tgas-tab div {
+    margin-inline-start: -1.75rem;
+    margin-inline-end: -1.75rem;
+    padding-inline-start: 1.75rem;
+    padding-inline-end: 1.75rem;
   }
 }
+
 /* work 容器 */
 .work-grid {
   --auto-grid-min-size: 17rem;
