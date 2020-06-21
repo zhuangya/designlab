@@ -2,7 +2,7 @@
 path : "/stories/thoughts_covers/"
 date : "2020-02-01"
 title : "Thoughts Covers"
-tags : ['All','Design']
+tags : ['All Stories','Design']
 excerpt : "..."
 cover : ../../cover/thoughts_covers.jpg
 twiter : "https://twitter.com/share?text=Thoughts Covers&url=https://wenhaoqi.com/stories/thoughts_covers/"

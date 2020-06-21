@@ -264,8 +264,8 @@ main {
     auto-fill,
     minmax(var(--auto-grid-min-size), 1fr)
   );
-  grid-gap: 1.5rem;
-  padding-top: 1.5rem;
+  grid-gap: 2rem;
+  padding: 2rem 5rem;
 }
 /* Work卡片 */
 .work-cover {
@@ -311,6 +311,9 @@ main {
   transform-origin: left center;
 }
 @media screen and (max-width: 48rem) {
+  .work-grid {
+    padding: 2rem 1.75rem;
+  }
   .work-line::before {
     background-color: transparent;
   }

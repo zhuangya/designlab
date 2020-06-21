@@ -2,7 +2,7 @@
 path: "/stories/what_is_thoughts/"
 date: "2020-02-02"
 title: "What is Thoughts?"
-tags: ["All", "Design"]
+tags: ["All Stories", "Design"]
 excerpt: "Thoughts 产品介绍视频分镜头脚本"
 cover: ../../cover/thoughts_video.jpg
 twiter: "https://twitter.com/share?text=Thoughts Covers&url=https://wenhaoqi.com/stories/thoughts_covers/"
