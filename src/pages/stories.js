@@ -60,15 +60,13 @@ const IndexPage = ({ data }) => {
               <Link
                 to={frontmatter.path}
                 className="work-cover"
-                title={frontmatter.excerpt}
               >
                 <img
                   src={frontmatter.cover}
                   alt={frontmatter.title}
-                  className="Tilt-inner"
                 />
                 <h4>{frontmatter.title}</h4>
-                <p className="work-date">{frontmatter.date}</p>
+                <p className="work-date">{frontmatter.date} · {frontmatter.excerpt}</p>
                 <div className="work-line"></div>
               </Link>
             </div>

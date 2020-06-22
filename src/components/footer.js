@@ -53,8 +53,9 @@ const Footer = ({ siteTitle, footerLink }) => (
         .footer-link a {
           margin: 0.25rem 0;
         }
-        .footer-link h4 {
+        .footer-link p {
           margin: 0;
+          font-weight: 500;
         }
       `}
     </style>
@@ -71,15 +72,15 @@ const Footer = ({ siteTitle, footerLink }) => (
       </text>
     </svg>
     <div className="footer-link" style={{ display: footerLink }}>
-      <Link to="/"><h4>Home</h4></Link>
-      <Link to="/stories/"><h4>Stories</h4></Link>
+      <Link to="/"><p>Home</p></Link>
+      <Link to="/stories/"><p>Stories</p></Link>
       <a
         href="https://thoughts.teambition.com/sharespace/5dcc2f9ff32abe001545f2c5/docs/5dcc2f94f32abe001545f2c1"
         target="_blank"
         title="Thoughts"
         rel="noopener noreferrer"
       >
-        <h4>Works</h4>
+        <p>Works</p>
       </a>
     </div>
   </div>

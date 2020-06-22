@@ -1,6 +1,8 @@
 import React from "react";
 import { graphql } from "gatsby";
 
+import PageUp from "../components/page-up";
+
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import "./templates.css";
@@ -31,6 +33,7 @@ const Template = ({ data }) => {
         <hr />
         <div dangerouslySetInnerHTML={{ __html: html }} />
       </div>
+      <PageUp />
     </Layout>
   );
 };

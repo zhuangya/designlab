@@ -190,20 +190,26 @@ main {
   z-index: 20;
   background-color: var(--Glass-bg-2);
   backdrop-filter: var(--Glass);
-  user-select: none;
   padding: 4.5rem 5rem 0;
   overflow: visible;
 }
 .space-sticky p {
   margin: 4.5rem 0 0;
   color: var(--Text-2);
-  font-weight: 500;
+}
+.space-sticky::after {
+  content: "";
+  position: absolute;
+  width: calc(100% - 2 * 5rem);
+  height: 1px;
+  background-color: var(--Text-1);
 }
 .tgas-tab {
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
   display: flex;
+  user-select: none;
   /* 吸附滚动关键 */
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
@@ -242,6 +248,9 @@ main {
   .space-sticky {
     padding: 4.5rem 1.75rem 0;
   }
+  .space-sticky::after {
+    width: calc(100% - 2 * 1.75rem);
+  }
   .tgas-tab {
     margin-inline-start: -1.75rem;
     margin-inline-end: -1.75rem;
@@ -254,11 +263,14 @@ main {
     padding-inline-start: 1.75rem;
     padding-inline-end: 1.75rem;
   }
+  .tgas-tab h1 {
+    margin: 1rem 1rem 1rem 0;
+  }
 }
 
 /* work 容器 */
 .work-grid {
-  --auto-grid-min-size: 17rem;
+  --auto-grid-min-size: 16.5rem;
   display: grid;
   grid-template-columns: repeat(
     auto-fill,
@@ -275,20 +287,18 @@ main {
   display: block;
   margin: 0;
 }
-.work-cover hr {
-  margin: 0.5rem 0;
+.work-cover:hover {
+  color: var(--Text-1);
 }
-.work-cover p {
-  margin: 0.5rem 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  font-weight: 600;
+.work-cover img {
+  box-shadow: 0 0 0 1px var(--BG-S);
 }
 .work-date {
+  margin-top: 0.5rem;
   color: var(--Text-2);
-  font-size: 0.8rem;
-  font-weight: 400 !important;
+  /* overflow: hidden; */
+  /* text-overflow: ellipsis; */
+  /* white-space: nowrap; */
 }
 .work-line {
   margin-top: 1rem;
