@@ -202,7 +202,6 @@ main {
   top: 0;
   left: 0;
   pointer-events: none; 
-  background-color: red;
   z-index: 20;
 }
 .space-sticky::after {
@@ -211,7 +210,6 @@ main {
   height: 100%;
   width: 5rem;
   background: linear-gradient(90deg, var(--BG-OP) 0%, var(--BG-P) 100%);
-  background-color: red;
   top: 0;
   right: 0;
   pointer-events: none; 
@@ -241,10 +239,9 @@ main {
   position: absolute;
   width: calc(100% - 2 * 5rem);
   height: 2px;
-  bottom: -1px;
+  bottom: -2px;
   background-color: var(--Text-1);
-  background-color: red;
-  z-index: 10;
+  z-index: 20;
 }
 .tgas-tab::-webkit-scrollbar {
   display: none;
