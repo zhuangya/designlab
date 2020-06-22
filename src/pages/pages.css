@@ -54,7 +54,7 @@ main {
 .banner {
   display: block;
   width: 100%;
-  fill: var(--Glass-bg);
+  fill: var(--Glass-BG-P);
   animation: app 1s ease 1s backwards;
 }
 @keyframes opp {
@@ -188,21 +188,34 @@ main {
   position: -webkit-sticky;
   top: -3.5rem;
   z-index: 20;
-  background-color: var(--Glass-bg-2);
+  background-color: var(--Glass-BG-S);
   backdrop-filter: var(--Glass);
   padding: 4.5rem 5rem 0;
   overflow: visible;
 }
-.space-sticky p {
-  margin: 4.5rem 0 0;
-  color: var(--Text-2);
+.space-sticky::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 5rem;
+  background: linear-gradient(90deg, var(--BG-P) 0%, var(--BG-OP) 100%);
+  top: 0;
+  left: 0;
+  pointer-events: none; 
 }
 .space-sticky::after {
-  content: "";
   position: absolute;
-  width: calc(100% - 2 * 5rem);
-  height: 1px;
-  background-color: var(--Text-1);
+  content: "";
+  height: 100%;
+  width: 5rem;
+  background: linear-gradient(90deg, var(--BG-OP) 0%, var(--BG-P) 100%);
+  top: 0;
+  right: 0;
+  pointer-events: none; 
+}
+.space-sticky p {
+  margin: 3.5rem 0 0;
+  color: var(--Text-2);
 }
 .tgas-tab {
   overflow-x: auto;
@@ -218,6 +231,14 @@ main {
   margin-inline-end: -5rem;
   padding-inline-start: 5rem;
   padding-inline-end: 5rem;
+}
+.tgas-tab::after {
+  content: "";
+  position: absolute;
+  width: calc(100% - 2 * 5rem);
+  height: 1px;
+  bottom: -2px;
+  background-color: var(--Text-1);
 }
 .tgas-tab::-webkit-scrollbar {
   display: none;
@@ -248,14 +269,20 @@ main {
   .space-sticky {
     padding: 4.5rem 1.75rem 0;
   }
+  .space-sticky::before {
+    width: 1.75rem;
+  }
   .space-sticky::after {
-    width: calc(100% - 2 * 1.75rem);
+    width: 1.75rem;
   }
   .tgas-tab {
     margin-inline-start: -1.75rem;
     margin-inline-end: -1.75rem;
     padding-inline-start: 1.75rem;
     padding-inline-end: 1.75rem;
+  }
+  .tgas-tab::after {
+    width: calc(100% - 2 * 1.75rem);
   }
   .tgas-tab div {
     margin-inline-start: -1.75rem;

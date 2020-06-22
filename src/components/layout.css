@@ -38,36 +38,38 @@
 }
 html {
   --BG-P: rgb(250, 248, 246);
+  --BG-OP: rgba(250, 248, 246, 0);
   --BG-S: rgb(242, 240, 238);
   --Text-1: rgb(26, 26, 26);
   --Text-2: rgba(26, 26, 26, 0.6);
   --Text-3: rgba(26, 26, 26, 0.2);
   --Glass: saturate(200%) blur(1.5rem);
-  --Glass-bg: #fff;
-  --Glass-bg-2: var(--BG-P);
+  --Glass-BG-P: #fff;
+  --Glass-BG-S: var(--BG-P);
   --Style: #5364ff;
   scroll-behavior: smooth;
 }
 @supports (backdrop-filter: none) {
   html {
-    --Glass-bg: rgba(255, 255, 255, 0.88);
-    --Glass-bg-2: rgba(250, 248, 246, 0.6);
+    --Glass-BG-P: rgba(255, 255, 255, 0.88);
+    --Glass-BG-S: rgba(250, 248, 246, 0.75);
   }
 }
 @media (prefers-color-scheme: dark) {
   html {
     --BG-P: rgb(24, 26, 28);
+    --BG-OP: rgba(24, 26, 28, 0);
     --BG-S: rgb(33, 35, 37);
     --Text-1: rgb(255, 255, 255);
     --Text-2: rgba(255, 255, 255, 0.6);
     --Text-3: rgba(255, 255, 255, 0.2);
-    --Glass-bg: rgb(42, 44, 46);
-    --Glass-bg-2: var(--BG-P);
+    --Glass-BG-P: rgb(42, 44, 46);
+    --Glass-BG-S: var(--BG-P);
   }
   @supports (backdrop-filter: none) {
     html {
-      --Glass-bg: rgba(42, 44, 46, 0.88);
-      --Glass-bg-2: rgba(24, 26, 28, 0.6);
+      --Glass-BG-P: rgba(42, 44, 46, 0.88);
+      --Glass-BG-S: rgba(24, 26, 28, 0.75);
     }
   }
 }

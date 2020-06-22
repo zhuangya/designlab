@@ -34,6 +34,7 @@
     box-shadow: inset 0 0 0 1px var(--Text-1);
     color: var(--Text-1);
     pointer-events: auto;
+    background-color: var(--BG-P);
   }
   .up-scroll {
     transform: rotateZ(90deg) scale(1);
