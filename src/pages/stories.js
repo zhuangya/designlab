@@ -10,8 +10,10 @@ import "./pages.css";
 const IndexPage = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
 
-  const [currentTag, setCurrentTag] = useState("");
-  const allTags = [];
+  const [currentTag, setCurrentTag] = useState("All Stories");
+  const allTags = [
+    'All Stories'
+  ];
   edges
     .map((n) => n.node.frontmatter.tags)
     .forEach((tags) => {
@@ -24,7 +26,7 @@ const IndexPage = ({ data }) => {
 
   console.log(allTags, currentTag);
 
-  const visibleWorks = currentTag
+  const visibleWorks = currentTag !== 'All Stories'
     ? edges.filter((n) => n.node.frontmatter.tags.includes(currentTag))
     : edges;
 
