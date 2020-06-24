@@ -42,7 +42,7 @@ class PageUp extends React.Component {
               color: var(--Text-1);
               transform: rotateZ(90deg) scale(1);
               pointer-events: auto;
-              background-color: var(--BG-P);
+              background-color: var(--Glass-BG-P);
             }
             .page-up:hover {
               box-shadow: inset 0 0 0 1px var(--Text-1);
