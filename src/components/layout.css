@@ -155,6 +155,11 @@ a:focus {
 a:hover {
   color: var(--Text-2);
 }
+img,
+video {
+  width: 100%;
+  display: block;
+}
 /* 基础类型移动版 */
 @media screen and (max-width: 48rem) {
   .big-type {

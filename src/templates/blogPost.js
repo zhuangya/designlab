@@ -1,9 +1,10 @@
 import React from "react";
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 
 import PageUp from "../components/page-up";
 
 import Layout from "../components/layout";
+import PageFooter from "../components/pagefooter";
 import SEO from "../components/seo";
 import "./templates.css";
 
@@ -12,42 +13,65 @@ const Template = ({ data }) => {
 
   const title = markdownRemark.frontmatter.title;
   const date = markdownRemark.frontmatter.date;
-  // const twiter = markdownRemark.frontmatter.twiter;
+  const path = markdownRemark.frontmatter.path;
+  const color = markdownRemark.frontmatter.color;
   const html = markdownRemark.html;
 
   return (
     <Layout>
-      <SEO title={title} />
-      <div className="stories-sticky"></div>
-      <div className="page">
-        <h1 className="page-title">{title}</h1>
-        <p className="page-date">{date}</p>
-        {/* <a
-          href={twiter}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="page-share"
-        >
-          
-        </a> */}
-        <hr />
-        <div dangerouslySetInnerHTML={{ __html: html }} />
-        <div>
-          <Link to="/">Home</Link>
-
-          <Link to="/stories/">Stories</Link>
-          <a
-            href="https://thoughts.teambition.com/sharespace/5dcc2f9ff32abe001545f2c5/docs/5dcc2f94f32abe001545f2c1"
-            target="_blank"
-            title="Thoughts"
-            rel="noopener noreferrer"
-          >
-            Works
-          </a>
-          <p>Dr.cat © 2020, Built with Gatsby</p>
+      <main className="zoom-in">
+        <SEO title={title} />
+        <div className="page-header" style={{ backgroundColor: color }}>
+          <div className="page">
+            <h1 className="page-title">{title}</h1>
+            <p className="page-share-title">{date}</p>
+          </div>
         </div>
-      </div>
-      <PageUp />
+        <div className="stories-sticky"></div>
+        <div className="page">
+          <div dangerouslySetInnerHTML={{ __html: html }} />
+        </div>
+        <p className="page-share-title">Share</p>
+        <div className="page-share">
+          <a
+            href={
+              "http://service.weibo.com/share/share.php?url=https://wenhaoqi.com" +
+              path +
+              "&title=" +
+              title
+            }
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Weibo"
+          >
+            
+          </a>
+          <a
+            href={
+              "https://twitter.com/share?text=Thoughts Covers&url=https://wenhaoqi.com" +
+              path
+            }
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Twitter"
+          >
+            
+          </a>
+          <a
+            href={
+              "https://www.facebook.com/sharer/sharer.php?kid_directed_site=0&u=https://wenhaoqi.com" +
+              path
+            }
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Facebook"
+          >
+            
+          </a>
+        </div>
+        <PageUp />
+        <PageFooter />
+      </main>
     </Layout>
   );
 };
@@ -60,7 +84,7 @@ export const query = graphql`
         date(formatString: "MMMM DD, YYYY")
         path
         title
-        twiter
+        color
       }
     }
   }

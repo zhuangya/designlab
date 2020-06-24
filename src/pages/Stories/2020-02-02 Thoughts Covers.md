@@ -1,11 +1,11 @@
 ---
-path : "/stories/thoughts_covers/"
-date : "2020-02-01"
-title : "Thoughts Covers"
-tags : ['Design']
-excerpt : "..."
-cover : ../../cover/thoughts_covers.jpg
-twiter : "https://twitter.com/share?text=Thoughts Covers&url=https://wenhaoqi.com/stories/thoughts_covers/"
+path: "/stories/thoughts_covers/"
+date: "2020-02-01"
+title: "Thoughts Covers"
+tags: ["Design"]
+excerpt: "..."
+cover: "../../cover/thoughts_covers.jpg"
+color: "rgba(110,116,224,0.16)"
 ---
 
 ![](../../stories/thoughts_covers/1.jpg)

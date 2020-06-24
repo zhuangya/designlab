@@ -2,10 +2,10 @@
 path: "/stories/what_is_thoughts/"
 date: "2020-02-02"
 title: "What is Thoughts?"
-tags: ['Design']
+tags: ["Design"]
 excerpt: "Thoughts 产品介绍视频分镜头脚本"
-cover: ../../cover/thoughts_video.jpg
-twiter: "https://twitter.com/share?text=Thoughts Covers&url=https://wenhaoqi.com/stories/thoughts_covers/"
+cover: "../../cover/thoughts_video.jpg"
+color: "rgba(110,116,224,0.16)"
 ---
 
 <video preload="metadata" controls="controls" poster="../../stories/what_is_thoughts/7.jpg"><source type="video/mp4" src="http://dn-clients.teambition.net/thoughts/thoughts_intro_2019.mp4"></video>
@@ -26,8 +26,8 @@ Thoughts 是知识管理工具，也是一款很好用的文本编辑工具。�
 
 ## Thoughts 产品介绍视频分镜设计
 
-| 镜头                                        | 描述                                                                                                         | 时长 |
-| ------------------------------------------- | ------------------------------------------------------------------------------------------------------------ | ---- |
+| 镜头                                       | 描述                                                                                                         | 时长 |
+| ------------------------------------------ | ------------------------------------------------------------------------------------------------------------ | ---- |
 | ![](../../stories/what_is_thoughts/1.jpg)  | 画面中心出现插入“+”，这是 thoughts 一切编辑媒体内容的开端                                                    | 0.3s |
 | ![](../../stories/what_is_thoughts/2.jpg)  | 加号后方的的输入框显示出占位符，短暂停留（看清占位符即可）                                                   | 0.8s |
 | ![](../../stories/what_is_thoughts/3.jpg)  | 模拟输入“所思是什么？”                                                                                       | 1.5s |

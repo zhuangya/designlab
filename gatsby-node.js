@@ -10,9 +10,9 @@ exports.createPages = ({ actions, graphql }) => {
             frontmatter {
               path
               title
-              twiter
               tags
               date
+              color
             }
           }
         }

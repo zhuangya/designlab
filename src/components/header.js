@@ -23,6 +23,7 @@ class Header extends React.Component {
   render() {
     return (
       <header
+        id="#home"
         className={`header${this.state.isToggleOn ? "" : " header-active"}`}
       >
         <div className="header-content">
@@ -33,7 +34,6 @@ class Header extends React.Component {
             className="menu-btn"
             onClick={this.handleClick}
             onFocus={() => 0}
-
             role="button"
             onKeyPress={() => {}}
             tabIndex="0"
@@ -57,7 +57,6 @@ class Header extends React.Component {
             <a
               href="https://thoughts.teambition.com/sharespace/5dcc2f9ff32abe001545f2c5/docs/5dcc2f94f32abe001545f2c1"
               target="_blank"
-              title="Thoughts"
               rel="noopener noreferrer"
               className="nav-title"
             >
@@ -68,7 +67,7 @@ class Header extends React.Component {
           <span className="menu-footer">
             <p className="type-p">GET IN TOUCH</p>
             <a href="tel:+86 186 0487 2509" title="Phone & Wechat">
-              +86 186 0487 2509
+              86 186-0487-2509
             </a>
             <a href="mailto:curiosity.wen@gmail.com" title="Mail">
               curiosity.wen@gmail.com

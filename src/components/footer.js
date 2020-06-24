@@ -2,8 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "gatsby";
 
-import "./header.css";
-
 const Footer = ({ siteTitle, footerLink }) => (
   <div className="circular">
     <style>
@@ -72,12 +70,15 @@ const Footer = ({ siteTitle, footerLink }) => (
       </text>
     </svg>
     <div className="footer-link" style={{ display: footerLink }}>
-      <Link to="/"><p>Home</p></Link>
-      <Link to="/stories/"><p>Stories</p></Link>
+      <Link to="/">
+        <p>Home</p>
+      </Link>
+      <Link to="/stories/">
+        <p>Stories</p>
+      </Link>
       <a
         href="https://thoughts.teambition.com/sharespace/5dcc2f9ff32abe001545f2c5/docs/5dcc2f94f32abe001545f2c1"
         target="_blank"
-        title="Thoughts"
         rel="noopener noreferrer"
       >
         <p>Works</p>

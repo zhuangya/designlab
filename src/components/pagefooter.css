@@ -1,0 +1,41 @@
+.page-footer {
+  position: relative;
+  width: 100%;
+  padding: 4rem 5rem 8rem;
+  /* box-shadow: 0 -28px 0 -27px var(--Text-3); */
+  background-color: var(--BG-S);
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin-top: 4rem;
+  grid-gap: 3.5rem;
+}
+.page-footer a {
+  margin: 0 0 1rem 0;
+}
+.pagefooter-logo {
+  grid-column-start: span 3;
+  display: block;
+}
+.pagefooter-nav a {
+  width: 100%;
+  display: block;
+}
+.pagefooter-text {
+  position: absolute;
+  left: 1.75rem;
+  bottom: 1.75rem;
+  line-height: 1.5rem;
+  display: block;
+  color: var(--Text-2);
+}
+@media screen and (max-width: 48rem) {
+  .page-footer {
+    padding: 1.75rem 1.75rem 8rem;
+  }
+  .pagefooter-logo {
+    grid-column-start: span 6;
+  }
+  .pagefooter-nav {
+    grid-column-start: span 3;
+  }
+}

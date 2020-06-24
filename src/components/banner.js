@@ -32,35 +32,37 @@ const Banner = () => {
   return (
     <>
       {data.sandwiches.nodes.map((item) => (
-          <a
-            key={item.recordId}
-            className="banner-space"
-            style={{ backgroundColor: item.data.Color }}
-            href={item.data.BannerLink}
-            target="_blank"
-            rel="noopener noreferrer"
+        <a
+          key={item.recordId}
+          className="banner-space"
+          style={{ backgroundColor: item.data.Color }}
+          href={item.data.BannerLink}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Tilt
+            className="Tilt"
+            options={{
+              max: 20,
+              reverse: true,
+              scale: 1.04,
+              reset: true,
+              perspective: 1600,
+            }}
           >
-            <Tilt
-              className="Tilt"
-              options={{
-                max: 20,
-                reverse: true,
-                scale: 1.04,
-                reset: true,
-                perspective: 1600,
-              }}
-            >
-              <img
-                src={item.data.Cover[0].url}
-                alt={item.data.Name}
-                className="Tilt-inner"
-              />
-            </Tilt>
-            <div className="banner-ring">
-              <p>{item.data.Name} - {item.data.Description}</p>
-              <BannerRing />
-            </div>
-          </a>
+            <img
+              src={item.data.Cover[0].url}
+              alt={item.data.Name}
+              className="Tilt-inner"
+            />
+          </Tilt>
+          <div className="banner-ring">
+            <p>
+              {item.data.Name} - {item.data.Description}
+            </p>
+            <BannerRing />
+          </div>
+        </a>
       ))}
     </>
   );

@@ -1,8 +1,22 @@
-main {
-  animation: zoomin 1s ease 1.6s backwards;
+.zoom-in {
+  animation: zoomin 0.5s ease 1s backwards;
   transform-origin: 50% 0%;
 }
 @keyframes zoomin {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.zoom-out {
+  animation: zoomout 1s ease 1.6s backwards;
+  transform-origin: 50% 0%;
+}
+@keyframes zoomout {
   0% {
     opacity: 0;
     transform: scale(1.1);
@@ -12,6 +26,7 @@ main {
     transform: scale(1);
   }
 }
+
 /* 首页 */
 .home-space {
   position: relative;
@@ -99,6 +114,9 @@ main {
 }
 @keyframes text {
   0% {
+    color: transparent;
+  }
+  50% {
     color: var(--Style);
   }
   100% {
