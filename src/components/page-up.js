@@ -38,7 +38,7 @@ class PageUp extends React.Component {
               background-color: transparent;
             }
             .up-scroll {
-              box-shadow: inset 0 0 0 1px var(--Text-3);
+              // box-shadow: inset 0 0 0 1px var(--Text-3);
               color: var(--Text-1);
               transform: rotateZ(90deg) scale(1);
               pointer-events: auto;
