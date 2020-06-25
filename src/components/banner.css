@@ -72,7 +72,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  margin: 0 0.5rem;
+  margin: 0 0.25rem;
   line-height: 2rem;
   color: transparent;
   transition: color 0.3s ease;

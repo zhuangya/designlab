@@ -24,6 +24,7 @@ const Social = () => (
           text-align: center;
           display: inline-block;
           font-size: 1.5rem;
+          text-shadow: 0 0 1.5rem var(--BG-P);
         }
       `}
     </style>

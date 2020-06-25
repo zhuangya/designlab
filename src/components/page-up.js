@@ -31,30 +31,27 @@ class PageUp extends React.Component {
               line-height: 2rem;
               z-index: 40;  
               transform: rotateZ(0deg) scale(4);
-              box-shadow: inset 0 0 0 1px transparent;
-              transition: transform 0.6s ease, color 0.3s ease, box-shadow 0.3s ease;
-              color: transparent;
+              transition: 0.3s ease;
+              color: var(--Text-1);
               pointer-events: none;
-              background-color: transparent;
+              background-color: var(--Glass-BG-P);
+              backdrop-filter: var(--Glass);
+              -webkit-backdrop-filter: var(--Glass);
+              opacity: 0;
             }
             .up-scroll {
-              // box-shadow: inset 0 0 0 1px var(--Text-3);
-              color: var(--Text-1);
               transform: rotateZ(90deg) scale(1);
               pointer-events: auto;
-              background-color: var(--Glass-BG-P);
+              opacity: 1;
             }
             .page-up:hover {
-              box-shadow: inset 0 0 0 1px var(--Text-1);
-              color: var(--Text-1);
+              color: var(--Text-2);
             }
             @media screen and (max-width: 48rem) {
               .page-up {
                 transform: rotateZ(-90deg) scale(1);
-                box-shadow: inset 0 0 0 1px var(--Text-1);
-                color: var(--Text-1);
                 pointer-events: auto;
-                background-color: var(--BG-P);
+                opacity: 1;
               }
               .up-scroll {
                 transform: rotateZ(90deg) scale(1);

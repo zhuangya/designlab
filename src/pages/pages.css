@@ -161,8 +161,9 @@
 @media screen and (max-width: 48rem) {
   .home-space {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-areas: 'a'
-                         'b';
+    grid-template-areas:
+      "a"
+      "b";
   }
   .home-space section {
     padding: 1.75rem;
@@ -199,7 +200,6 @@
   }
 }
 
-
 /* 故事页面 */
 .space-sticky {
   position: sticky;
@@ -219,7 +219,7 @@
   background: linear-gradient(90deg, var(--BG-P) 0%, var(--BG-OP) 100%);
   top: 0;
   left: 0;
-  pointer-events: none; 
+  pointer-events: none;
   z-index: 20;
 }
 .space-sticky::after {
@@ -230,7 +230,7 @@
   background: linear-gradient(90deg, var(--BG-OP) 0%, var(--BG-P) 100%);
   top: 0;
   right: 0;
-  pointer-events: none; 
+  pointer-events: none;
   z-index: 20;
 }
 .space-sticky p {
@@ -280,7 +280,7 @@
   -webkit-tab-highlight-color: transparent;
   transition: 0.3s ease;
 }
-.tgas-tab div:last-child h1{
+.tgas-tab div:last-child h1 {
   margin-right: 0;
 }
 .tgas-tab .active h1 {
@@ -325,9 +325,9 @@
     minmax(var(--auto-grid-min-size), 1fr)
   );
   grid-gap: 2rem;
-  padding: 2rem 5rem;
+  padding: 2rem 5rem 4rem;
 }
-.work-grid :first-child{
+.work-grid :first-child {
   grid-column: span 2;
 }
 /* Work卡片 */
@@ -375,10 +375,33 @@
   .work-grid {
     padding: 2rem 1.75rem;
   }
-  .work-grid :first-child{
+  .work-grid :first-child {
     grid-column: span 1;
   }
   .work-line::before {
     background-color: transparent;
+  }
+}
+
+/* 404 */
+.home-space section.notfound-l {
+  background-color: var(--Glass-BG-P);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.home-space section.notfound-r {
+  background-color: var(--BG-P);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.75rem;
+}
+@media screen and (max-width: 48rem) {
+  .home-space section.notfound-l,
+  .home-space section.notfound-r {
+    min-height: 50vh!important;
+    text-align: center;
   }
 }
