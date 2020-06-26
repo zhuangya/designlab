@@ -30,6 +30,6 @@
 
 # 发布
 
-使用了盖茨比推荐的 [Netlify](https://app.netlify.com/)，轻松免费自动拉取 Master 进行部署。
+使用 [Netlify](https://app.netlify.com/) 发布。
 
 <!-- AUTO-GENERATED-CONTENT:END -->
