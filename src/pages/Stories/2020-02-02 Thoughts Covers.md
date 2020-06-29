@@ -4,11 +4,11 @@ date: "2020-02-01"
 title: "Thoughts Covers"
 tags: ["Design"]
 excerpt: "..."
-cover: "../../cover/thoughts_covers.jpg"
+cover: "https://dl.airtable.com/.attachments/85ecbd88cbeb8b2fbcc89dca1806d203/eaf9275c/thoughts_covers.jpg"
 color: "rgba(110,116,224,0.16)"
 ---
 
-![](../../stories/thoughts_covers/1.jpg)
+![](https://dl.airtable.com/.attachments/fa8f07cd6e7d206bd77690575efb6ae0/95c06fd6/1.jpg)
 
 > Thoughts 图片选择器
 
@@ -16,60 +16,60 @@ color: "rgba(110,116,224,0.16)"
 
 ---
 
-![](../../stories/thoughts_covers/Default.jpg)
+![](https://dl.airtable.com/.attachments/c72e29771d3d5183688ee1193ba197a0/2cd0584e/Default.jpg)
 
 Default
 
 ---
 
-![](../../stories/thoughts_covers/Public.jpg)
+![](https://dl.airtable.com/.attachments/f13a6005d76f5d0918558ac1a18ba1ae/213e7f0a/Public.jpg)
 
 Public
 
 ---
 
-![](../../stories/thoughts_covers/Project.jpg)
+![](https://dl.airtable.com/.attachments/540e167f5758efe574af6e519fc9fea0/e85ee1a8/Project.jpg)
 
 Project
 
 ---
 
-![](../../stories/thoughts_covers/Question and answer.jpg)
+![](https://dl.airtable.com/.attachments/59289579db2f15d28acea59cd614368e/dcdd4b61/Questionandanswer.jpg)
 
 Question and answer
 
 ---
 
-![](../../stories/thoughts_covers/Development.jpg)
+![](https://dl.airtable.com/.attachments/8a92337928326a77400f9eb52bb65e5e/f271c590/Development.jpg)
 
 Development
 
 ---
 
-![](../../stories/thoughts_covers/Human resources.jpg)
+![](https://dl.airtable.com/.attachments/f40bec43900ee1fd6d1ba5d643aafc4c/7798c95e/Humanresources.jpg)
 
 Human resources
 
 ---
 
-![](../../stories/thoughts_covers/Product log.jpg)
+![](https://dl.airtable.com/.attachments/6f1bde20625c82f45d5f467e249c200e/1e78ce70/Productlog.jpg)
 
 Product log
 
 ---
 
-![](../../stories/thoughts_covers/Operations.jpg)
+![](https://dl.airtable.com/.attachments/f69e3f021b60f962f44e86fdde7a7cad/1c5c2e23/Operations.jpg)
 
 Operations
 
 ---
 
-![](../../stories/thoughts_covers/Blog.jpg)
+![](https://dl.airtable.com/.attachments/64b96b6f0aef7923f04ebc520beb85db/4f2fd9dc/Blog.jpg)
 
 Blog
 
 ---
 
-![](../../stories/thoughts_covers/Marketing.jpg)
+![](https://dl.airtable.com/.attachments/56f73dd6b88bf5bff0ed493e0e540fbd/b162f8c0/Marketing.jpg)
 
 Marketing

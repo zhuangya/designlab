@@ -15,6 +15,10 @@ module.exports = {
           {
             baseId: `appQ7dZb0ldgR7Ugz`,
             tableName: `Sandwiches`
+          },
+          {
+            baseId: `appQ7dZb0ldgR7Ugz`,
+            tableName: `Resources`
           }
         ]
       }
