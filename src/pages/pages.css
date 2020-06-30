@@ -182,7 +182,8 @@
   }
   .handle {
     transform: translate(0,0)!important;
-    cursor: auto;
+    pointer-events: none!important;
+    user-select: none;
   }
   .home-space section.home-02 {
     grid-area: a;
