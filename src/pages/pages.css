@@ -52,6 +52,10 @@
   z-index: 30;
   padding-right: 0;
   padding-left: 0;
+  overflow: hidden;
+}
+.handle {
+  cursor: move;
 }
 .big-stroke {
   -webkit-text-stroke: 1px var(--Text-1);
@@ -175,6 +179,10 @@
     grid-area: b;
     min-height: calc(100vh - 100vw);
     top: 24vh;
+  }
+  .handle {
+    transform: translate(0,0)!important;
+    cursor: auto;
   }
   .home-space section.home-02 {
     grid-area: a;

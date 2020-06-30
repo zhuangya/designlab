@@ -1,10 +1,11 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
+
 import Parallax from "react-rellax";
+import Draggable from "react-draggable";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-
 import Footer from "../components/footer";
 import Social from "../components/social";
 import PageUp from "../components/page-up";
@@ -35,13 +36,18 @@ const IndexPage = () => {
         <SEO title="Home" />
         <div className="home-space">
           <section className="home-01">
-            <h1 className="big-type">
-              DR.CAT
-              <br />
-              DESIGNER
-              <br />
-              <span className="big-stroke">SHANGHAI</span>
-            </h1>
+            <Draggable
+              // axis="y"
+              handle=".handle"
+            >
+              <h1 className="big-type handle">
+                DR.CAT
+                <br />
+                DESIGNER
+                <br />
+                <span className="big-stroke">SHANGHAI</span>
+              </h1>
+            </Draggable>
           </section>
           <section className="home-02">
             <Banner />
