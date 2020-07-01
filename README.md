@@ -28,6 +28,9 @@
 类似 tvOS 的接触视差
 [react-tilt](https://github.com/jonathandion/react-tilt)
 
+自由拖拽
+[react-draggable](https://www.npmjs.com/package/react-draggable)
+
 # 发布
 
 使用 [Netlify](https://app.netlify.com/) 发布。
