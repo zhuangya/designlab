@@ -55,7 +55,11 @@
   overflow: hidden;
 }
 .handle {
-  cursor: move;
+  cursor: grab;
+  user-select: none;
+}
+.react-draggable-dragging {
+  cursor: grabbing;
 }
 .big-stroke {
   -webkit-text-stroke: 1px var(--Text-1);
@@ -182,8 +186,7 @@
   }
   .handle {
     transform: translate(0,0)!important;
-    pointer-events: none!important;
-    user-select: none;
+    pointer-events: none;
   }
   .home-space section.home-02 {
     grid-area: a;
