@@ -36,10 +36,7 @@ const IndexPage = () => {
         <SEO title="Home" />
         <div className="home-space">
           <section className="home-01">
-            <Draggable
-              // axis="y"
-              handle=".handle"
-            >
+            <Draggable handle=".handle">
               <h1 className="big-type handle">
                 DR.CAT
                 <br />
