@@ -182,7 +182,6 @@ code[class*="language-"] {
   margin: 0;
   display: inline-block;
   white-space: pre;
-  mix-blend-mode: darken;
 }
 :not(pre) > code[class*="language-"] {
   white-space: pre-wrap;
@@ -323,8 +322,5 @@ code[class*="language-"] ::selection {
   .token.important,
   .token.variable {
     color: #ffa941;
-  }
-  code[class*="language-"] {
-    mix-blend-mode: lighten;
   }
 }
