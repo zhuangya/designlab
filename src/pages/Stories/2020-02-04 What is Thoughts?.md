@@ -3,7 +3,6 @@ path: "/stories/what_is_thoughts/"
 date: "2020-02-02"
 title: "What is Thoughts?"
 tags: ["Design"]
-excerpt: "Thoughts 产品介绍视频分镜头脚本"
 cover: "https://dl.airtable.com/.attachments/19d83c3795644af0f7fd15186f500683/3a5bdddb/thoughts_video.jpg"
 color: "rgba(110,116,224,0.16)"
 ---

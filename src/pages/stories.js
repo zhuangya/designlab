@@ -64,7 +64,7 @@ const IndexPage = ({ data }) => {
                   <img src={frontmatter.cover} alt={frontmatter.title} />
                   <h4>{frontmatter.title}</h4>
                   <p className="work-date">
-                    {frontmatter.date} · {frontmatter.excerpt}
+                    {frontmatter.date}
                   </p>
                   <div className="work-line"></div>
                 </Link>
@@ -88,7 +88,6 @@ export const query = graphql`
             path
             date(formatString: "MMMM DD, YYYY")
             tags
-            excerpt
             cover
           }
         }

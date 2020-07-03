@@ -3,7 +3,6 @@ path: "/stories/thoughts_covers/"
 date: "2020-02-01"
 title: "Thoughts Covers"
 tags: ["Design"]
-excerpt: "..."
 cover: "https://dl.airtable.com/.attachments/85ecbd88cbeb8b2fbcc89dca1806d203/eaf9275c/thoughts_covers.jpg"
 color: "rgba(110,116,224,0.16)"
 ---
