@@ -1,7 +1,7 @@
 import { Link } from "gatsby";
 import React from "react";
 
-import Logo from "../images/assets/logo.svg";
+import Logo from "../images/assets/logo-loop-sh.svg";
 import SplitText from "../components/splittext";
 
 import "./header.css";

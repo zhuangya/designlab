@@ -1,23 +1,33 @@
 /* 字体调用 */
 @font-face {
-  font-family: "Spoof";
-  src: url("../fonts/Spoof-Bold.otf");
+  font-family: "Loop";
+  src: url("../fonts/Loop-Black.otf");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Loop";
+  src: url("../fonts/Loop-Bold.otf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Loop";
+  src: url("../fonts/Loop-SemiBold.otf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Loop";
+  src: url("../fonts/Loop-Logo.otf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "gilroy";
+  src: url("../fonts/Gilroy-Medium.otf");
   font-weight: 600;
 }
 @font-face {
   font-family: "gilroy";
   src: url("../fonts/Gilroy-Regular.otf");
   font-weight: 400;
-}
-@font-face {
-  font-family: "gilroy";
-  src: url("../fonts/Gilroy-Semibold.otf");
-  font-weight: 500;
-}
-@font-face {
-  font-family: "gilroy";
-  src: url("../fonts/Gilroy-Bold.otf");
-  font-weight: 600;
 }
 @font-face {
   font-family: "jet";
@@ -97,9 +107,10 @@ body {
 }
 /* 基础类型 */
 .big-type {
-  font-family: "Spoof";
-  font-size: 5.8vw;
+  font-family: "Loop", sans-serif;
+  font-size: 6vw;
   line-height: 1;
+  font-weight: 900;
 }
 .type-p {
   font-size: 0.875rem;
@@ -108,25 +119,26 @@ h1,
 h2,
 h3,
 h4 {
+  font-family: "Loop","gilroy", "PingFang", sans-serif;
   line-height: 1.5;
   margin-top: 1rem;
   -webkit-tap-highlight-color: transparent;
 }
 h1 {
   font-size: 4rem;
-  font-weight: 600;
+  font-weight: 800;
 }
 h2 {
   font-size: 3rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 h3 {
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 h4 {
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 p,
 a {

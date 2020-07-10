@@ -15,8 +15,8 @@ const Footer = ({ siteTitle, footerLink }) => (
         }
         .circular svg{
           display: block;
-          font-family: "Spoof";
-          letter-spacing: 0.25rem;
+          font-family: "Loop";
+          letter-spacing: 0.34rem;
           overflow: visible;
           transform: rotate(-32deg);
           fill: var(--Text-3);
@@ -64,8 +64,8 @@ const Footer = ({ siteTitle, footerLink }) => (
         <textPath xlinkHref="#c-1">
           {siteTitle} © {new Date().getFullYear()}
         </textPath>
-        <textPath startOffset="200" xlinkHref="#c-2">
-          • All Rights Reserved •
+        <textPath startOffset="210" xlinkHref="#c-2">
+          All Rights Reserved
         </textPath>
       </text>
     </svg>

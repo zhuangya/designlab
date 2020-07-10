@@ -64,7 +64,7 @@ const IndexPage = () => {
           <section className="home-04">
             <h2>Hey!</h2>
             <h4>
-              I'm Haoqi Wen (also known as Dr.Cat), I'm a senior experience
+              I'm Haoqi Wen (also known as Dr.cat), I'm a senior experience
               designer at Alibaba on the Teambition team. Used to work in
               ecommerce, recruitment industry, engaged in digital product
               design. I also work in other fields such as Motion Graphic,
@@ -99,7 +99,7 @@ const IndexPage = () => {
               <h4>Design Systems</h4>
             </li>
             <li>
-              <h1 className="big-type big-stroke">20+</h1>
+              <h1 className="big-type big-stroke">20</h1>
               <h4>Commercial Projects</h4>
             </li>
           </section>
