@@ -91,7 +91,7 @@ const IndexPage = () => {
           </section>
           <section className="home-06">
             <li>
-              <h1 className="big-type big-stroke">8</h1>
+              <h1 className="big-type big-stroke">7</h1>
               <h4>Years</h4>
             </li>
             <li>
@@ -99,7 +99,7 @@ const IndexPage = () => {
               <h4>Design Systems</h4>
             </li>
             <li>
-              <h1 className="big-type big-stroke">20</h1>
+              <h1 className="big-type big-stroke">15</h1>
               <h4>Commercial Projects</h4>
             </li>
           </section>
