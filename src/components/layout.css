@@ -30,6 +30,11 @@
   font-weight: 400;
 }
 @font-face {
+  font-family: "Loop";
+  src: url("../fonts/Loop-Light.otf");
+  font-weight: 200;
+}
+@font-face {
   font-family: "jet";
   src: url("../fonts/JetBrainsMono-Medium.ttf");
 }

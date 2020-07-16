@@ -1,7 +1,6 @@
 import { Link } from "gatsby";
 import React from "react";
 
-import Logo from "../images/assets/logo-loop-sh.svg";
 import SplitText from "../components/splittext";
 
 import "./header.css";
@@ -27,8 +26,8 @@ class Header extends React.Component {
         className={`header${this.state.isToggleOn ? "" : " header-active"}`}
       >
         <div className="header-content">
-          <a className="header-logo" href="/">
-            <Logo />
+          <a className="header-logo logo-type" href="/">
+            curiosity<span>wen</span>
           </a>
           <div
             className="menu-btn"

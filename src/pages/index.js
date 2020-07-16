@@ -38,11 +38,25 @@ const IndexPage = () => {
           <section className="home-01">
             <Draggable handle=".handle">
               <h1 className="big-type handle">
-                DR.CAT
+                {/* <span className="big-stroke">CLARITY</span>
                 <br />
-                DESIGNER
+                PURITY &
                 <br />
-                <span className="big-stroke">SHANGHAI</span>
+                RESONANCE */}
+
+                DESIGN,
+                <br />
+                <span className="big-stroke">DEVELOP &
+                <br />
+                CREATE.</span>
+
+                {/* DESIGNS
+                <br />
+                <span className="big-stroke">FOR SOCIAL
+                <br />
+                CHANGE.</span> */}
+
+
               </h1>
             </Draggable>
           </section>
@@ -64,7 +78,7 @@ const IndexPage = () => {
           <section className="home-04">
             <h2>Hey!</h2>
             <h4>
-              I'm Haoqi Wen (also known as Dr.cat), I'm a senior experience
+              I'm Curiosity Wen, I'm a senior experience
               designer at Alibaba on the Teambition team. Used to work in
               ecommerce, recruitment industry, engaged in digital product
               design. I also work in other fields such as Motion Graphic,

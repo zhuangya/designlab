@@ -21,6 +21,15 @@ header {
   height: 2rem;
   margin: 0;
 }
+.logo-type {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 600;
+  transform: translateY(-0.125rem);
+}
+.logo-type span {
+  color: var(--Text-2);
+}
 /* 汉堡动画菜单 */
 .menu-btn {
   position: absolute;

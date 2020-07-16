@@ -1,13 +1,12 @@
 import React from "react";
 import { Link } from "gatsby";
 
-import Logo from "../images/assets/logo-loop-sh.svg";
 import "./pagefooter.css";
 
 const PageFooter = () => (
   <div className="page-footer">
-    <a className="pagefooter-logo" href="/">
-      <Logo />
+    <a className="pagefooter-logo logo-type" href="/">
+      curiosity<span>wen</span>
     </a>
 
     <div className="pagefooter-nav">
