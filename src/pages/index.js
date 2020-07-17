@@ -38,25 +38,11 @@ const IndexPage = () => {
           <section className="home-01">
             <Draggable handle=".handle">
               <h1 className="big-type handle">
-                {/* <span className="big-stroke">CLARITY</span>
-                <br />
-                PURITY &
-                <br />
-                RESONANCE */}
-
                 DESIGN,
                 <br />
-                <span className="big-stroke">DEVELOP &
+                <span className="big-stroke">DEVELOP
                 <br />
-                CREATE.</span>
-
-                {/* DESIGNS
-                <br />
-                <span className="big-stroke">FOR SOCIAL
-                <br />
-                CHANGE.</span> */}
-
-
+                & CREATE.</span>
               </h1>
             </Draggable>
           </section>
