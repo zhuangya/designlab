@@ -61,10 +61,6 @@
 .react-draggable-dragging {
   cursor: grabbing;
 }
-.big-stroke {
-  -webkit-text-stroke: 1px var(--Text-1);
-  color: transparent;
-}
 .home-space section.home-02 {
   position: relative;
   display: flex;

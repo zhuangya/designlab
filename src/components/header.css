@@ -15,7 +15,7 @@ header {
   position: absolute;
   left: 1.5rem;
   top: 1.25rem;
-  padding: 0.25rem;
+  padding: 0 0.25rem;
   display: flex;
   align-items: center;
   height: 2rem;
@@ -23,11 +23,19 @@ header {
 }
 .logo-type {
   font-size: 24px;
-  line-height: 24px;
+  line-height: 32px;
   font-weight: 700;
-  transform: translateY(-0.125rem);
+  transform: translateY(-0.25rem);
 }
 .logo-type span {
+  color: var(--Text-2);
+}
+.logo-type::after {
+  content: ".design";
+  color: transparent;
+  transition: 0.3s ease;
+}
+.logo-type:hover::after {
   color: var(--Text-2);
 }
 /* 汉堡动画菜单 */
