@@ -27,7 +27,7 @@ const PageFooter = () => (
         target="_blank"
         rel="noopener noreferrer"
       >
-        Bēhance
+        Behance
       </a>
       <a
         href="https://www.instagram.com/wenhaoqi"

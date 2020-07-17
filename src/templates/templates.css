@@ -44,11 +44,11 @@
   box-shadow: 0 1px 0 var(--Text-3);
 }
 .page h1 {
-  font-size: 3rem;
-  margin-top: 3rem;
+  font-size: 2.5rem;
+  margin-top: 2.5rem;
 }
 .page h2 {
-  font-size: 2rem;
+  font-size: 2em;
   margin-top: 2rem;
 }
 .page h3 {
@@ -92,7 +92,7 @@ video {
 ul,
 ol,
 blockquote {
-  padding-left: 1rem;
+  padding-left: 1.5rem;
 }
 ul p,
 ul ul,

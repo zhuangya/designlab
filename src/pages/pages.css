@@ -109,9 +109,6 @@
   flex-wrap: wrap;
   align-content: center;
 }
-.home-space section.home-04 h2 {
-  color: var(--Text-2);
-}
 .text-x {
   color: var(--Style);
   animation: text 1s ease infinite;

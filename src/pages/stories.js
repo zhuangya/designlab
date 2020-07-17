@@ -35,7 +35,7 @@ const IndexPage = ({ data }) => {
       <main className="zoom-in">
         <SEO title="Stories" />
         <div className="space-sticky">
-          <p>UPDATE: 06.11.2020</p>
+          <p>UPDATE: July 18, 2020</p>
           <div className="tgas-tab">
             {allTags.map((n) => (
               <div

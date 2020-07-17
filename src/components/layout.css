@@ -2,21 +2,16 @@
 @font-face {
   font-family: "Loop";
   src: url("../fonts/Loop-Black.otf");
-  font-weight: 900;
-}
-@font-face {
-  font-family: "Loop";
-  src: url("../fonts/Loop-Bold.otf");
   font-weight: 800;
 }
 @font-face {
   font-family: "Loop";
-  src: url("../fonts/Loop-SemiBold.otf");
+  src: url("../fonts/Loop-Bold.otf");
   font-weight: 700;
 }
 @font-face {
   font-family: "Loop";
-  src: url("../fonts/Loop-Logo.otf");
+  src: url("../fonts/Loop-SemiBold.otf");
   font-weight: 600;
 }
 @font-face {
@@ -28,11 +23,6 @@
   font-family: "Loop";
   src: url("../fonts/Loop-Regular.otf");
   font-weight: 400;
-}
-@font-face {
-  font-family: "Loop";
-  src: url("../fonts/Loop-Light.otf");
-  font-weight: 200;
 }
 @font-face {
   font-family: "jet";
@@ -114,7 +104,7 @@ body {
 .big-type {
   font-size: 6vw;
   line-height: 1;
-  font-weight: 900;
+  font-weight: 800;
 }
 .big-stroke {
   -webkit-text-stroke: 1px var(--Text-1);
@@ -133,19 +123,19 @@ h4 {
 }
 h1 {
   font-size: 4rem;
-  font-weight: 800;
+  font-weight: 600;
 }
 h2 {
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 h3 {
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 h4 {
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 p,
 a {
