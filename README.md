@@ -22,6 +22,9 @@
 盖茨比 SVG 调用
 [gatsby-plugin-react-svg](https://www.gatsbyjs.org/packages/gatsby-source-filesystem/?=gatsby-plugin-react-svg)
 
+代码块染色
+[gatsby-remark-prismjs](https://www.gatsbyjs.org/packages/gatsby-remark-prismjs/?=prismjs#gatsby-remark-prismjs)
+
 ## 视效插件
 
 滚动视差

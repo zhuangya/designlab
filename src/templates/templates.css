@@ -60,7 +60,7 @@
   margin-top: 1rem;
 }
 .page p {
-  line-height: 1.6;
+  line-height: 1.8;
 }
 .page a {
   text-decoration: underline;
@@ -85,7 +85,7 @@ blockquote {
   box-shadow: inset 4px 0 0 0 var(--Text-3);
 }
 video {
-  box-shadow: 0 0 0 1px var(--Text-2);
+  box-shadow: 0 0 0 1px var(--Text-3);
   background-color: var(--Text-2);
   cursor: pointer;
 }
@@ -154,7 +154,7 @@ table td {
 code[class*="language-"],
 pre[class*="language-"] {
   font-family: "jet", Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
-  font-size: 0.8rem;
+  font-size: 1rem;
   line-height: 1.5;
   word-spacing: normal;
   word-break: normal;
