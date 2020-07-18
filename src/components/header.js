@@ -22,7 +22,6 @@ class Header extends React.Component {
   render() {
     return (
       <header
-        id="#home"
         className={`header${this.state.isToggleOn ? "" : " header-active"}`}
       >
         <div className="header-content">

@@ -59,7 +59,7 @@ class PageUp extends React.Component {
             }
           `}
         </style>
-        <a id="page-up" className="page-up" href="#home">
+        <a href="#up" id="page-up" className="page-up">
           
         </a>
       </>

@@ -107,6 +107,7 @@ const IndexPage = () => {
             <Footer siteTitle={date.site.siteMetadata.title} />
           </section>
         </div>
+        
       </main>
     </Layout>
   );
