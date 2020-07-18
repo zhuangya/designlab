@@ -52,7 +52,7 @@ html {
   --Glass-BG-P: #fff;
   --Glass-BG-S: var(--BG-P);
   --Style: #5364ff;
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 @supports (backdrop-filter: none) {
   html {
