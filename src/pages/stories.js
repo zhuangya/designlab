@@ -35,7 +35,15 @@ const IndexPage = ({ data }) => {
       <main className="zoom-in">
         <SEO title="Stories" />
         <div className="space-sticky">
-          <p>UPDATE: July 18, 2020</p>
+          <p>Updated in
+            {visibleWorks.map((edge) => {
+              const { frontmatter } = edge.node;
+              return (
+                <span key={frontmatter.path}> {frontmatter.date}</span>
+              );
+            })}
+          </p>
+
           <div className="tgas-tab">
             {allTags.map((n) => (
               <div

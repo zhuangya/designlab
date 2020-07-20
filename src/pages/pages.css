@@ -242,6 +242,12 @@
   margin: 3.5rem 0 0;
   color: var(--Text-2);
 }
+.space-sticky p span {
+  display: none;
+}
+.space-sticky p span:first-child  {
+  display: inline;
+}
 .tgas-tab {
   overflow-x: auto;
   overflow-y: hidden;
