@@ -90,7 +90,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  animation: fadein 1s ease 0.5s backwards;
+  animation: fadein 1s ease 1s backwards;
 }
 @keyframes fadein {
   0% {
