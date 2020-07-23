@@ -1,5 +1,5 @@
 .home-02 {
-  --banner-time: 16s;
+  --banner-time: 20s;
   /* 总时长变量最好是4的倍数 */
 }
 .home-02 a:nth-child(1) {

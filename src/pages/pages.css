@@ -13,7 +13,7 @@
   }
 }
 .zoom-out {
-  animation: zoomout 1s ease 1.6s backwards;
+  animation: zoomout 0.75s ease 1s backwards;
   transform-origin: 50% 0%;
 }
 @keyframes zoomout {
