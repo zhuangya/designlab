@@ -81,6 +81,9 @@ header {
   transform: rotate(0deg) translate3d(0, 0, 0);
 }
 /* 展开 */
+.header-active {
+  height: 100%;
+}
 .header-active .menu-btn li::before {
   top: 0;
   transform: rotate(-45deg);
@@ -103,7 +106,7 @@ header {
   top: 0;
   right: 0;
   width: 50%;
-  height: 100vh;
+  height: 100%;
   user-select: none;
   backdrop-filter: var(--Glass);
   background-color: var(--Glass-BG-P);
