@@ -350,6 +350,10 @@
 }
 .work-cover img {
   box-shadow: 0 0 0 1px var(--BG-S);
+  transition: filter 0.3s ease;
+}
+.work-cover:hover img {
+  filter: brightness(1.1);
 }
 .work-date {
   margin-top: 0.5rem;

@@ -121,6 +121,20 @@ table td {
   word-wrap: break-word;
   box-shadow: inset -1px -1px 0 0 var(--Text-2);
 }
+.font-view {
+  font-size: 6.5rem;
+  font-weight: 600;
+  font-family: "loop";
+  display: block;
+  width: 100%;
+  color: var(--Text-1);
+  background-color: var(--BG-P);
+  border: 0;
+  outline: none;
+  margin: 4rem 0;
+  overflow:hidden;
+  resize:none;
+}
 @media screen and (max-width: 48rem) {
   .page-title {
     font-size: 3rem !important;
@@ -147,6 +161,9 @@ table td {
   blockquote,
   table {
     margin-top: 0.8rem;
+  }
+  .font-view {
+    display: none;
   }
 }
 

@@ -2,14 +2,12 @@
 path: "/stories/teambition_day2019/"
 date: "2020-07-18"
 title: "Teambition Day 2019"
-tags: ["Design"]
+tags: ['Design']
 cover: "https://dl.airtable.com/.attachments/e706fdbbf0157a009f8f0f16683881c4/65677a86/Teambitionday2019.png"
-color: "rgba(0,180,255,0.16)"
+color: "rgba(0,180,255,0.24)"
 ---
 
 ![](https://dl.airtable.com/.attachments/b67a6707ac035eaac11cbd992bfa0e35/702094f5/1.png)
-
-
 
 # Teambition Day 2019<br/>发生了什么？
 

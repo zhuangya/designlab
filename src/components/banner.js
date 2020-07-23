@@ -45,9 +45,9 @@ const Banner = () => {
             options={{
               max: 20,
               reverse: true,
-              scale: 1.04,
+              scale: 1,
               reset: true,
-              perspective: 1600,
+              perspective: 1200,
             }}
           >
             <img

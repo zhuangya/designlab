@@ -2,9 +2,9 @@
 path: "/stories/what_is_thoughts/"
 date: "2020-02-02"
 title: "What is Thoughts?"
-tags: ["Design"]
+tags: ['Design']
 cover: "https://dl.airtable.com/.attachments/19d83c3795644af0f7fd15186f500683/3a5bdddb/thoughts_video.jpg"
-color: "rgba(110,116,224,0.16)"
+color: "rgba(110,116,224,0.24)"
 ---
 
 <video preload="metadata" controls="controls" poster="../../stories/what_is_thoughts/7.jpg"><source type="video/mp4" src="http://dn-clients.teambition.net/thoughts/thoughts_intro_2019.mp4"></video>

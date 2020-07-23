@@ -48,7 +48,7 @@ html {
   --Text-1: rgb(26, 26, 26);
   --Text-2: rgba(26, 26, 26, 0.6);
   --Text-3: rgba(26, 26, 26, 0.2);
-  --Glass: saturate(200%) blur(1.5rem);
+  --Glass: saturate(200%) blur(1.25rem);
   --Glass-BG-P: #fff;
   --Glass-BG-S: var(--BG-P);
   --Style: #5364ff;
