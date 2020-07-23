@@ -25,7 +25,7 @@ header {
   font-size: 24px;
   line-height: 32px;
   font-weight: 600;
-  transform: translateY(-0.25rem);
+  transform: translateY(-0.2rem);
 }
 .logo-type span {
   color: var(--Text-2);
