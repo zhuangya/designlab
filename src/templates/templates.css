@@ -121,7 +121,7 @@ table td {
   word-wrap: break-word;
   box-shadow: inset -1px -1px 0 0 var(--Text-2);
 }
-iframe {
+.page iframe {
   border: 0!important;
   box-shadow: 0 0 0 1px var(--Text-3);
   margin-top: 1rem;
