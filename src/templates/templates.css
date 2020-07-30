@@ -126,6 +126,7 @@ iframe {
   box-shadow: 0 0 0 1px var(--Text-3);
   margin-top: 1rem;
   width: 100%;
+  display: block;
 }
 .font-view {
   font-size: 6.5rem;
