@@ -2,7 +2,7 @@
 path: "/stories/teambition_day2019/"
 date: "2020-07-18"
 title: "Teambition Day 2019"
-tags: ['Design']
+tags: ["Design"]
 cover: "https://dl.airtable.com/.attachments/e706fdbbf0157a009f8f0f16683881c4/65677a86/Teambitionday2019.png"
 color: "rgba(0,180,255,0.24)"
 ---
@@ -13,11 +13,11 @@ color: "rgba(0,180,255,0.24)"
 
 ---
 
-* 一年一度的客户见面大会
+- 一年一度的客户见面大会
 
-* 发布了 2 条新的产品线
+- 发布了 2 条新的产品线
 
-* 发布了全新的 Teambition 品牌形象
+- 发布了全新的 Teambition 品牌形象
 
 本次项目是为 **Teambition Day 2019** 设计针对新产品线与新品牌设计的宣传介绍手册，我们采取了折页 + 海报的设计方案：
 
@@ -55,13 +55,13 @@ color: "rgba(0,180,255,0.24)"
 
 ![](https://dl.airtable.com/.attachments/fcd24e2be2bd1e80e2787bad31acfad5/58068afc/6.png)
 
-**B面** 系列海报设计 - 蓝图
+**B 面** 系列海报设计 - 蓝图
 
 <br/>
 
 ![](https://dl.airtable.com/.attachments/ec5573f0295821ec4f496dbfed107fa1/7c73127e/7.png)
 
-**A面** 系列折页介绍册
+**A 面** 系列折页介绍册
 
 <br/>
 
