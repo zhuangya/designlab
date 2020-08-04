@@ -64,13 +64,13 @@ class Header extends React.Component {
             </a>
           </span>
           <span className="menu-footer">
-            <p className="type-p"><BuildTime /></p>
             <a href="tel:+86 186 0487 2509" title="Phone & Wechat">
               86 186-0487-2509
             </a>
             <a href="mailto:curiosity.wen@gmail.com" title="Mail">
               curiosity.wen@gmail.com
             </a>
+            <p><BuildTime /></p>
           </span>
         </div>
       </header>

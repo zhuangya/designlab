@@ -140,8 +140,7 @@ header {
   flex: 0 0 auto;
 }
 .menu-footer p {
-  color: var(--Text-2);
-  margin-bottom: 2rem;
+  color: var(--Text-3);
 }
 .nav-title {
   position: relative;
