@@ -2,6 +2,7 @@ import { Link } from "gatsby";
 import React from "react";
 
 import SplitText from "../components/splittext";
+import BuildTime from "../components/buildtime"
 
 import "./header.css";
 
@@ -63,7 +64,7 @@ class Header extends React.Component {
             </a>
           </span>
           <span className="menu-footer">
-            <p className="type-p">GET IN TOUCH</p>
+            <p className="type-p"><BuildTime /></p>
             <a href="tel:+86 186 0487 2509" title="Phone & Wechat">
               86 186-0487-2509
             </a>

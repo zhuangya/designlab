@@ -11,6 +11,7 @@ const Layout = ({ children }) => {
     graphql`
       query SiteTitleQuery {
         site {
+          buildTime(formatString: "YYYY-MM-DD hh:mm a z")
           siteMetadata {
             title
           }

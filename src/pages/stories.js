@@ -35,12 +35,11 @@ const IndexPage = ({ data }) => {
       <main className="zoom-in">
         <SEO title="Stories" />
         <div className="space-sticky">
-          <p>Updated in
+          <p>
+            Updated in
             {visibleWorks.map((edge) => {
               const { frontmatter } = edge.node;
-              return (
-                <span key={frontmatter.path}> {frontmatter.date}</span>
-              );
+              return <span key={frontmatter.path}> {frontmatter.date}</span>;
             })}
           </p>
 
@@ -71,9 +70,7 @@ const IndexPage = ({ data }) => {
                 <Link to={frontmatter.path} className="work-cover">
                   <img src={frontmatter.cover} alt={frontmatter.title} />
                   <h4>{frontmatter.title}</h4>
-                  <p className="work-date">
-                    {frontmatter.date}
-                  </p>
+                  <p className="work-date">{frontmatter.date}</p>
                   <div className="work-line"></div>
                 </Link>
               </div>
