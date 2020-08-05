@@ -1,9 +1,6 @@
-<svg viewBox="0 0 86 86" fill="none" 
-  xmlns="http://www.w3.org/2000/svg">
-  <rect x="4.5" y="4.5" width="77" height="77" stroke="var(--Text-2)"/>
-  <rect x="5" y="5" width="76" height="76" rx="38" fill="var(--Text-3)" fill-opacity="0.4" stroke="var(--Text-1)" stroke-width="1"/>
-  <rect x="1" y="1" width="7" height="7" fill="var(--BG-P)" stroke="var(--Text-1)" stroke-width="1"/>
-  <rect x="1" y="78" width="7" height="7" fill="var(--BG-P)" stroke="var(--Text-1)" stroke-width="1"/>
-  <rect x="78" y="1" width="7" height="7" fill="var(--BG-P)" stroke="var(--Text-1)" stroke-width="1"/>
-  <rect x="78" y="78" width="7" height="7" fill="var(--BG-P)" stroke="var(--Text-1)" stroke-width="1"/>
+<svg viewBox="0 0 86 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.5" y="0.5" width="85" height="85" rx="42.5" stroke="var(--Text-1)"/>
+<rect x="27" y="50" width="32" height="32" rx="16" fill="var(--Text-3)" fill-opacity="0.8"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M43 27C34.1634 27 27 34.1634 27 43C27 47.5138 28.8692 51.5911 31.8757 54.5C34.7549 51.7142 38.6773 50 43 50C47.3227 50 51.2451 51.7142 54.1243 54.5C57.1308 51.5911 59 47.5138 59 43C59 34.1634 51.8366 27 43 27Z" fill="var(--Text-3)"  fill-opacity="0.4"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M43 4C34.1634 4 27 11.1634 27 20C27 24.5138 28.8692 28.5911 31.8757 31.5C34.7549 28.7142 38.6773 27 43 27C47.3227 27 51.2451 28.7142 54.1243 31.5C57.1308 28.5911 59 24.5138 59 20C59 11.1634 51.8366 4 43 4Z" fill="var(--Text-3)"  fill-opacity="0.2"/>
 </svg>
