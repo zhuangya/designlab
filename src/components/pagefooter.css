@@ -1,7 +1,7 @@
 .page-footer {
   position: relative;
   width: 100%;
-  padding: 4rem 5rem 8rem;
+  padding: 2rem 1.75rem 6rem;
   background-color: var(--BG-S);
   display: grid;
   grid-template-columns: repeat(6, 1fr);
