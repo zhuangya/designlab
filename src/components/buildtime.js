@@ -7,7 +7,7 @@ const BuildTime = () => {
     graphql`
       query siteTitleQueryAndSiteTitleQuery {
         site {
-          buildTime(formatString: "MMMM DD, YYYY")
+          buildTime(formatString: "A h:mm MMMM DD, YYYY")
         }
       }
     `
