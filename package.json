@@ -27,6 +27,7 @@
     "react-draggable": "^4.4.3",
     "react-helmet": "^5.2.1",
     "react-parallax-tilt": "^1.4.61",
+    "react-random-reveal": "^1.0.1",
     "react-rellax": "^1.0.3",
     "react-tilt": "^0.1.4",
     "sharp": "^0.24.1"

@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from "gatsby";
 
 import Parallax from "react-rellax";
 import Draggable from "react-draggable";
+import { RandomReveal } from "react-random-reveal";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
@@ -37,12 +38,20 @@ const IndexPage = () => {
         <div className="home-space">
           <section className="home-01">
             <Draggable handle=".handle">
-              <h1 className="big-type handle">
-                DESIGN,
+              <h1 className="big-type handle capital">
+                <RandomReveal
+                  isPlaying
+                  duration={2}
+                  revealDuration={0.5}
+                  characters="DESIGN"
+                  characterSet="DESIGN"
+                  onComplete={() => [true, 8000]}
+                />,
                 <br />
-                <span className="big-stroke">DEVELOP
-                <br />
-                & CREATE.</span>
+                <span className="big-stroke">
+                  DEVELOP
+                  <br />& CREATE.
+                </span>
               </h1>
             </Draggable>
           </section>
@@ -64,11 +73,11 @@ const IndexPage = () => {
           <section className="home-04">
             <h2>Hey!</h2>
             <h4>
-              I'm Curiosity Wen, I'm a senior experience
-              designer at Alibaba on the Teambition team. Used to work in
-              ecommerce, recruitment industry, engaged in digital product
-              design. I also work in other fields such as Motion Graphic,
-              Illustration<span className="text-x">_</span>
+              I'm Curiosity Wen, I'm a senior experience designer at Alibaba on
+              the Teambition team. Used to work in ecommerce, recruitment
+              industry, engaged in digital product design. I also work in other
+              fields such as Motion Graphic, Illustration
+              <span className="text-x">_</span>
             </h4>
           </section>
           <Social />
@@ -107,7 +116,6 @@ const IndexPage = () => {
             <Footer siteTitle={date.site.siteMetadata.title} />
           </section>
         </div>
-        
       </main>
     </Layout>
   );
