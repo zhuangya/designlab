@@ -45,7 +45,7 @@ const IndexPage = () => {
                   revealDuration={0.5}
                   characters="DESIGN"
                   characterSet="DESIGN"
-                  onComplete={() => [true, 8000]}
+                  onComplete={() => [true, 4000]}
                 />,
                 <br />
                 <span className="big-stroke">

@@ -52,7 +52,6 @@ html {
   --Glass-BG-P: #fff;
   --Glass-BG-S: var(--BG-P);
   --Style: #5364ff;
-  /* scroll-behavior: smooth; */
 }
 @supports (backdrop-filter: none) {
   html {
@@ -91,6 +90,7 @@ body {
   line-height: 1.5;
   font-weight: 400;
   animation: fadein 1s ease 1s backwards;
+  /* scroll-behavior: smooth; */
 }
 @keyframes fadein {
   0% {
