@@ -90,7 +90,6 @@ body {
   line-height: 1.5;
   font-weight: 400;
   animation: fadein 1s ease 1s backwards;
-  /* scroll-behavior: smooth; */
 }
 @keyframes fadein {
   0% {
