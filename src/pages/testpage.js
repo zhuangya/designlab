@@ -5,6 +5,7 @@ import PageUp from "../components/page-up";
 
 import "./testpage.css";
 
+
 const TextPage = () => (
   <main className="view">
     <SEO title="test" />

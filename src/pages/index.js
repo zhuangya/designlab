@@ -1,7 +1,7 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 
-import Parallax from "react-rellax";
+import RellaxWrapper from "react-rellax-wrapper";
 import Draggable from "react-draggable";
 import { RandomReveal } from "react-random-reveal";
 
@@ -60,9 +60,9 @@ const IndexPage = () => {
             <BannerSvg />
           </section>
           <section className="home-03">
-            <Parallax speed={-4}>
+            <RellaxWrapper speed={-4}>
               <img src={`../../me.jpg`} alt="" />
-            </Parallax>
+            </RellaxWrapper>
             <div className="ring">
               <Footer
                 siteTitle={date.site.siteMetadata.title}

@@ -28,7 +28,7 @@
 ## 视效插件
 
 滚动视差
-[react-rellax](https://github.com/nelonoel/react-rellax)
+[react-rellax-wrapper](https://www.npmjs.com/package/react-rellax-wrapper)
 
 类似 tvOS 的接触视差
 [react-tilt](https://github.com/jonathandion/react-tilt)
