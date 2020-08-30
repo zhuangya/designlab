@@ -19,7 +19,7 @@ const PageFooter = () => (
       >
         Works
       </a>
-      <Link to="/testpage/">-</Link>
+      {/* <Link to="/testpage/">-</Link> */}
     </div>
 
     <div className="pagefooter-nav">

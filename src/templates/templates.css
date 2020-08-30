@@ -41,7 +41,7 @@
   height: 4.5rem;
   background-color: var(--Glass-BG-S);
   backdrop-filter: var(--Glass);
-  box-shadow: 0 1px 0 var(--Text-3);
+  box-shadow: 0 0.5px 0 var(--Glass-BG-P);
 }
 .page h1 {
   font-size: 2.5rem;
