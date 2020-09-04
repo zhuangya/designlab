@@ -20,7 +20,7 @@ function Box(props) {
     <mesh
       {...props}
       ref={mesh}
-      scale={active ? [0.7, 0.7, 0.7] : [0.5, 0.5, 0.5]}
+      scale={active ? [1, 1, 1] : [0.5, 0.5, 0.5]}
       onClick={(e) => setActive(!active)}
       onPointerOver={(e) => setHover(true)}
       onPointerOut={(e) => setHover(false)}>
@@ -33,7 +33,7 @@ function Box(props) {
 function Circle(props) {
   const mesh = useRef()
   useFrame(() => (mesh.current.rotation.x += 0.01))
-  useFrame(() => (mesh.current.rotation.y += 0.02))
+  useFrame(() => (mesh.current.rotation.y += -0.02))
   return (
     <mesh
       {...props}
@@ -47,8 +47,8 @@ function Circle(props) {
 
 function Torus(props) {
   const mesh = useRef()
-  useFrame(() => (mesh.current.rotation.x -= 0.02))
-  useFrame(() => (mesh.current.rotation.y -= 0.01))
+  useFrame(() => (mesh.current.rotation.x += -0.01))
+  useFrame(() => (mesh.current.rotation.y += -0.02))
   return (
     <mesh
       {...props}
