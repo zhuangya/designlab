@@ -3,6 +3,5 @@
   width: 50%;
   right: 0;
   height: 100vh;
-  /* background-color: var(--BG-S); */
-  background-color: black;
+  background-color: var(--BG-S);
 }

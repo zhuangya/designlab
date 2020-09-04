@@ -25,7 +25,7 @@ function Box(props) {
       onPointerOver={(e) => setHover(true)}
       onPointerOut={(e) => setHover(false)}>
       <boxBufferGeometry attach="geometry" args={[0.5, 0.5, 0.5]} />
-      <meshStandardMaterial attach="material" color={hovered ? 'yellow' : 'orange'} />
+      <meshStandardMaterial attach="material" color={hovered ? 'yellow' : 'orange'} roughness={0.5} />
     </mesh>
   )
 }
@@ -40,7 +40,7 @@ function Circle(props) {
       ref={mesh}
       >
       <tetrahedronBufferGeometry attach="geometry" args={[0.25]}/>
-      <meshStandardMaterial attach="material" color={"hotpink"} />
+      <meshStandardMaterial attach="material" color={"hotpink"} roughness={0.5} />
     </mesh>
   )
 }
@@ -55,7 +55,7 @@ function Torus(props) {
       ref={mesh}
       >
       <torusBufferGeometry attach="geometry" args={[0.15, 0.05, 0.05 , 100]} />
-      <meshStandardMaterial attach="material" color={"aqua"} />
+      <meshStandardMaterial attach="material" color={"aqua"} roughness={0.5} />
     </mesh>
   )
 }
@@ -63,7 +63,8 @@ function Torus(props) {
 export default function App() {
   return (
     <div className="view">
-      <Canvas colorManagement camera={{ position: [0, 0, 24], fov: 20 }}>
+      <Canvas colorManagement camera={{ position: [0, 0, 4.5], fov: 60 }}>
+        <fog attach="fog" args={[0xFAFF00, 0, 90]} />
         <ambientLight />
         <pointLight position={[10, 10, 10]} />
         
