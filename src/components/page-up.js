@@ -11,6 +11,7 @@ class PageUp extends React.Component {
     } else {
       pageup.classList.remove("up-scroll");
     }
+    console.log(window.pageYOffset)
   };
   render() {
     return (
