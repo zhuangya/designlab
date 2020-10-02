@@ -200,10 +200,10 @@
     background-color: var(--BG-P);
   }
   .home-space section.home-05 .big-type {
-    font-size: 20vw;
+    font-size: 22vw;
   }
   .home-space section.home-06 svg {
-    width: 20vw;
+    width: 22vw;
   }
   .home-space section.home-07 {
     grid-column-start: span 1;
