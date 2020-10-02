@@ -53,6 +53,9 @@ html {
   --Glass-BG-S: var(--BG-P);
   --Style: #5364ff;
 }
+::-webkit-scrollbar {
+  display: none;
+}
 @supports (backdrop-filter: none) {
   html {
     --Glass-BG-P: rgba(255, 255, 255, 0.88);
@@ -63,17 +66,17 @@ html {
   html {
     --BG-P: rgb(22, 20, 20);
     --BG-OP: rgba(22, 20, 20, 0);
-    --BG-S: rgb(32, 30, 30);
+    --BG-S: rgb(26, 24, 24);
     --Text-1: rgb(255, 255, 255);
     --Text-2: rgba(255, 255, 255, 0.6);
     --Text-3: rgba(255, 255, 255, 0.2);
-    --Glass-BG-P: rgb(42, 40, 40);
+    --Glass-BG-P: rgb(32, 30, 30);
     --Glass-BG-S: var(--BG-P);
     --Style: rgb(205, 245, 103);
   }
   @supports (backdrop-filter: none) {
     html {
-      --Glass-BG-P: rgba(42, 40, 40, 0.88);
+      --Glass-BG-P: rgba(32, 30, 30, 0.88);
       --Glass-BG-S: rgba(22, 20, 20, 0.75);
     }
   }

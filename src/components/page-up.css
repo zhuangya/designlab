@@ -1,0 +1,23 @@
+.page-up {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  width: 2rem;
+  height: 2rem;
+  z-index: 40;
+  transition: 0.3s ease;
+  transform: rotateZ(-90deg) scale(0.5);
+  pointer-events: none;
+}
+.up-scroll {
+  pointer-events: auto;
+  transform: rotateZ(-90deg) scale(1);
+}
+.svgbg {
+  transition: 0.3s ease;
+  stroke-width: 8;
+}
+.up-scroll .svgbg {
+  stroke: var(--Text-3);
+  stroke-width: 2;
+}

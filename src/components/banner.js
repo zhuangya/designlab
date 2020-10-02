@@ -1,13 +1,37 @@
-import React from "react";
+import React, { useState, useEffect, useRef, useCallback } from "react";
 import Tilt from "react-tilt";
 import { useStaticQuery, graphql } from "gatsby";
 
 import "./banner.css";
 
-import BannerRing from "../images/assets/circular.svg";
-
-// DESC降序 ASC生序
 const Banner = () => {
+  const [RandomNum, setProgress] = useState("");
+
+  const lastProgress = useRef();
+
+  const getRandomProgress = useCallback(() => {
+    var max = 4;
+    var min = 1;
+
+    var num = Math.floor(Math.random() * max + min);
+    while (num === lastProgress.current) {
+      num = Math.floor(Math.random() * max + min);
+    }
+    lastProgress.current = num;
+
+    var rnum = "banner_" + num;
+    setProgress(rnum);
+    // console.log(rnum);
+  }, []);
+
+  useEffect(() => {
+    getRandomProgress();
+
+    setInterval(function() {
+      getRandomProgress();
+    }, 4000);
+  }, [getRandomProgress]);
+
   const data = useStaticQuery(graphql`
     query MenuQuery {
       sandwiches: allAirtable(
@@ -29,8 +53,9 @@ const Banner = () => {
       }
     }
   `);
+  // DESC降序 ASC生序
   return (
-    <>
+    <div className={RandomNum} id="hahaha">
       {data.sandwiches.nodes.map((item) => (
         <a
           key={item.recordId}
@@ -58,13 +83,13 @@ const Banner = () => {
           </Tilt>
           <div className="banner-ring">
             <p>
-              {item.data.Name} - {item.data.Description}
+              {item.data.Description}
             </p>
-            <BannerRing />
+            <div className="banner-time-ring"></div>
           </div>
         </a>
       ))}
-    </>
+    </div>
   );
 };
 

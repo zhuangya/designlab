@@ -22,8 +22,8 @@ header {
   margin: 0;
 }
 .logo-type {
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 1.5rem;
+  line-height: 2rem;
   font-weight: 600;
   transform: translateY(-0.2rem);
 }
@@ -106,7 +106,7 @@ header {
   top: 0;
   right: 0;
   width: 50%;
-  height: 100%;
+  height: 100vh;
   user-select: none;
   backdrop-filter: var(--Glass);
   background-color: var(--Glass-BG-P);
@@ -117,11 +117,10 @@ header {
   justify-content: space-between;
   align-items: flex-start;
   padding: 9rem 4.5rem 4.5rem;
-  opacity: 0;
+  transform-origin: 0% 0%;
 }
 .header-active .header-bg {
   transform: translateX(0);
-  opacity: 1;
 }
 /* 侧栏菜单内容 */
 .header-bg :not(.menu-link) a {
@@ -237,6 +236,7 @@ header [aria-current="page"] h1 {
 @media screen and (max-width: 48rem) {
   .header-bg {
     width: 100%;
+    height: 100%;
     transform: translateX(100%);
     padding: 6rem 3rem 3rem;
   }

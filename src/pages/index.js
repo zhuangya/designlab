@@ -10,12 +10,14 @@ import SEO from "../components/seo";
 import Footer from "../components/footer";
 import Social from "../components/social";
 import PageUp from "../components/page-up";
+
 import Banner from "../components/banner";
+
+import Threenodels from "../components/threemodels";
 
 import Brand from "../images/assets/brand.svg";
 import Uiux from "../images/assets/ui.svg";
 import Motion from "../images/assets/motion.svg";
-import BannerSvg from "../images/assets/banner.svg";
 
 import "./pages.css";
 
@@ -35,7 +37,9 @@ const IndexPage = () => {
     <Layout>
       <main className="zoom-out">
         <SEO title="Home" />
+
         <div className="home-space">
+          <PageUp />
           <section className="home-01">
             <Draggable handle=".handle">
               <h1 className="big-type handle capital">
@@ -45,8 +49,9 @@ const IndexPage = () => {
                   revealDuration={0.5}
                   characters="DESIGN"
                   characterSet="DESIGN"
-                  onComplete={() => [true, 4000]}
-                />,
+                  onComplete={() => [true, 8000]}
+                />
+                ,
                 <br />
                 <span className="big-stroke">
                   DEVELOP
@@ -57,7 +62,6 @@ const IndexPage = () => {
           </section>
           <section className="home-02">
             <Banner />
-            <BannerSvg />
           </section>
           <section className="home-03">
             <RellaxWrapper speed={-4}>
@@ -77,39 +81,40 @@ const IndexPage = () => {
               the Teambition team. Used to work in ecommerce, recruitment
               industry, engaged in digital product design. I also work in other
               fields such as Motion Graphic, Illustration
-              <span className="text-x">_</span>
+              <span className="text-cursor">_</span>
             </h4>
           </section>
+
           <Social />
-          <PageUp />
         </div>
-        <div className="home-space">
+        <div className="home-space mobile-space">
           <section className="home-05">
             <li>
-              <Uiux />
-              <h4>UI/UX</h4>
+              <h1 className="big-type">8</h1>
+              <p>Years</p>
             </li>
             <li>
-              <Motion />
-              <h4>Motion</h4>
+              <h1 className="big-type">2</h1>
+              <p>Design Systems</p>
             </li>
             <li>
-              <Brand />
-              <h4>Brand</h4>
+              <h1 className="big-type">20+</h1>
+              <p>Commercial Projects</p>
             </li>
+            <Threenodels />
           </section>
           <section className="home-06">
             <li>
-              <h1 className="big-type big-stroke">7</h1>
-              <h4>Years</h4>
+              <Uiux />
+              <p>UI/UX</p>
             </li>
             <li>
-              <h1 className="big-type big-stroke">2</h1>
-              <h4>Design Systems</h4>
+              <Motion />
+              <p>Motion</p>
             </li>
             <li>
-              <h1 className="big-type big-stroke">20+</h1>
-              <h4>Commercial Projects</h4>
+              <Brand />
+              <p>Brand</p>
             </li>
           </section>
           <section className="home-07">
