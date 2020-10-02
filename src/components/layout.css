@@ -1,27 +1,27 @@
 /* 字体调用 */
 @font-face {
   font-family: "Loop";
-  src: url("../fonts/Loop-Black.otf");
+  src: url("../fonts/AlibabaTeambitionLoop01-Black.otf");
   font-weight: 800;
 }
 @font-face {
   font-family: "Loop";
-  src: url("../fonts/Loop-Bold.otf");
+  src: url("../fonts/AlibabaTeambitionLoop01-Bold.otf");
   font-weight: 700;
 }
 @font-face {
   font-family: "Loop";
-  src: url("../fonts/Loop-SemiBold.otf");
+  src: url("../fonts/AlibabaTeambitionLoop01-SemiBold.otf");
   font-weight: 600;
 }
 @font-face {
   font-family: "Loop";
-  src: url("../fonts/Loop-Medium.otf");
+  src: url("../fonts/AlibabaTeambitionLoop01-Medium.otf");
   font-weight: 500;
 }
 @font-face {
   font-family: "Loop";
-  src: url("../fonts/Loop-Regular.otf");
+  src: url("../fonts/AlibabaTeambitionLoop01-Regular.otf");
   font-weight: 400;
 }
 @font-face {

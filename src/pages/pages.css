@@ -120,9 +120,14 @@
   text-align: center;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
-.home-space section.home-05 h1 {
-  transform: scale(0.7);
+.home-space section.home-05 [data-rellax-speed] {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 .home-space section.home-06 {
   display: flex;
@@ -141,7 +146,6 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-  z-index: 20;
   margin: 1.5rem 0;
   pointer-events: none;
 }

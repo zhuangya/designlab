@@ -9,21 +9,21 @@ function Box(props) {
   const [active, setActive] = useState(false);
   // Rotate mesh every frame, this is outside of React without overhead
   // useFrame(() => (mesh.current.rotation.x = mesh.current.rotation.y += 0.01))
-  useFrame(() => (mesh.current.rotation.x += 0.01));
-  useFrame(() => (mesh.current.rotation.y += 0.02));
+  useFrame(() => (mesh.current.rotation.x += 0.005));
+  useFrame(() => (mesh.current.rotation.y += 0.01));
   return (
     <mesh
       {...props}
       ref={mesh}
-      scale={active ? [1.5, 1.5, 1.5] : [1, 1, 1]}
+      scale={active ? [0.5, 0.5, 0.5] : [1, 1, 1]}
       onClick={(e) => setActive(!active)}
       onPointerOver={(e) => setHover(true)}
       onPointerOut={(e) => setHover(false)}
     >
-      <boxBufferGeometry attach="geometry" args={[0.6, 0.6, 0.6]} />
+      <boxBufferGeometry attach="geometry" args={[1, 1, 1]} />
       <meshStandardMaterial
         attach="material"
-        color={hovered ? "#C58800" : "orange"}
+        color={hovered ? "yellow" : "orange"}
         roughness={0.5}
       />
     </mesh>
@@ -31,11 +31,11 @@ function Box(props) {
 }
 function Triangle(props) {
   const mesh = useRef();
-  useFrame(() => (mesh.current.rotation.x += 0.01));
-  useFrame(() => (mesh.current.rotation.y += -0.02));
+  useFrame(() => (mesh.current.rotation.x += 0.005));
+  useFrame(() => (mesh.current.rotation.y += -0.01));
   return (
     <mesh {...props} ref={mesh}>
-      <tetrahedronBufferGeometry attach="geometry" args={[0.5]} />
+      <tetrahedronBufferGeometry attach="geometry" args={[0.8]} />
       <meshStandardMaterial
         attach="material"
         color={"hotpink"}
@@ -46,11 +46,11 @@ function Triangle(props) {
 }
 function Torus(props) {
   const mesh = useRef();
-  useFrame(() => (mesh.current.rotation.x += -0.01));
-  useFrame(() => (mesh.current.rotation.y += -0.02));
+  useFrame(() => (mesh.current.rotation.x += -0.005));
+  useFrame(() => (mesh.current.rotation.y += -0.01));
   return (
     <mesh {...props} ref={mesh}>
-      <torusBufferGeometry attach="geometry" args={[0.3, 0.1, 0.1, 100]} />
+      <torusBufferGeometry attach="geometry" args={[0.5, 0.16, 0.16, 100]} />
       <meshStandardMaterial attach="material" color={"#00B1AC"} roughness={0.5} />
     </mesh>
   );
@@ -73,13 +73,13 @@ export default function App() {
       `}
       </style>
       <div className="view">
-        <Canvas colorManagement camera={{ position: [0, 0, 8], fov: 50 }}>
+        <Canvas colorManagement camera={{ position: [0, 0, 7], fov: 48 }}>
           <fog attach="fog" args={[0xfaff00, 0, 90]} />
           <ambientLight />
           <pointLight position={[10, 10, 10]} />
-          <Box position={[0, 1.8, 0]} />
-          <Torus position={[0, 0, 0]} />
-          <Triangle position={[0, -1.6, 0]} />
+          <Box position={[-1.4, 2.2, 0]} />
+          <Torus position={[1.4, 0, 0]} />
+          <Triangle position={[-1.4, -2.2, 0]} />
         </Canvas>
       </div>
     </>

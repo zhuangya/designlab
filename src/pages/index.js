@@ -90,18 +90,21 @@ const IndexPage = () => {
         <div className="home-space mobile-space">
           <section className="home-05">
             <li>
-              <h1 className="big-type">8</h1>
+              <h1 className="big-type big-stroke">8</h1>
               <p>Years</p>
             </li>
             <li>
-              <h1 className="big-type">2</h1>
+              <h1 className="big-type big-stroke">2</h1>
               <p>Design Systems</p>
             </li>
             <li>
-              <h1 className="big-type">20+</h1>
+              <h1 className="big-type big-stroke">20+</h1>
               <p>Commercial Projects</p>
             </li>
-            <Threenodels />
+            
+            <RellaxWrapper speed={4} percentage={0.5}>
+              <Threenodels />
+            </RellaxWrapper>
           </section>
           <section className="home-06">
             <li>
