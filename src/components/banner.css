@@ -123,7 +123,7 @@
     margin: 1rem 22.5%;
     transform: translate3d(0px, 0px, 0px) !important;
   }
-  .banner-ring p {
-    color: var(--Text-1);
+  .home-02:hover .banner-ring p {
+    color: transparent;
   }
 }
