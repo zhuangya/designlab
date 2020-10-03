@@ -46,10 +46,10 @@ const IndexPage = () => {
                 <RandomReveal
                   isPlaying
                   duration={2}
-                  revealDuration={0.5}
+                  revealDuration={2}
                   characters="DESIGN"
-                  characterSet="DESIGN"
-                  onComplete={() => [true, 8000]}
+                  characterSet="DEVELOP&CREATE"
+                  onComplete={() => [true, 12000]}
                 />
                 ,
                 <br />
@@ -57,6 +57,7 @@ const IndexPage = () => {
                   DEVELOP
                   <br />& CREATE.
                 </span>
+
               </h1>
             </Draggable>
           </section>
