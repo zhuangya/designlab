@@ -102,7 +102,7 @@ const IndexPage = () => {
               <p>Commercial Projects</p>
             </li>
             
-            <RellaxWrapper speed={4} percentage={0.5}>
+            <RellaxWrapper speed={6} percentage={0.5}>
               <Threenodels />
             </RellaxWrapper>
           </section>

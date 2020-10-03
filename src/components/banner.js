@@ -36,11 +36,10 @@ const Banner = () => {
     query MenuQuery {
       sandwiches: allAirtable(
         filter: { table: { eq: "Sandwiches" } }
-        sort: { fields: data___Name, order: ASC }
+        sort: { fields: data___Description, order: ASC }
       ) {
         nodes {
           data {
-            Name
             Description
             BannerLink
             Color
@@ -77,7 +76,7 @@ const Banner = () => {
           >
             <img
               src={item.data.Cover[0].url}
-              alt={item.data.Name}
+              alt={item.data.Description}
               className="Tilt-inner"
             />
           </Tilt>
