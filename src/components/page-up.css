@@ -21,3 +21,11 @@
   stroke: var(--Text-3);
   stroke-width: 2;
 }
+@media screen and (max-width: 48rem) {
+  .svgbg {
+    opacity: 0;
+  }
+  .up-scroll .svgbg {
+    opacity: 1;
+  }
+}
