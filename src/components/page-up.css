@@ -22,10 +22,10 @@
   stroke-width: 2;
 }
 @media screen and (max-width: 48rem) {
-  .svgbg {
+  .page-up {
     opacity: 0;
   }
-  .up-scroll .svgbg {
+  .up-scroll {
     opacity: 1;
   }
 }

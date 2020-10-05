@@ -27,6 +27,7 @@ class Social extends React.Component {
                   display: grid;
                   grid-template-columns: repeat(3, 1fr);
                   column-gap: 1rem;
+                  transition: 0.3s ease;
                 }
                 .social-icon a {
                   margin-top: 0;
@@ -41,21 +42,26 @@ class Social extends React.Component {
                   transition: 0.3s ease;
                 }
                 @media screen and (max-width: 48rem) {
+                  .social-icon {
+                    column-gap: 1.5rem;
+                  }
                   .social-icon a:nth-child(1){
                     transition: 0.3s ease;
                   }
                   .social-icon a:nth-child(2){
-                    transition: 0.3s ease 0.1s;
+                    transition: 0.3s ease 0.05s;
                   }
                   .social-icon a:nth-child(3){
-                    transition: 0.3s ease 0.2s;
+                    transition: 0.3s ease 0.1s;
                   }
                   .social-icon a {
                     opacity: 0;
-                    transform: scale(0.8);
+                    pointer-events: none; 
+                    transform: scale(0.5);
                   }
                   .up-social.social-icon a{
                     opacity: 1;
+                    pointer-events: auto; 
                     transform: scale(1);
                   }
                 }
