@@ -49,18 +49,18 @@ class Social extends React.Component {
                     transition: 0.3s ease;
                   }
                   .social-icon a:nth-child(2){
-                    transition: 0.3s ease 0.05s;
+                    transition: 0.3s ease 0.15s;
                   }
                   .social-icon a:nth-child(3){
-                    transition: 0.3s ease 0.1s;
+                    transition: 0.3s ease 0.3s;
                   }
                   .social-icon a {
-                    opacity: 0;
+                    color: transparent;
                     pointer-events: none; 
                     transform: scale(0.5);
                   }
                   .up-social.social-icon a{
-                    opacity: 1;
+                    color: inherit;
                     pointer-events: auto; 
                     transform: scale(1);
                   }
