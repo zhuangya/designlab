@@ -31,14 +31,23 @@ function Box(props) {
 }
 function Triangle(props) {
   const mesh = useRef();
+  const [active, setActive] = useState(false);
+  const [hovered, setHover] = useState(false);
   useFrame(() => (mesh.current.rotation.x += 0.005));
   useFrame(() => (mesh.current.rotation.y += -0.01));
   return (
-    <mesh {...props} ref={mesh}>
+    <mesh
+      {...props}
+      ref={mesh}
+      scale={active ? [0.5, 0.5, 0.5] : [1, 1, 1]}
+      onClick={(e) => setActive(!active)}
+      onPointerOver={(e) => setHover(true)}
+      onPointerOut={(e) => setHover(false)}
+    >
       <tetrahedronBufferGeometry attach="geometry" args={[0.8]} />
       <meshStandardMaterial
         attach="material"
-        color={"hotpink"}
+        color={hovered ? "#ff99cc" : "hotpink"}
         roughness={0.5}
       />
     </mesh>
@@ -46,12 +55,25 @@ function Triangle(props) {
 }
 function Torus(props) {
   const mesh = useRef();
+  const [active, setActive] = useState(false);
+  const [hovered, setHover] = useState(false);
   useFrame(() => (mesh.current.rotation.x += -0.005));
   useFrame(() => (mesh.current.rotation.y += -0.01));
   return (
-    <mesh {...props} ref={mesh}>
+    <mesh
+      {...props}
+      ref={mesh}
+      scale={active ? [0.5, 0.5, 0.5] : [1, 1, 1]}
+      onClick={(e) => setActive(!active)}
+      onPointerOver={(e) => setHover(true)}
+      onPointerOut={(e) => setHover(false)}
+    >
       <torusBufferGeometry attach="geometry" args={[0.5, 0.16, 0.16, 100]} />
-      <meshStandardMaterial attach="material" color={"#00B1AC"} roughness={0.5} />
+      <meshStandardMaterial
+        attach="material"
+        color={hovered ? "aqua" : "#00B1AC"}
+        roughness={0.5}
+      />
     </mesh>
   );
 }
