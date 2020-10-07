@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 import "./pagefooter.css";
 
 const PageFooter = () => (
-  <div className="page-footer">
+  <div className="page-footer" id="social-up">
     <a className="pagefooter-logo logo-type" href="/">
       curiosity<span>wen</span>
     </a>
