@@ -59,7 +59,7 @@ header {
   width: 1.5rem;
   height: 0.125rem;
   content: "";
-  background-color: var(--Text-2);
+  background-color: var(--Text-1);
   transition: top 0.2s ease-out 0.2s, transform 0.2s ease-out,
     background-color 0.3s ease-out;
 }
@@ -77,10 +77,6 @@ header {
   top: 5px;
   transform: rotate(0deg) translate3d(0, 0, 0);
 }
-.menu-btn:hover li::before,
-.menu-btn:hover li::after {
-  background-color: var(--Text-1);
-}
 /* 展开 */
 .header-active {
   height: 100%;
@@ -96,9 +92,6 @@ header {
   transform: rotate(45deg);
   transition: top 0.2s ease-out, transform 0.2s ease-out 0.2s,
     background-color 0.15s ease-out;
-}
-.header-active .menu-btn li {
-  background-color: transparent;
 }
 /* 玻璃菜单内 */
 .header-bg {
