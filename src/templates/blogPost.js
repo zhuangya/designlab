@@ -15,6 +15,7 @@ const Template = ({ data }) => {
   const date = markdownRemark.frontmatter.date;
   const path = markdownRemark.frontmatter.path;
   const color = markdownRemark.frontmatter.color;
+  const cover = markdownRemark.frontmatter.cover;
   const html = markdownRemark.html;
 
   return (
@@ -23,12 +24,18 @@ const Template = ({ data }) => {
         <SEO title={title} />
         <div className="page-header" style={{ backgroundColor: color }}>
           <div className="page">
-            <h1 className="page-title">{title}</h1>
-            <p className="page-share-title">{date}</p>
+            <div className="page-cover">
+              <img
+                src={cover}
+                alt={title}
+              />
+            </div>
           </div>
         </div>
-        <div className="stories-sticky"></div>
+        <div className="stories-sticky" style={{ backgroundColor: color }}></div>
         <div className="page">
+          <h1 className="page-title">{title}</h1>
+          <p className="page-share-title">{date}</p>
           <div dangerouslySetInnerHTML={{ __html: html }} />
         </div>
         <p className="page-share-title">Share</p>
@@ -85,6 +92,7 @@ export const query = graphql`
         path
         title
         color
+        cover
       }
     }
   }
