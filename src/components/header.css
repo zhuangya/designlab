@@ -79,7 +79,7 @@ header {
 }
 /* 展开 */
 .header-active {
-  height: 100%;
+  height: 100vh;
 }
 .header-active .menu-btn li::before {
   top: 0;
