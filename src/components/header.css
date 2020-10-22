@@ -79,7 +79,7 @@ header {
 }
 /* 展开 */
 .header-active {
-  height: 100vh;
+  height: 100%;
 }
 .header-active .menu-btn li::before {
   top: 0;
@@ -100,7 +100,7 @@ header {
   top: 0;
   right: 0;
   width: 50%;
-  height: 100vh;
+  height: 100vh!important;
   user-select: none;
   backdrop-filter: var(--Glass);
   background-color: var(--Glass-BG-P);
