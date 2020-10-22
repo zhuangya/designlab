@@ -60,7 +60,7 @@ header {
   height: 0.125rem;
   content: "";
   background-color: var(--Text-1);
-  transition: top 0.2s ease-out 0.2s, transform 0.2s ease-out,
+  transition: top 0.2s ease-out 0.66s, transform 0.66s cubic-bezier(0.66, 0, 0.01, 1),
     background-color 0.3s ease-out;
 }
 .menu-btn li {
@@ -84,13 +84,13 @@ header {
 .header-active .menu-btn li::before {
   top: 0;
   transform: rotate(-45deg);
-  transition: top 0.2s ease-out, transform 0.2s ease-out 0.2s,
+  transition: top 0.2s ease-out, transform 0.66s cubic-bezier(0.66, 0, 0.01, 1) 0.2s,
     background-color 0.15s ease-out;
 }
 .header-active .menu-btn li::after {
   top: 0;
   transform: rotate(45deg);
-  transition: top 0.2s ease-out, transform 0.2s ease-out 0.2s,
+  transition: top 0.2s ease-out, transform 0.66s cubic-bezier(0.66, 0, 0.01, 1) 0.2s,
     background-color 0.15s ease-out;
 }
 /* 玻璃菜单内 */
