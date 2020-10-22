@@ -32,13 +32,13 @@ const Template = ({ data }) => {
             </div>
           </div>
         </div>
-        <div className="stories-sticky" style={{ backgroundColor: color }}></div>
+        <div className="stories-sticky" style={{ backgroundImage: "linear-gradient(180deg,"+color+"0%,"+color+"100%)"}}></div>
         <div className="page">
           <h1 className="page-title">{title}</h1>
           <p className="page-share-title">{date}</p>
           <div dangerouslySetInnerHTML={{ __html: html }} />
         </div>
-        <p className="page-share-title">Share</p>
+        <p className="page-share-title" style={{textAlign:"center"}}>Share</p>
         <div className="page-share">
           <a
             href={

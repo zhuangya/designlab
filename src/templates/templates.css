@@ -46,6 +46,7 @@
   z-index: 20;
   height: 4.5rem;
   backdrop-filter: var(--Glass);
+  background-color: var(--Glass-BG-S);
 }
 .page h1 {
   font-size: 2.5rem;

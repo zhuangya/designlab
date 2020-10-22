@@ -4,7 +4,7 @@ date: "2020-02-01"
 title: "Thoughts Covers"
 tags: ["Design"]
 cover: "https://dl.airtable.com/.attachments/85ecbd88cbeb8b2fbcc89dca1806d203/eaf9275c/thoughts_covers.jpg"
-color: "rgba(110,116,224,0.48)"
+color: "rgba(110,116,224,0.24)"
 ---
 
 ![](https://dl.airtable.com/.attachments/fa8f07cd6e7d206bd77690575efb6ae0/95c06fd6/1.jpg)
