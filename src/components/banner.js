@@ -1,38 +1,17 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
+import cx from "classnames";
 import Tilt from "react-tilt";
 import { useStaticQuery, graphql } from "gatsby";
 
 import "./banner.css";
 
-const Banner = () => {
-  const [RandomNum, setProgress] = useState("");
+const pickExcept = (array, prev) => {
+  const candidates = prev ? array.filter((item) => item !== prev) : array;
+  return candidates[Math.floor(Math.random() * candidates.length)];
+};
 
-  const lastProgress = useRef();
-
-  const getRandomProgress = useCallback(() => {
-    var max = 4;
-    var min = 1;
-
-    var num = Math.floor(Math.random() * max + min);
-    while (num === lastProgress.current) {
-      num = Math.floor(Math.random() * max + min);
-    }
-    lastProgress.current = num;
-
-    var rnum = "banner_" + num;
-    setProgress(rnum);
-    // console.log(rnum);
-  }, []);
-
-  useEffect(() => {
-    getRandomProgress();
-
-    setInterval(function() {
-      getRandomProgress();
-    }, 4000);
-  }, [getRandomProgress]);
-
-  const data = useStaticQuery(graphql`
+function useBanners() {
+  const { sandwiches } = useStaticQuery(graphql`
     query MenuQuery {
       sandwiches: allAirtable(
         filter: { table: { eq: "Sandwiches" } }
@@ -52,13 +31,37 @@ const Banner = () => {
       }
     }
   `);
-  // DESC降序 ASC生序
+
+  return sandwiches.nodes || [];
+}
+
+function usePickBanner(sandwiches) {
+  const ids = sandwiches.map(({ recordId }) => recordId);
+  const [result, setResult] = useState(() => pickExcept(ids));
+
+  useEffect(() => {
+    const interval = setInterval(
+      () => setResult(pickExcept(sandwiches, result)),
+      4000
+    );
+    return () => clearInterval(interval);
+  }, [result, sandwiches]);
+
+  return result;
+}
+
+const Banner = () => {
+  const sandwiches = useBanners();
+  const currentSandwich = usePickBanner(sandwiches);
+
   return (
-    <div className={RandomNum} id="hahaha">
-      {data.sandwiches.nodes.map((item) => (
+    <div>
+      {sandwiches.map((item) => (
         <a
           key={item.recordId}
-          className="banner-space"
+          className={cx("banner-space", {
+            visible: item.recordId === currentSandwich.recordId,
+          })}
           style={{ backgroundColor: item.data.Color }}
           href={item.data.BannerLink}
           target="_blank"
@@ -81,9 +84,7 @@ const Banner = () => {
             />
           </Tilt>
           <div className="banner-ring">
-            <p>
-              {item.data.Description}
-            </p>
+            <p>{item.data.Description}</p>
             <div className="banner-time-ring"></div>
           </div>
         </a>
