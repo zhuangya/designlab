@@ -36,7 +36,7 @@ function useBanners() {
 }
 
 function usePickBanner(sandwiches) {
-  const [result, setResult] = useState(pickExcept(sandwiches));
+  const [result, setResult] = useState(() => pickExcept(sandwiches));
 
   useEffect(() => {
     const interval = setInterval(
