@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useCallback } from "react";
+import React, { useState, useEffect } from "react";
 import cx from "classnames";
 import Tilt from "react-tilt";
 import { useStaticQuery, graphql } from "gatsby";
@@ -36,8 +36,7 @@ function useBanners() {
 }
 
 function usePickBanner(sandwiches) {
-  const ids = sandwiches.map(({ recordId }) => recordId);
-  const [result, setResult] = useState(() => pickExcept(ids));
+  const [result, setResult] = useState(pickExcept(sandwiches));
 
   useEffect(() => {
     const interval = setInterval(
