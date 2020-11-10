@@ -6,7 +6,9 @@ import { useStaticQuery, graphql } from "gatsby";
 import "./banner.css";
 
 const pickExcept = (array, prev) => {
-  const candidates = prev ? array.filter((item) => item !== prev) : array;
+  const candidates = prev
+    ? array.filter((item) => item.recordId !== prev.recordId)
+    : array;
   return candidates[Math.floor(Math.random() * candidates.length)];
 };
 
