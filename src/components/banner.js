@@ -42,18 +42,21 @@ function usePickBanner(sandwiches) {
 
   useEffect(() => {
     const interval = setInterval(
-      () => setResult(pickExcept(sandwiches, result)),
+      () => setResult((prev) => pickExcept(sandwiches, prev)),
       4000
     );
     return () => clearInterval(interval);
-  }, [result, sandwiches]);
+  }, [sandwiches]);
 
   return result;
 }
 
 const Banner = () => {
+  const [isClient, setIsClient] = useState(false);
   const sandwiches = useBanners();
   const currentSandwich = usePickBanner(sandwiches);
+
+  useEffect(() => setIsClient(true), []);
 
   return (
     <div>
@@ -61,7 +64,7 @@ const Banner = () => {
         <a
           key={item.recordId}
           className={cx("banner-space", {
-            visible: item.recordId === currentSandwich.recordId,
+            visible: isClient && item.recordId === currentSandwich.recordId,
           })}
           style={{ backgroundColor: item.data.Color }}
           href={item.data.BannerLink}
