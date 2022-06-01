@@ -34,7 +34,7 @@
     "react-rellax-wrapper": "^1.0.5",
     "react-three-fiber": "^4.2.21",
     "react-tilt": "^0.1.4",
-    "sharp": "^0.24.1",
+    "sharp": "^0.30.5",
     "three": "^0.120.1",
     "typescript": "^3.9.7"
   },
